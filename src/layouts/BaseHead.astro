@@ -1,0 +1,11 @@
+---
+const { title = 'Digitalwarenkombinat', description = 'Digitalwarenkombinat' } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<title>{title}</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />

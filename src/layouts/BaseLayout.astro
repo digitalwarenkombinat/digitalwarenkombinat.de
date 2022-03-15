@@ -1,0 +1,28 @@
+---
+import { Spa } from "astro-spa";
+
+import BaseHead from './BaseHead.astro';
+import Footer from './Footer.astro';
+import Nav from './Nav.astro';
+
+import config from '../config/index.json';
+
+import '../styles/global.scss';
+
+const { lang = 'de' } = Astro.props;
+
+---
+
+<html lang={lang} class="scroll-smooth">
+	<head>
+		<BaseHead/>
+	</head>
+	<body>
+		<Spa />
+		<div class={'bg-background grid gap-y-16 lg:gap-y-32 overflow-hidden'}>
+      <Nav config={config[lang]}/>
+			<slot />
+      <Footer config={config[lang]}/>
+		</div>
+	</body>
+</html>

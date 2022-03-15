@@ -16,8 +16,5 @@
     "postcss": "^8.4.8",
     "sass": "^1.49.9",
     "tailwindcss": "^3.0.23"
-  },
-  "dependencies": {
-    "astro-spa": "^1.3.8"
   }
 }

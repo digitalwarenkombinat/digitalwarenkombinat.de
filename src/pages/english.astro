@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 
 import About from '../components/About.astro';
+import Canvas from '../components/Canvas.tsx';
 import Projects from '../components/Projects.astro';
 import Services from '../components/Services.astro';
 import References from '../components/References.astro';
@@ -11,6 +12,7 @@ import config from '../config/index.json';
 <BaseLayout lang='en'>
 	<About config={config.en.about}/>
 	<Services config={config.en.services} />
+	<Canvas client:only />
 	<Projects config={config.en.projects} />
 	<References config={config.en.references} />
 </BaseLayout>

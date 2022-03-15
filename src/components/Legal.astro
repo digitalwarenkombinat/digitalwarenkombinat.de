@@ -1,0 +1,14 @@
+---
+const { config: legal } = Astro.props;
+const {title, subtitle, description} = legal;
+---
+
+<section class={'md:py-8'} id="legal">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <h2 class={'text-base text-primary font-semibold tracking-wide uppercase'}>{title}</h2>
+      <p class="mt-4 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">{subtitle}</p>
+      <p class="mt-4 max-w-2xl text-xl text-black lg:mx-auto">{description}</p>
+    </div>
+  </div>
+</section>

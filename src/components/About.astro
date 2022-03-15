@@ -1,0 +1,27 @@
+---
+import Caption from './Caption.astro';
+const { config: about } = Astro.props;
+const { items, title } = about;
+---
+
+<section id="about">
+  <div class={'container max-w-7xl mx-auto px-4'}>
+    <Caption title={title}/>
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 md:gap-8">
+      {items.map((item) => (
+        <div key={item.name} class="bg-background md:border-primary md:border-4 md:rounded-lg p-4">
+          <div class="flex items-center space-x-8 mb-4">
+            <img class="h-28 w-28 object-cover object-center rounded-full" src={item.img} alt={item.name} >
+            <div>
+              <p class="text-xl text-primary title-font font-bold">{item.name}</p>
+              <p class="leading-relaxed text-base text-secondary font-medium">{item.description}</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-black leading-loose font-medium text-base">{item.content}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

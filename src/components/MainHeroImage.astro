@@ -1,0 +1,12 @@
+---
+const { mainHero } = Astro.props;
+---
+
+<div class="lg:absolute lg:inset-y-4 lg:right-0 lg:w-1/2">
+  <picture>
+    <img
+    class="h-64 w-full object-cover sm:h-80 md:h-96 lg:w-full lg:h-full"
+    src={mainHero.img}
+    alt="Digitalwarenkombinat" />
+  </picture>
+</div>

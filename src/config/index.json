@@ -37,7 +37,7 @@
       },
       "secondaryAction": {
         "text": "Schreib uns",
-        "href": "mailto:info@digitalwarenkombinat.com?subject=Hallo Digitalwarenkombinat-Team!"
+        "href": "mailto:info@digitalwarenkombinat.de?subject=Hallo Digitalwarenkombinat-Team!"
       }
     },
     "about": {
@@ -137,7 +137,7 @@
       "sections": [
         {
           "name": "Kontakt",
-          "href": "mailto:info@digitalwarenkombinat.com?subject=Hallo Digitalwarenkombinat-Team!"
+          "href": "mailto:info@digitalwarenkombinat.de?subject=Hallo Digitalwarenkombinat-Team!"
         },
         {
           "name": "Impressum",
@@ -194,7 +194,7 @@
       },
       "secondaryAction": {
         "text": "Email us",
-        "href": "mailto:info@digitalwarenkombinat.com?subject=Hi Digitalwarenkombinat-Team!"
+        "href": "mailto:info@digitalwarenkombinat.de?subject=Hi Digitalwarenkombinat-Team!"
       }
     },
     "about": {
@@ -294,7 +294,7 @@
       "sections": [
         {
           "name": "Contact",
-          "href": "mailto:info@digitalwarenkombinat.com?subject=Hi Digitalwarenkombinat-Team!"
+          "href": "mailto:info@digitalwarenkombinat.de?subject=Hi Digitalwarenkombinat-Team!"
         },
         {
           "name": "Legal Notices",

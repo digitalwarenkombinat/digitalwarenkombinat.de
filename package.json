@@ -1,12 +1,10 @@
 {
   "name": "digitalwarenkombinat.de",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "postbuild": "node ./postbuild.mjs -path https://digitalwarenkombinat.github.io/digitalwarenkombinat.de/",
     "preview": "astro preview"
   },
   "devDependencies": {

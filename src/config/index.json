@@ -146,14 +146,13 @@
       ],
       "socialMedia": {
         "github": "https://github.com/digitalwarenkombinat/",
-        "twitter": "https://twitter.com/digitalwarenkombinat",
+        "twitter": "https://twitter.com/digiwako",
         "instagram": "https://www.instagram.com/digitalwarenkombinat"
       }
     },
     "legal": {
       "title": "Impressum",
-      "subtitle": "Digitalwarenkombinat GbR",
-      "description": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Haftung für Inhalte Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen. Haftung für Links Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.  Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen. Urheberrecht Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+      "subtitle": "Digitalwarenkombinat GbR"
     }
   },
   "en": {
@@ -172,7 +171,7 @@
       },
 
       {
-        "name": "Projekts",
+        "name": "Projects",
         "href": "#projects"
       },
       {
@@ -187,7 +186,7 @@
     "mainHero": {
       "title": "We are",
       "subtitle": "Digitalwarenkombinat.",
-      "description": "The Digitalwarenkombinat (DIWAKO) is dedicated to the creative use of open cultural data and develops web applications and merchandise for and with GLAM institutions under the motto „United in shaping digital worlds“. We are committed to the sustainable use of open cultural data and support museums, galleries, archives and libraries in opening up digitally to society as a whole.",
+      "description": "The Digitalwarenkombinat (DIWAKO) is dedicated to the creative use of open cultural data and develops web applications and merchandise for and with GLAM institutions under the motto „Shaping digital worlds together“. We are committed to the sustainable use of open cultural data and support museums, galleries, archives and libraries in opening up digitally to the whole society.",
       "img": "/assets/about.svg",
       "primaryAction": {
         "text": "Get started",
@@ -203,41 +202,41 @@
       "items": [
         {
           "name": "Anne Mühlich",
-          "description": "Westslawistin, Europäistin, Digitalhumanistin",
-          "content": "Geboren in der Oberlausitz, einer Region in Mitteleuropa, die durch eine wechselvolle Geschichte geprägt ist, habe ich mich früh für die Nachbarländer Polen und Tschechien sowie unsere gemeinsamen Wurzeln interessiert. Neben einem Studium der Westslawistik, der European Studies und längeren Aufenthalten in Polen habe ich mich jahrelang in der internationalen Jugendbildung engagiert. Der Zufall brachte mich 2018 zum Kulturhackathon Coding da Vinci, wo ich mich kreativ ausprobieren und neues dazulernen konnte. Gemeinsam mit Gerd entwickele ich seitdem Ideen, wie man digitalisierte Sammlungen spielerisch und ästhetisch ansprechend aufbereiten kann, um sie für neue Zielgruppen zu öffnen. Daraus entstand das Digitalwarenkombinat.",
+          "description": "Western Slavist, Europeanist, Digital Humanist",
+          "content": "Born in Upper Lusatia, a region in Central Europe marked by an varied history, I became interested in the neighboring countries of Poland and the Czech Republic and our common roots at an early age. In addition to studying Western Slavic Studies, European Studies, and extended stays in Poland, I was involved in international youth education for many years. In 2018, coincidence brought me to the Coding da Vinci cultural hackathon, where I was able to try out my creativity and learn something new. Together with Gerd, I have since been developing ideas on how to prepare digitized collections in a playful and aesthetically pleasing way to open them up to new target groups. This resulted in the Digitalwarenkombinat.",
           "img": "/assets/anne.webp"
         },
         {
           "name": "Gerd Müller",
-          "description": "Software-Architekt, Kulturenthusiast, Open Source-Liebhaber",
-          "content": "Aufgewachsen im Leipziger Umland begeisterte ich mich bereits in meiner Jugend für die Möglichkeiten, die Softwareentwicklung und Digitalisierung bieten. Mein Diplom im Bereich Informatik erwarb ich 2011 an der Berufsakademie Leipzig. Seit mehr als 10 Jahren betreue ich als Entwickler, Architekt und Ausbilder digitale Projekte. Daneben engagiere ich mich u.a. ehrenamtlich in verschiedenen Leipziger Vereinen. Durch Freunde erfuhr ich 2018 vom Kulturhackathon Coding da Vinci, in dessen Rahmen ich meine Fähigkeiten seitdem in einem kreativen und vielseitigen Umfeld erweitere und ausprobiere. Gemeinsam mit Anne möchte ich diese gewonnenen Erfahrungen und Ansätze vertiefen und in Zukunft nutzbar machen – dafür gibt es das Digitalwarenkombinat.",
+          "description": "Software Architect, Culture Enthusiast, Open Source Lover",
+          "content": "Growing up in the Leipzig area, I was already enthusiastic about the possibilities offered by software development and digitization in my youth. I earned my diploma in computer science at the Leipzig University of Cooperative Education in 2011. For more than 10 years, I have been managing digital projects as a developer, architect and trainer. In addition, I am involved in various Leipzig associations on a voluntary basis. Through friends, I learned about the Coding da Vinci cultural hackathon in 2018, in the context of which I have been expanding and trying out my skills in a creative and diverse environment. Together with Anne, I would like to deepen these experiences and approaches and make them usable in the future - that's what Digitalwarenkombinat is for.",
           "img": "/assets/gerd.webp"
         }
       ]
     },
     "services": {
       "title": "Services",
-      "subtitle": "Wir machen eure Sammlungen erlebbar!",
-      "description": "Immer mehr Archive, Museen, Bibliotheken und Galerien digitalisieren ihre Sammlungen und stellen diese unter freie Lizenzen oder Public Domain. Wir machen diese vielfältigen Schätze niedrigschwellig zugänglich, sichtbar und kreativ nutzbar. Aus staubigen Archivbeständen werden Edugames, virtuelle Ausstellungen und analoge Kunstwerke.",
+      "subtitle": "We bring your collections to life!",
+      "description": "More and more archives, museums, libraries and galleries are digitizing their collections and placing them under free licenses or public domain. We make these diverse treasures accessible, visible and creatively usable. Dusty archive collections become edugames, virtual exhibitions and analog works of art again.",
       "items": [
         {
-          "name": "Webanwendungen",
-          "description": "Wir helfen euch dabei, eure Museums- und Archivfunde einer größeren Öffentlichkeit zugänglich zu machen und mithilfe von spielerisch-edukativen Webanwendungen auch jene zu erreichen, die bisher selten den Weg zu euch finden.",
+          "name": "Web applications",
+          "description": "We help you to make your museum´s and archive´s collections accessible to a wider public and, with the help of playful and educational web applications, to reach even those who have rarely found their way to you so far.",
           "icon": "/assets/website.svg"
         },
         {
-          "name": "Medienstationen",
-          "description": "Wir entwickeln mit euch gemeinsam Medienstationen auf der Grundlage eurer digitalisierten Sammlungsschätze – für Ausstellungen sowie als Anwendung für eure Museumspädagogische Abteilung",
+          "name": "Media stations",
+          "description": "We develop media stations together with you based on your digitized collection treasures - for exhibitions as well as an application for your museum education department.",
           "icon": "/assets/mediastation.svg"
         },
         {
           "name": "Merchandise",
-          "description": "Viel zu viele digitalisierte Museumsschätze fristen trotz offener Lizenzen und Public Domain ihr Dasein im Schatten des Internets. Wir wollen das ändern und neue, analoge und ästhetische Produkte daraus gestalten – damit Altes neu entdeckt werden kann.",
+          "description": "Despite open licenses and public domain, far too many digitized museum treasures eke out an existence in the shadows of the internet. We want to change that and create new, analog and aesthetic products from them - so that old things can be rediscovered.",
           "icon": "/assets/merchandise.svg"
         },
         {
-          "name": "Beratung",
-          "description": "Ihr habt eifrig eure Sammlungen digitalisiert und gescannt, wisst aber nicht, was ihr damit nun anfangen sollt? Wir begleiten und beraten euch dabei und entwickeln mit euch gemeinsam Idee, für eine kreative weiterführende Nutzung eurer Kulturdaten.",
+          "name": "Consulting",
+          "description": "You have digitized and scanned your collections, but don't know what to do with them? We accompany and advise you and develop ideas together with you for a creative use of your cultural data.",
           "icon": "/assets/consulting.svg"
         }
       ]
@@ -250,19 +249,19 @@
           "title": "Plantala",
           "href": "https://www.plantala.de/",
           "img": "/assets/plantala.webp",
-          "description": "Mit Plantala hauchten wir archivierten und digitalisierten Biologie-Lehrtafeln der Zentralen Kustodie der Universität Göttingen ein neues Leben ein. Gestalte mit Plantala aus einzelnen Pflanzenteilen bunte und ausmalbare Mandalas."
+          "description": "With Plantala, we brought archived and digitized hand-drawn biology posters from the Central Custody of the University of Göttingen back to life. Use Plantala to create colorful and colorable mandalas from individual plant parts."
         },
         {
           "title": "Demokratie erLeben",
           "href": "https://demokratie-erleben.arbeiterjugend.de/",
           "img": "/assets/demol.webp",
-          "description": "Bei Demokratie erLeben begleiten wir drei Kinder aus der Arbeiterklasse gegen Ende der 1920er Jahre auf ihrem Weg zu einer Kinderrepublik – einem sozialistischen Zeltlager. Begleite Anna, Karl und Gerda auf ihrer Reise, die auf digitalisierten Fotografien und Berichten aus dem Archiv der Arbeiterjugendbewegung in Oer-Erkenschwick basiert."
+          "description": "In Demokratie erLeben we accompany three working-class children towards the end of the 1920s on their way to a children's republic - a socialist tent camp. Join Anna, Karl and Gerda on their journey, based on digitized photographs and reports from the archive of the Workers' Youth Movement in Oer-Erkenschwick."
         },
         {
           "title": "Wie geht’s dir, Europa?",
           "href": "https://gerdesque.github.io/wiegehtsdireuropa/",
           "img": "/assets/europa.webp",
-          "description": "Anlässlich der Wahl zum Parlament der Europäischen Union 2019 stellten wir uns die Frage, wie es um Europa eigentlich bestellt ist. Entdecke die Vielfalt Europas mit digitalisierten Fotografien von Willy Prager aus der Sammlung des Landesarchiv Baden-Württemberg in Verbindung mit Twitter-Tweets."
+          "description": "On the occasion of the 2019 election for the Parliament of the European Union, we asked ourselves the question of what Europe is actually like. Discover the diversity of Europe with digitized photographs by Willy Prager from the collection of the Federal archive of Baden-Württemberg in combination with Twitter tweets."
         }
       ]
     },
@@ -271,23 +270,23 @@
       "items": [
         {
           "title": "Referenz 1",
-          "description": "Die Projekte von Anne Mühlich und Gerd Müller sind eine große Bereicherung für den Kultur-Hackathon Coding da Vinci. Mit jeder Teilnahme beweisen die beiden aufs Neue ihre Kreativität und ihren sensiblen Umgang mit offenen Kulturdaten und den dahinterstehenden Institutionen – das beweisen nicht zuletzt die Coding da Vinci-Stipendien, mit denen sie mehrfach ausgezeichnet wurden.",
-          "author": "Philippe Genêt, Projektkoordinator Coding da Vinci"
+          "description": "The projects of Anne Mühlich and Gerd Müller are a great enrichment for the Coding da Vinci cultural hackathon. With each participation, those two prove their creativity and their sensitive handling of open cultural data and the institutions behind it - as evidenced not least by the Coding da Vinci scholarships with which they have been awarded several times.",
+          "author": "Philippe Genêt, Project coordinator Coding da Vinci"
         },
         {
           "title": "Referenz 2",
-          "description": "Anne Mühlich und Gerd Müller haben mit den Quellen des Archivs der Arbeiterjugendbewegung im Rahmen des Kulturhackathons „Coding da Vinci“ Fantastisches vollbracht: eine ästhetisch ansprechende, technisch einwandfreie und zielgruppengerechte Homepage zu den Kinderrepubliken der 1920er Jahre! Wir sind aber nicht nur überzeugt von der Kreativität und Professionalität des Teams, sondern auch von der unkomplizierten und konstruktiven Zusammenarbeit.",
-          "author": "Maria Daldrup, Leiterin des Archivs der Arbeiterjugendbewegung"
+          "description": "Anne Mühlich and Gerd Müller have achieved fantastic things with the sources of the Archive of the Workers' Youth Movement within the framework of the cultural hackathon 'Coding da Vinci': an aesthetically pleasing, technically flawless and target group-oriented homepage on the Children's Republics of the 1920s! But we are not only convinced by the creativity and professionalism of the team, but also by the uncomplicated and constructive cooperation.",
+          "author": "Maria Daldrup, Head of the Archive of the Worker's Youth Movement"
         },
         {
           "title": "Referenz 3",
-          "description": "Mit Plantala ist Anne Mühlich und Gerd Müller wunderbares gelungen: offene Kulturdaten in einer Software und ästhetischen Sprache zu präsentieren, die direkt ins Analoge zurückkoppelt. Große Spielfreude mit großem Mehrwert. Danke!",
-          "author": "Karsten Heck, Universität Göttingen / Forum Wissen"
+          "description": "With Plantala, Anne Mühlich and Gerd Müller have accomplished something wonderful: presenting open cultural data in a software and aesthetic language that ties directly back into the analog. Great fun with great value. Thank you!",
+          "author": "Karsten Heck, Göttingen University / Forum Wissen"
         },
         {
           "title": "Referenz 4",
-          "description": "Die Zusammenarbeit mit Anne Mühlich und Gerd Müller im Rahmen des Kultur-Hackathon Coding da Vinci Nieder.Rhein.Land 2021 war inspirierend und klappte reibungslos auch über die Entfernung hinweg. Dieses kollaborative Arbeiten war eine tolle Erfahrung und ich bin sehr stolz auf unser Ergebnis.",
-          "author": "Liane Hellmund, freiberufliche Grafikdesignerin"
+          "description": "The collaboration with Anne Mühlich and Gerd Müller as part of the cultural hackathon Coding da Vinci Nieder.Rhein.Land 2021 was inspiring and worked smoothly even over distance. This collaborative work was a great experience and I am very proud of our result.",
+          "author": "Liane Hellmund, freelance graphic designer"
         }
       ]
     },
@@ -304,14 +303,13 @@
       ],
       "socialMedia": {
         "github": "https://github.com/digitalwarenkombinat/",
-        "twitter": "https://twitter.com/digitalwarenkombinat",
+        "twitter": "https://twitter.com/digiwako",
         "instagram": "https://www.instagram.com/digitalwarenkombinat"
       }
     },
     "legal": {
       "title": "Legal Notices",
-      "subtitle": "Digitalwarenkombinat GbR",
-      "description": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Haftung für Inhalte Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen. Haftung für Links Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.  Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen. Urheberrecht Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+      "subtitle": ""
     }
   }
 }

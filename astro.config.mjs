@@ -5,6 +5,6 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 	integrations: [
     preact(),
   ],
-  site: 'https://digitalwarenkombinat.github.io/digitalwarenkombinat.de/',
+  site: 'https://digitalwarenkombinat.github.io',
   base: '/digitalwarenkombinat.de'
 });

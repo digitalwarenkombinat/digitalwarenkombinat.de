@@ -1,9 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-
-import Legal from '../components/Legal.astro';
-import config from '../config/index.json';
 ---
-<BaseLayout lang='en'>
-	<Legal config={config.en.legal} />
+<BaseLayout lang='en' showMainContent={false}>
+	<section class={'md:py-8'} id="legal">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <h2 class={'text-base text-primary font-semibold tracking-wide uppercase lg:mx-auto'}>Legal Notice</h2>
+			<p class="max-w-2xl text-xl text-black lg:mx-auto ">Please see the German
+				<a href={'impressum'} class="hover:text-primary cursor-pointer leading-4">Impressum</a>.
+			</p>
+		</div>
+  </div>
+</section>
 </BaseLayout>

@@ -3,15 +3,15 @@ import Header from './Header.astro';
 import MainHero from '../components/MainHero.astro';
 import MainHeroImage from '../components/MainHeroImage.astro';
 
-const { config } = Astro.props;
+const { config, showMainContent } = Astro.props;
 ---
 
 <div class={'relative'}>
   <div class="max-w-7xl mx-auto">
     <div class={'relative z-10 pb-4 bg-background sm:pb-16 lg:max-w-2xl lg:w-full lg:pb-32 xl:pb-40'}>
       <Header config={config}/>
-      <MainHero mainHero={config.mainHero}/>
+      {showMainContent && <MainHero mainHero={config.mainHero}/>}
     </div>
   </div>
-  <MainHeroImage mainHero={config.mainHero}/>
+  {showMainContent && <MainHeroImage mainHero={config.mainHero}/>}
 </div>

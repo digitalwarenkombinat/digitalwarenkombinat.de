@@ -7,7 +7,7 @@ import config from '../config/index.json';
 
 import '../styles/global.scss';
 
-const { lang = 'de' } = Astro.props;
+const { lang = 'de', showMainContent = true } = Astro.props;
 
 ---
 
@@ -17,7 +17,7 @@ const { lang = 'de' } = Astro.props;
 	</head>
 	<body>
 		<div class={'bg-background grid gap-y-16 lg:gap-y-32 overflow-hidden'}>
-      <Nav config={config[lang]}/>
+      <Nav config={config[lang]} showMainContent={showMainContent}/>
 			<slot />
       <Footer config={config[lang]}/>
 		</div>

@@ -2,7 +2,7 @@
 const { config } = Astro.props;
 const { company, contact } = config;
 const { logo, name: companyName } = company;
-const { socialMedia, sections, legal, legalHref } = contact;
+const { socialMedia, sections } = contact;
 ---
 
 <footer id="contact" class="mx-auto container xl:px-20 lg:px-12 sm:px-8 px-4">
@@ -11,7 +11,7 @@ const { socialMedia, sections, legal, legalHref } = contact;
       <img src={logo} alt={companyName} class="w-24 h-24" />
     </div>
     <div class="flex flex-wrap sm:gap-8 gap-4 items-center justify-center mt-4 h-12">
-      {sections.map((section, index) => (
+      {sections.map((section) => (
         <a
           key={section.name}
           href={section.href}

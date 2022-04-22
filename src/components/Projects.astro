@@ -19,12 +19,20 @@ const [firstItem, secondItem, thirdItem] = projects.items;
         <a class={'text-tertiary font-bold hover:text-primary'} href={firstItem?.href} target="_blank" rel="noreferrer">{`${description} ${firstItem?.title}`}</a>
       </div>
       <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <img class="h-6/6 rounded-md border-primary border-4" src={firstItem?.img} alt={firstItem?.title} />
+        <picture>
+          <source srcset={firstItem?.img} type="image/webp">
+          <source srcset={firstItem?.imgFallback} type="image/jpeg"> 
+          <img class="h-6/6 rounded-md border-primary border-4" src={firstItem?.img} alt={firstItem?.title} />
+        </picture>
       </div>
     </div>
     <div class={'flex flex-wrap flex-col-reverse sm:flex-row'}>
       <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <img class="h-6/6 rounded-md border-primary border-4" src={secondItem?.img} alt={secondItem?.title} />
+        <picture>
+          <source srcset={secondItem?.img} type="image/webp">
+          <source srcset={secondItem?.imgFallback} type="image/jpeg"> 
+          <img class="h-6/6 rounded-md border-primary border-4" src={secondItem?.img} alt={secondItem?.title} />
+        </picture>
       </div>
       <div class={'w-full sm:w-1/2 p-8 lg:mt-16'}>
         <div class={'align-middle'}>
@@ -41,7 +49,11 @@ const [firstItem, secondItem, thirdItem] = projects.items;
         <a class={'text-tertiary font-bold hover:text-primary'} href={thirdItem?.href} target="_blank" rel="noreferrer">{`${description} ${thirdItem?.title}`}</a>
       </div>
       <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <img class="h-6/6 rounded-md border-primary border-4" src={thirdItem?.img} alt={thirdItem?.title} />
+        <picture>
+          <source srcset={thirdItem?.img} type="image/webp">
+          <source srcset={thirdItem?.imgFallback} type="image/jpeg"> 
+          <img class="h-6/6 rounded-md border-primary border-4" src={thirdItem?.img} alt={thirdItem?.title} />
+        </picture>
       </div>
     </div>
   </div>

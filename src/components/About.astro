@@ -11,12 +11,12 @@ const { items, title } = about;
       {items.map((item) => (
         <div key={item.name} class="bg-background md:border-primary md:border-4 md:rounded-lg p-4">
           <div class="flex items-center space-x-8 mb-4">
-            <picture>
+            <picture class="flex-none">
               <source srcset={item.img} type="image/webp">
               <source srcset={item.imgFallback} type="image/jpeg"> 
               <img class="h-32 w-32 object-cover object-center rounded-full" src={item.img} alt={item.name} >
             </picture>
-            <div>
+            <div class="flex-1">
               <p class="text-xl text-primary title-font font-bold">{item.name}</p>
               <p class="leading-relaxed text-base text-secondary font-medium">{item.description}</p>
             </div>

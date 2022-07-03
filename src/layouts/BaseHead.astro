@@ -1,11 +1,26 @@
 ---
-const { title = 'Digitalwarenkombinat', description = 'Digitalwarenkombinat' } = Astro.props;
+const { config } = Astro.props;
 ---
 
 <meta charset="UTF-8" />
-<meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
-<title>{title}</title>
+<meta name ="title" content ={config.company.description}/>
+<meta name ="description" content ="Digitalwarenkombinat | Digitalagentur aus Leipzig für Webanwendungen für Museen, Archive, Bibliotheken und Galerien. Webdesign, Entwicklung und Beratung für eure digitalisierten Sammlungen."/>
+<meta name ="copyright" content ="Digitalwarenkombinat"/>
+<meta name ="keywords" content ="Digitalagentur, Leipzig, Open Source, Kulturinstitutionen, Internet-Agentur, Webdesign, Entwicklung, Beratung, DIWAKO"/>
+<meta property ="og:type" content ="website"/>
+<meta property ="og:url" content ="https://digitalwarenkombinat.de/"/>
+<meta property ="og:title" content ="Digitalwarenkombinat"/>
+<meta property ="og:description" content ={config.company.description}/>
+<meta property ="og:image" content ="https://digitalwarenkombinat.de/image.png"/>
+<meta property ="twitter:card" content ="summary_large_image"/>
+<meta property ="twitter:url" content ="https://digitalwarenkombinat.de/"/>
+<meta property ="twitter:title" content ="Digitalwarenkombinat"/>
+<meta property ="twitter:description" content ={config.company.description}/>
+<meta property ="twitter:image" content ="https://digitalwarenkombinat.de/image.png"/>
 
+<title>{config.company.description}</title>
+
+<link rel="canonical" href="https://digitalwarenkombinat.de/" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/icon.svg" type="image/svg+xml" />

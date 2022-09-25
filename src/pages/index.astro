@@ -1,18 +1,19 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
+import BaseLayout from "../layouts/BaseLayout.astro"
 
-import About from '../components/About.astro';
-import Canvas from '../components/Canvas.tsx';
-import Projects from '../components/Projects.astro';
-import Services from '../components/Services.astro';
-import References from '../components/References.astro';
+import About from "../components/About.astro"
+import Canvas from "../components/Canvas.tsx"
+import Projects from "../components/Projects.astro"
+import Services from "../components/Services.astro"
+import References from "../components/References.astro"
 
-import config from '../config/index.json';
+import config from "../config/index.json"
 ---
-<BaseLayout lang='de'>
-	<About config={config.de.about} />
-	<Services config={config.de.services} />
-	<Canvas client:only />
-	<Projects config={config.de.projects} />
-	<References config={config.de.references} />
+
+<BaseLayout lang="de">
+  <About config={config.de.about} />
+  <Services config={config.de.services} />
+  <Canvas client:only="preact" />
+  <Projects config={config.de.projects} />
+  <References config={config.de.references} />
 </BaseLayout>

@@ -21,6 +21,10 @@
       {
         "name": "Kontakt",
         "href": "#contact"
+      },
+      {
+        "name": "Blog",
+        "href": "/blog"
       }
     ],
     "callToAction": {

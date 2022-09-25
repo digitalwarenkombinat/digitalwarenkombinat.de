@@ -1,8 +1,8 @@
+import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
+import mdx from '@astrojs/mdx';
 
-// @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
-	integrations: [
-    preact(),
-  ]
+export default defineConfig({
+	site: 'https://digitalwarenkombinat.de/',
+	integrations: [preact(),mdx()],
 });

@@ -92,11 +92,25 @@
       "description": "Gehe zu",
       "items": [
         {
+          "title": "Kooperation mit Geomazing",
+          "href": "https://geomazing.com/",
+          "img": "/assets/geomazing.webp",
+          "imgFallback": "/assets/geomazing.jpeg",
+          "description": "Gemeinsam mit Gregor Asfalg (Geomazing) haben wir die Web-App „Flamingo Flucht“ weiterentwickelt. Mithilfe dieser digitalen Schnitzeljagd durch Aschersleben begeben sich die Spieler:innen auf die Suche nach entlaufenen Zoo-Tieren und entdecken nebenbei spannende Orte und Stadt-Geschichten."
+        },
+        {
+          "title": "PROTESTORY!",
+          "href": "https://protestory.de/",
+          "img": "/assets/protestory.webp",
+          "imgFallback": "/assets/protestory.jpeg",
+          "description": "PROTESTORY! ist ein Projekt des Archivs der Arbeiterjugendbewegung und wurde gemeinsam mit uns umgesetzt. Als Webanwendung bietet PROTESTORY! eine spielerische Auseinandersetzung mit Protestkulturen der Arbeiter:innenjugend seit dem frühen 20. Jahrhundert und macht eine Vielzahl von Materialien, die im Kontext von Jugendprotesten entstanden sind, erlebbar."
+        },
+        {
           "title": "Plantala",
           "href": "https://www.plantala.de/",
           "img": "/assets/plantala.webp",
           "imgFallback": "/assets/plantala.jpeg",
-          "description": "Mit Plantala hauchten wir archivierten und digitalisierten Biologie-Lehrtafeln der Zentralen Kustodie der Universität Göttingen ein neues Leben ein. Gestalte mit Plantala aus einzelnen Pflanzenteilen bunte und ausmalbare Mandalas. Plantala wurde im Rahmen eines Coding da Vinci Stipendiums 2021 entwickelt."
+          "description": "Mit Plantala hauchten wir archivierten und digitalisierten Biologie-Lehrtafeln der Zentralen Kustodie der Universität Göttingen ein neues Leben ein. Mit Plantala lassen sich aus einzelnen Pflanzenteilen bunte und ausmalbare Mandalas gestalten. Plantala wurde im Rahmen eines Coding da Vinci Stipendiums 2021 entwickelt."
         },
         {
           "title": "Demokratie erLeben",
@@ -255,11 +269,25 @@
       "description": "Go to",
       "items": [
         {
+          "title": "Cooperation with Geomazing",
+          "href": "https://geomazing.com/",
+          "img": "/assets/geomazing.webp",
+          "imgFallback": "/assets/geomazing.jpeg",
+          "description": "Together with Gregor Asfalg (Geomazing), we have further developed the web app 'Flamingo Escape'. With the help of this digital scavenger hunt through Aschersleben, the players go in search of escaped zoo animals and discover exciting places and city stories along the way."
+        },
+        {
+          "title": "PROTESTORY!",
+          "href": "https://protestory.de/",
+          "img": "/assets/protestory.webp",
+          "imgFallback": "/assets/protestory.jpeg",
+          "description": "PROTESTORY! is a project of the Archive of the Workers' Youth Movement and was implemented together with us. As a web application, PROTESTORY! offers a playful exploration of protest cultures of working-class youth since the early 20th century and makes it possible to experience a variety of materials that were created in the context of youth protests."
+        },
+        {
           "title": "Plantala",
           "href": "https://www.plantala.de/",
           "img": "/assets/plantala.webp",
           "imgFallback": "/assets/plantala.jpeg",
-          "description": "With Plantala, we brought archived and digitized hand-drawn biology posters from the Central Custody of the University of Göttingen back to life. Use Plantala to create colorful and colorable mandalas from individual plant parts. Plantala was developed within the framework of a Coding da Vinci grant 2021."
+          "description": "With Plantala, we brought archived and digitized hand-drawn biology posters from the Central Custody of the University of Göttingen back to life. With Plantala, colorful and colorable mandalas can be created from individual plant parts. Plantala was developed within the framework of a Coding da Vinci grant 2021."
         },
         {
           "title": "Living Democracy",

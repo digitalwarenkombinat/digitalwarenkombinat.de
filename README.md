@@ -2,13 +2,8 @@
 
 Source code for the [digitalwarenkombinat.de website](https://digitalwarenkombinat.de).
 
-## 🧞 Commands
+## We are Digitalwarenkombinat 👋
 
-All commands are run from the root of the project, from a terminal:
+The Digitalwarenkombinat (DIWAKO) is dedicated to the creative use of open cultural data and develops web applications and merchandise for and with GLAM institutions under the motto „Shaping digital worlds together“. We are committed to the sustainable use of open cultural data and support museums, galleries, archives and libraries in opening up digitally to the whole society.
 
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
+![](./public/image.png)

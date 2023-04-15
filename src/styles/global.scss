@@ -5,13 +5,13 @@
 @layer base {
   @font-face {
     font-family: "Fabrik";
-    src: url(/fonts/fabrik.ttf);
+    src: url('/fonts/fabrik.woff2') format('woff2');
     fontdisplay: "swap";
   }
   @font-face {
     font-family: "Fundamental Brigade";
     fontdisplay: "swap";
-    src: url(/fonts/Fundamental_Brigade.ttf);
+    src: url('/fonts/Fundamental_Brigade.woff2') format('woff2');
   }
 
   body {

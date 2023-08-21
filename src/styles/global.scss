@@ -6,12 +6,12 @@
   @font-face {
     font-family: "Fabrik";
     src: url('/fonts/fabrik.woff2') format('woff2');
-    fontdisplay: "swap";
+    font-display: swap;
   }
   @font-face {
     font-family: "Fundamental Brigade";
-    fontdisplay: "swap";
     src: url('/fonts/Fundamental_Brigade.woff2') format('woff2');
+    font-display: swap;
   }
 
   body {

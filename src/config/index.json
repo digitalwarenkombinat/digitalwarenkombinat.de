@@ -92,12 +92,12 @@
       "description": "Gehe zu",
       "items": [
         {
-          "title": "Kooperation mit Geomazing",
+          "title": "Flamingo Flucht",
           "href": "https://geomazing.com/",
           "hrefText": "Gehe zur",
           "img": "/assets/geomazing.webp",
           "imgFallback": "/assets/geomazing.jpeg",
-          "description": "Gemeinsam mit Gregor Asfalg (Geomazing) haben wir die Web-App „Flamingo Flucht“ weiterentwickelt. Mithilfe dieser digitalen Schnitzeljagd durch Aschersleben begeben sich die Spieler:innen auf die Suche nach entlaufenen Zoo-Tieren und entdecken nebenbei spannende Orte und Stadt-Geschichten."
+          "description": "Flamingo Flucht ist eine digitale Schnitzeljagd von Geomazing, die in Kooperation mit der celloon GmbH für die Kaufmannsgilde in Aschersleben erstellt wurde. Mithilfe dieser digitalen Schnitzeljagd durch Aschersleben begeben sich die Spieler:innen auf die Suche nach entlaufenen Zoo-Tieren und entdecken nebenbei spannende Orte und Stadt-Geschichten."
         },
         {
           "title": "PROTESTORY!",
@@ -270,12 +270,12 @@
       "description": "Go to",
       "items": [
         {
-          "title": "Cooperation with Geomazing",
+          "title": "Flamingo Flucht",
           "href": "https://geomazing.com/",
           "hrefText": "Go to",
           "img": "/assets/geomazing.webp",
           "imgFallback": "/assets/geomazing.jpeg",
-          "description": "Together with Gregor Asfalg (Geomazing), we have developed the web app 'Flamingo Flucht'. With the help of this digital scavenger hunt through Aschersleben, the players try to find escaped zoo animals and discover exciting places and city stories along the way."
+          "description": "Flamingo Flucht is a digital scavenger hunt by Geomazing, which was created in cooperation with celloon GmbH for the Kaufmannsgilde in Aschersleben. With the help of this digital scavenger hunt through Aschersleben, the players try to find escaped zoo animals and discover exciting places and city stories along the way."
         },
         {
           "title": "PROTESTORY!",

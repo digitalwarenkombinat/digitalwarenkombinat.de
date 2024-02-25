@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true
   }
 }

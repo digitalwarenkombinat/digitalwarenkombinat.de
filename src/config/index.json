@@ -92,6 +92,13 @@
       "description": "Gehe zu",
       "items": [
         {
+          "title": "GLAMorous Europe",
+          "href": "https://www.glam-europe.de/",
+          "img": "/assets/glamorous.webp",
+          "imgFallback": "/assets/glamorous.png",
+          "description": "GLAMorous Europe bringt Kulturenthusiast:innen mit Sammlungsobjekten europäischer Museen, Bibliotheken, Galerien und Archive zusammen! Beginnend als zufällige Auswahl von digitalisierten Gemälden, Drucken, Skulpturen und Fotografien entsteht eine zunehmend personalisierte Sammlung, die erkundet und in eigene Kunstwerke verwandelt werden kann."
+        },
+        {
           "title": "Flamingo Flucht",
           "href": "https://geomazing.com/",
           "hrefText": "Gehe zur",
@@ -119,13 +126,6 @@
           "img": "/assets/demol.webp",
           "imgFallback": "/assets/demol.jpeg",
           "description": "Bei Demokratie erLeben begleiten wir drei Kinder aus der Arbeiterklasse gegen Ende der 1920er Jahre auf ihrem Weg zu einer Kinderrepublik – einem sozialistischen Zeltlager. Begleite Anna, Karl und Gerda auf ihrer Reise, die auf digitalisierten Fotografien und Berichten aus dem Archiv der Arbeiterjugendbewegung in Oer-Erkenschwick basiert. Demokratie erLeben wurde im Rahmen eines Coding da Vinci Stipendiums 2020 entwickelt."
-        },
-        {
-          "title": "Wie geht’s dir, Europa?",
-          "href": "https://gerdesque.github.io/wiegehtsdireuropa/",
-          "img": "/assets/europa.webp",
-          "imgFallback": "/assets/europa.jpeg",
-          "description": "Anlässlich der Wahl zum Parlament der Europäischen Union 2019 stellten wir uns die Frage, wie es um Europa eigentlich bestellt ist. Entdecke die Vielfalt Europas mit digitalisierten Fotografien von Willy Prager aus der Sammlung des Landesarchiv Baden-Württemberg in Verbindung mit Twitter-Tweets. Dieser Prototyp entstand im Rahmen des Kulturhackathons Coding da Vinci Süd 2018."
         }
       ]
     },
@@ -270,6 +270,13 @@
       "description": "Go to",
       "items": [
         {
+          "title": "GLAMorous Europe",
+          "href": "https://www.glam-europe.de/",
+          "img": "/assets/glamorous.webp",
+          "imgFallback": "/assets/glamorous.png",
+          "description": "GLAMorous Europe matches culture enthusiasts with collection objects from European museums, libraries, galleries and archives! Starting as a random selection of digitized paintings, prints, sculptures and photographs, an increasingly personalized collection is created that can be explored and transformed into your own artwork."
+        },
+        {
           "title": "Flamingo Flucht",
           "href": "https://geomazing.com/",
           "hrefText": "Go to",
@@ -297,13 +304,6 @@
           "img": "/assets/demol.webp",
           "imgFallback": "/assets/demol.jpeg",
           "description": "In Living Democracy we accompany three working-class children towards the end of the 1920s on their way to a children's republic - a socialist tent camp. Join Anna, Karl and Gerda on their journey, based on digitized photographs and reports from the archive of the Workers' Youth Movement in Oer-Erkenschwick. Living Democracy was developed within the framework of a Coding da Vinci grant 2020. English version available."
-        },
-        {
-          "title": "Wie geht’s dir, Europa?",
-          "href": "https://gerdesque.github.io/wiegehtsdireuropa/",
-          "img": "/assets/europa.webp",
-          "imgFallback": "/assets/europa.jpeg",
-          "description": "On the occasion of the 2019 election for the Parliament of the European Union, we asked ourselves the question of what Europe is actually like. Discover the diversity of Europe with digitized photographs by Willy Prager from the collection of the Federal archive of Baden-Württemberg in combination with Twitter tweets. This prototype was created as part of the Coding da Vinci Süd cultural hackathon in 2018."
         }
       ]
     },

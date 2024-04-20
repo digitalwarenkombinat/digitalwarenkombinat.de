@@ -21,6 +21,7 @@
     "sanitize-html": "^2.13.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.7.0",
     "@types/markdown-it": "^14.0.1",
     "@types/remove-markdown": "^0.3.4",
     "@types/sanitize-html": "^2.11.0",

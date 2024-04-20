@@ -1,6 +1,8 @@
 # build output
-dist
-.jampack
+dist/
+
+# generated types
+.astro/
 
 # dependencies
 node_modules/

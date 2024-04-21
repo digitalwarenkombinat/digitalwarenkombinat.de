@@ -10,13 +10,17 @@
   "javascript": {
     "formatter": {
       "jsxQuoteStyle": "single",
+      "semicolons": "asNeeded",
       "trailingComma": "es5"
     }
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "warn"
+      }
     }
   }
 }

@@ -1,15 +1,15 @@
 ---
-import Caption from './Caption.astro';
-const { config: references } = Astro.props;
-const { items, title } = references;
+import Caption from "./Caption.astro"
+const { config: references } = Astro.props
+const { items, title } = references
 ---
 
 <section id="references">
   <div class={'container max-w-7xl mx-auto px-4'}>
     <Caption title={title}/>
     <div class="w-full grid grid-cols-1 gap-4 lg:grid-cols-4">
-      {items.map((item) => (
-        <div key={item.title} class="py-4 px-4 mx-4 bg-white rounded-md border-primary border-4 lg:flex lg:flex-col">
+      {items.map((item: { description: unknown; author: unknown }) => (
+        <div class="py-4 px-4 mx-4 bg-white rounded-md border-primary border-4 lg:flex lg:flex-col">
           <p class="mb-4 text-black">{item.description}</p>
           <p class="lg:mt-auto font-medium text-secondary">{item.author}</p>
         </div>

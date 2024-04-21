@@ -1,0 +1,21 @@
+---
+import { uiStrings } from "@i18n/uiStrings"
+import { siteMail } from "@src/consts"
+const title = `${uiStrings.title[Astro.currentLocale]}`
+const subtitle = `${uiStrings.subtitle[Astro.currentLocale]}`
+const description = `${uiStrings.description[Astro.currentLocale]}`
+const primaryAction = `${uiStrings.primaryAction[Astro.currentLocale]}`
+---
+
+<div class="text-center">
+  <h1 class="text-4xl leading-tight">
+    <span>{title}</span>
+    <span class="text-primary">{subtitle}</span>
+  </h1>
+  <p class="mt-4">{description}</p>
+  <div class="mt-4">
+    <a href={siteMail} class="block w-full py-2 rounded-md text-white bg-tertiary">
+      {primaryAction}
+    </a>
+  </div>
+</div>

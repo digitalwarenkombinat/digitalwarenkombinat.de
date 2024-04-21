@@ -1,8 +1,14 @@
 ---
-import Caption from './Caption.astro';
-const { config: projects } = Astro.props;
-const { title, description } = projects;
-const [firstItem, secondItem, thirdItem, fourthItem, fifthItem] = projects.items;
+import { Image } from "astro:assets"
+import geomazing from "../../public/assets/geomazing.webp"
+import glamorous from "../../public/assets/glamorous.webp"
+import plantala from "../../public/assets/plantala.webp"
+import protestory from "../../public/assets/protestory.webp"
+import Caption from "./Caption.astro"
+
+const { config: projects } = Astro.props
+const { title, description } = projects
+const [firstItem, secondItem, thirdItem, fourthItem, fifthItem] = projects.items
 ---
 
 <section id="projects" >
@@ -19,20 +25,12 @@ const [firstItem, secondItem, thirdItem, fourthItem, fifthItem] = projects.items
         <a class={'text-tertiary font-bold hover:text-primary'} href={firstItem?.href} target="_blank" rel="noreferrer">{`${description} ${firstItem?.title}`}</a>
       </div>
       <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <picture>
-          <source srcset={firstItem?.img} type="image/webp">
-          <source srcset={firstItem?.imgFallback} type="image/jpeg"> 
-          <img class="h-6/6 rounded-md border-primary border-4" src={firstItem?.img} alt={firstItem?.title} />
-        </picture>
+        <Image src={geomazing} alt={thirdItem?.title} />
       </div>
     </div>
     <div class={'flex flex-wrap flex-col-reverse sm:flex-row'}>
       <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <picture>
-          <source srcset={secondItem?.img} type="image/webp">
-          <source srcset={secondItem?.imgFallback} type="image/jpeg"> 
-          <img class="h-6/6 rounded-md border-primary border-4" src={secondItem?.img} alt={secondItem?.title} />
-        </picture>
+        <Image src={glamorous} alt={secondItem?.title} />
       </div>
       <div class={'w-full sm:w-1/2 p-8 lg:mt-16'}>
         <div class={'align-middle'}>
@@ -49,20 +47,12 @@ const [firstItem, secondItem, thirdItem, fourthItem, fifthItem] = projects.items
         <a class={'text-tertiary font-bold hover:text-primary'} href={thirdItem?.href} target="_blank" rel="noreferrer">{`${description} ${thirdItem?.title}`}</a>
       </div>
       <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <picture>
-          <source srcset={thirdItem?.img} type="image/webp">
-          <source srcset={thirdItem?.imgFallback} type="image/jpeg"> 
-          <img class="h-6/6 rounded-md border-primary border-4" src={thirdItem?.img} alt={thirdItem?.title} />
-        </picture>
+        <Image src={plantala} alt={thirdItem?.title} />
       </div>
     </div>
     <div class={'flex flex-wrap flex-col-reverse sm:flex-row'}>
       <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <picture>
-          <source srcset={fourthItem?.img} type="image/webp">
-          <source srcset={fourthItem?.imgFallback} type="image/jpeg"> 
-          <img class="h-6/6 rounded-md border-primary border-4" src={fourthItem?.img} alt={fourthItem?.title} />
-        </picture>
+        <Image src={protestory} alt={fourthItem?.title} />
       </div>
       <div class={'w-full sm:w-1/2 p-8 lg:mt-16'}>
         <div class={'align-middle'}>
@@ -70,20 +60,6 @@ const [firstItem, secondItem, thirdItem, fourthItem, fifthItem] = projects.items
           <p class={'text-black font-medium mb-4'}>{fourthItem?.description}</p>
           <a class={'text-tertiary font-bold hover:text-primary'} href={fourthItem?.href} target="_blank" rel="noreferrer">{`${description} ${fourthItem?.title}`}</a>
         </div>
-      </div>
-    </div>
-    <div class={'flex flex-wrap'}>
-      <div class={'w-5/6 sm:w-1/2 p-8 lg:mt-16'}>
-        <h2 class={'text-3xl text-black font-bold leading-none mb-4'}>{fifthItem?.title}</h2>
-        <p class={'text-black font-medium mb-4'}>{fifthItem?.description}</p>
-        <a class={'text-tertiary font-bold hover:text-primary'} href={fifthItem?.href} target="_blank" rel="noreferrer">{`${description} ${fifthItem?.title}`}</a>
-      </div>
-      <div class={'w-full sm:w-1/2 p-8 self-center'}>
-        <picture>
-          <source srcset={fifthItem?.img} type="image/webp">
-          <source srcset={fifthItem?.imgFallback} type="image/jpeg"> 
-          <img class="h-6/6 rounded-md border-primary border-4" src={fifthItem?.img} alt={fifthItem?.title} />
-        </picture>
       </div>
     </div>
   </div>

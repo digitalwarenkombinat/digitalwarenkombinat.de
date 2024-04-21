@@ -1,0 +1,16 @@
+---
+import type { TranslationLink } from "./MainI18n.astro"
+
+interface Props {
+  translationLinks: TranslationLink[]
+}
+
+const { translationLinks } = Astro.props
+---
+<li class="border-t md:border-none">
+  {translationLinks.map((translation) => (
+    <a class="font-medium text-primary hover:text-tertiary block md:inline-block p-4" href={translation.relativeURL} hreflang={translation.locale}>
+      {translation.label}
+    </a>
+  ))}
+</li>

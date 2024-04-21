@@ -1,0 +1,22 @@
+---
+import { getPersonPath, people } from "@utilities/people"
+---
+
+<div class="w-full grid grid-cols-1">
+  {people.map((person) => (
+    <div class="bg-background p-4">
+      <div class="flex items-center space-x-8 mb-4">
+        <a href={getPersonPath(Astro.currentLocale, person.id)}>
+          <img loading="lazy" class="flex-none h-32 w-32 object-cover object-center rounded-full" src={person.image} alt={person.name} >
+        </a>
+        <div class="flex-1">
+          <p class="text-xl text-primary title-font font-bold">{person.name}</p>
+          <p class="leading-relaxed text-base text-secondary font-medium">{person.description[Astro.currentLocale]}</p>
+        </div>
+      </div>
+      <div>
+        <p class="text-black leading-loose font-medium text-base">{person.content[Astro.currentLocale]}</p>
+      </div>
+    </div>
+  ))}
+</div>

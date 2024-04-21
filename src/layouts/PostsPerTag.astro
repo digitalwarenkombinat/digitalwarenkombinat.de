@@ -1,0 +1,31 @@
+---
+import Page from "@layouts/Page.astro"
+import type { CommonFrontmatter } from "@src/types"
+import { getRelativePostPath } from "@utilities/getPostPath"
+import { getPostsByTag } from "@utilities/tags"
+
+interface Frontmatter extends CommonFrontmatter {
+  tag?: string
+  collection?: string
+}
+interface Props {
+  frontmatter: Frontmatter
+}
+
+const { frontmatter } = Astro.props
+const filteredPosts = await getPostsByTag(
+  "blog",
+  frontmatter.tag,
+  Astro.currentLocale
+)
+---
+
+<Page {frontmatter}>
+  <ul>
+    {filteredPosts.map(({ data, slug }) => (
+      <li>
+        <a href={getRelativePostPath(Astro.currentLocale, frontmatter.collection, slug )}>{data.title}</a>
+      </li>
+    ))}
+  </ul>
+</Page>

@@ -7,11 +7,11 @@ const { pathname } = Astro.url
 const ariaCurrent =
   href === pathname || href === pathname.replace(/\/$/, "") ? "page" : ""
 ---
-<li class="border-t md:border-none">
+<li class="border-t item">
   <a
     href={href}
     class:list={[className]}
-    class="font-medium text-black hover:text-tertiary block md:inline-block p-4"
+    class="link font-medium text-black hover:text-tertiary block p-4"
     aria-current={ariaCurrent ? ariaCurrent : undefined}
     {...props}
   >

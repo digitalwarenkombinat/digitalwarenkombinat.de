@@ -1,85 +1,15 @@
 ---
-import { Image } from "astro:assets"
-import { defaultLocale, fallback } from "@i18n/i18n"
-import { siteTitle } from "@src/consts"
-import { headerMenu } from "@src/header"
-import type { navigationItem } from "@src/header"
-import logo from "../../public/favicon.svg"
-import HeaderLink from "./HeaderLink.astro"
-
-const menuLocale: string = headerMenu[Astro.currentLocale]
-  ? Astro.currentLocale
-  : fallback[Astro.currentLocale] || defaultLocale
-const headerMenuItems: navigationItem[] = headerMenu[menuLocale].items
+import Hamburger from "./Hamburger.astro"
+import Logo from "./Logo.astro"
+import Navigation from "./Navigation.astro"
+import ThemeIcon from "./ThemeIcon.astro"
 ---
 
-<header>
-  <nav class="flex flex-wrap items-center justify-between px-4 md:h-8 lg:justify-start">
-    <a href="/">
-      <Image src={logo} alt={siteTitle} class="w-24 h-24" />
-    </a>
-
-    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-    <label class="menu-icon block cursor-pointer md:hidden p-4 relative select-none" for="menu-btn">
-      <span class="navicon bg-grey-darkest flex items-center relative"></span>
-    </label>
-    <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
-      {headerMenuItems.map((item) => (
-        <HeaderLink href={item.path}>{item.label}</HeaderLink>
-      ))}
-      <slot />
-    </ul>
-  </nav>
+<header class="flex flex-wrap items-center px-4">
+  <Logo/>
+  <ThemeIcon />
+  <Hamburger />
+  <Navigation>
+    <slot/>
+  </Navigation>
 </header>
-
-<style>
-  @media (max-width: 767px) {
-    .navicon,
-    .navicon::before,
-    .navicon::after {
-      display: block;
-      position: absolute;
-      width: 1.125em;
-      height: .125em;
-      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      border-radius: 2px;
-      background: #3D4852;
-    }
-
-    .navicon::before {
-      content: '';
-      margin-top: -8px;
-    }
-
-    .navicon::after {
-      content: '';
-      margin-top: 8px;
-    }
-
-    .menu-btn:not(:checked) ~ .menu {
-      display: none;
-    }
-
-    .menu-btn:checked ~ .menu {
-      display: block;
-    }
-
-    .menu-btn:checked ~ .menu-icon .navicon {
-      background: transparent;
-    }
-
-    .menu-btn:checked ~ .menu-icon .navicon::before {
-      transform: rotate(-45deg);
-    }
-
-    .menu-btn:checked ~ .menu-icon .navicon::after {
-      transform: rotate(45deg);
-    }
-
-    .menu-btn:checked ~ .menu-icon .navicon::before,
-    .menu-btn:checked ~ .menu-icon .navicon::after {
-      margin-top: 0;
-    }
-  }
-
-</style>

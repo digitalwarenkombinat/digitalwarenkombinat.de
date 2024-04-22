@@ -5,11 +5,6 @@ import Html from "@components/Html.astro"
 import TranslationLinks from "@components/TranslationLinks.astro"
 import { uiStrings } from "@i18n/uiStrings"
 import { getLocaleFromUrl } from "@i18n/utilities"
-// Create an object with translations of the page.
-// A translation is identified by its 'reference' frontmatter value: pages that have the same value are considered translations.
-// If there are translations of the page, the TranslationsBanner is shown.
-// Because astro.glob() and getCollections are only available inside .astro files, the logic can't be easily moved to utility function.
-// The benefit of having the logic inside this component is that the translations only need to be searched once for all the places where they are used (head and TranslationsBanner).
 import { site } from "@src/consts"
 import type { CommonFrontmatter } from "@src/types"
 import {
@@ -87,16 +82,15 @@ if (reference) {
   {translationLinks.map((translation) => ( 
     <link rel="alternate" hreflang={translation.locale} href={translation.absoluteURL} slot="head" />
   ))}
-</Html>
   <Header>
     {translationLinks.length > 0 &&
       <TranslationLinks {translationLinks} />
     }
   </Header>
   <slot/>
-    {translationLinks.length > 0 &&
-      <footer>
-        <Footer />
-      </footer>
-    }
+  {translationLinks.length > 0 &&
+    <footer>
+      <Footer />
+    </footer>
+  }
 </Html>

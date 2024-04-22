@@ -1,0 +1,9 @@
+---
+import { Image } from "astro:assets"
+import { siteTitle } from "@src/consts"
+import logo from "../../public/favicon.svg"
+---
+
+<a href="/">
+  <Image src={logo} alt={siteTitle} class="w-24 h-24" />
+</a>

@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets"
+import { socialMedia } from "@src/consts"
+
+import github from "../../public/assets/github.svg"
+import instagram from "../../public/assets/instagram.svg"
+import linkedin from "../../public/assets/linkedin.svg"
+---
+
+<div class="flex items-center gap-x-2 mt-8 h-8">
+  <a aria-label="instagram" href={socialMedia.instagram} target="_blank" rel="noreferrer">
+    <Image src={instagram} alt="instagram" />
+  </a>
+  <a aria-label="github" href={socialMedia.github} target="_blank" rel="noreferrer">
+    <Image src={github} alt="github" />
+  </a>
+  <a aria-label="linkedin" href={socialMedia.linkedin} target="_blank" rel="noreferrer">
+    <Image src={linkedin} alt="linkedin" />
+  </a>
+</div>

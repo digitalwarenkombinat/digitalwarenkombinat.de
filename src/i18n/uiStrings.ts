@@ -51,10 +51,6 @@ export const uiStrings: TypeUIStrings = {
     de: "Posts zum Thema",
     en: "Posts about",
   },
-  personProfilePageDescription: {
-    de: "Profil von",
-    en: "Profile of",
-  },
   pageNotFoundHeading: {
     de: "Seite nicht gefunden",
     en: "Page not found",

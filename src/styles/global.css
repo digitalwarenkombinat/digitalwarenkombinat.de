@@ -24,54 +24,18 @@
   }
 }
 
-/* Reset based on ideas from https: //chriscoyier.net/2023/10/03/being-picky-about-a-css-reset-for-fun-pleasure/ */
-*{
-	box-sizing: border-box;
-}
-
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
-/* This makes it so iPhones don’t dork up the font size in landscape mode */
-html {
-	-moz-text-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	text-size-adjust: none;
-}
-body{
-	min-height: 100svh;
-}
-body,
-:where(h1,h2, h3, h4, p, figure, blockquote, dl, dd){
-	margin: 0;
-}
-:where(ul, ol){
-	list-style-type: '';
-	margin: 0;
-	padding: 0
-}
-:where(input, button, textarea, select) {
-	font: inherit;
-}
-:where(h1, h2, h3, h4) {
-	text-wrap: balance;
-}
-:where(p, figcaption, blockquote, dl, dd, li) {
-	text-wrap: pretty;
-}
-:where(img){
-	max-width: 100%;
-	height: auto;
-}
-:target {
-	scroll-margin-block: 1em;
-}
-
-
 /* Tokens */
-:root{
+:root {
+  --primary-color: #dd8d0e;
+  --primary-dark-color: #ffffff;
+  --secondary-color: #009599;
+  --secondary-dark-color: #009599;
+  --tertiary-color: #33006c;
+  --tertiary-dark-color: #33006c;
+  --border-color: #472f12;
+  --border-dark-color: #472f12;
+  --background-color: #ffffff;
+  --background-dark-color: #33006c;
 	--space-xs: 0.5rem;
 	--space-s: 1rem;
 	--space-m: 2rem;
@@ -82,14 +46,72 @@ body,
 	--duration-link-hover: 75ms;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+html.dark {
+  background-color: var(--background-dark-color);
+  color: var(--primary-dark-color);
+}
+
+.dark .nav-links a {
+  color: var(--primary-dark-color);
+}
+
+body {
+	min-height: 100svh;
+}
+
+body,
+:where(h1,h2, h3, h4, p, figure, blockquote, dl, dd) {
+	margin: 0;
+}
+
+:where(ul, ol) {
+	list-style-type: '';
+	margin: 0;
+	padding: 0
+}
+
+:where(input, button, textarea, select) {
+	font: inherit;
+}
+
+:where(h1, h2, h3, h4) {
+	text-wrap: balance;
+}
+
+:where(p, figcaption, blockquote, dl, dd, li) {
+	text-wrap: pretty;
+}
+
+:where(img) {
+	max-width: 100%;
+	height: auto;
+}
+
+:target {
+	scroll-margin-block: 1em;
+}
+
 @media (prefers-reduced-motion: reduce) {
 :root {
 		--duration-link: 5ms;
 		--duration-link-hover: 5ms;
 	}
 }
-
-/* Basic layout */
 
 body {
 	display: flex;
@@ -99,4 +121,134 @@ body {
 main {
 	flex-grow: 1;
 	margin: 2rem;
+}
+
+/* hamburger */
+.checkbox {
+  display: none;
+}
+
+.button {
+  position: relative;
+  background-color: var(--secondary-color);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1vh; 
+  right: 1vw; 
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem black;
+  text-align: center; 
+  cursor: pointer;
+}
+
+.background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1.5vh; 
+  right: 1.5vw; 
+  background-color: var(--primary-color);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -60vw;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s;
+}
+
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.item {
+  margin: 1rem;
+}
+
+.link:link,
+.link:visited {
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* functionality */
+.checkbox:checked ~ .background {
+  transform: scale(80);
+}
+.checkbox:checked ~ .nav {
+  opacity: 1;
+  width: 100%;
+  right: 0;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  width: 3rem;
+  height: 3px;
+  background-color: black;
+  display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.icon::before {
+  top: -0.8rem;
+}
+.icon::after {
+  top: 0.8rem;
+}
+
+.button:hover icon:before {
+  top: -1rem;
+}
+.button:hover icon::after {
+  top: 1rem;
+}
+
+.checkbox:checked + .button .icon {
+  background-color: transparent;
+}
+
+.checkbox:checked + .button .icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.checkbox:checked + .button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }

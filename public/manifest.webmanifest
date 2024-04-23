@@ -2,6 +2,7 @@
   "name": "Digitalwarenkombinat",
   "short_name": "Diwako",
   "description": "Digitalagentur für Museen, Archive, Bibliotheken und Galerien. Webdesign, Entwicklung und Beratung für digitalisierte Sammlungen.",
+  "background_color": "#fff",
   "theme_color": "#dd8d0e",
   "icons": [
     {

@@ -1,0 +1,27 @@
+---
+import { uiStrings } from "@i18n/uiStrings"
+import { area, getFocusPath } from "@src/utilities/area"
+import Caption from "./Caption.astro"
+const title = `${uiStrings.areaTitle[Astro.currentLocale]}`
+const subtitle = `${uiStrings.areaSubtitle[Astro.currentLocale]}`
+---
+
+<div class="max-w-7xl mx-auto px-4">
+  <div class="w-full mb-4">
+    <Caption title={title} subtitle={subtitle}/>
+  </div>
+  <div class="mt-8">
+    <dl class="space-y-8">
+      {area.map((focus) => (
+        <div class="relative">
+          <dt>
+            <p class="text-lg leading-8 font-bold text-black">
+              <a href={getFocusPath(Astro.currentLocale, focus.id)}>{focus.name}</a>
+              </p>
+          </dt>
+          <dd class="mt-4 ml-4 text-base font-medium text-black">{focus.description[Astro.currentLocale]}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+</div>

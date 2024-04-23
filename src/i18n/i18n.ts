@@ -32,4 +32,9 @@ export const directoryNames: PathNames = {
     de: "ueber",
     en: "about",
   },
+  // Define the path for focus's detail pages. Should arguably be the same as the locale's Focus page's slug.
+  focus: {
+    de: "focus",
+    en: "focus",
+  },
 }

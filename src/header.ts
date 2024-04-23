@@ -8,7 +8,7 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
     items: [
       {
         path: "/",
-        label: "Home",
+        label: "Start",
       },
       {
         path: "/blog",
@@ -17,6 +17,10 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: "/about",
         label: "Über uns",
+      },
+      {
+        path: "/focus",
+        label: "Schwerpunkte",
       },
       {
         path: "/legal",
@@ -37,6 +41,10 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: "/en/about",
         label: "About",
+      },
+      {
+        path: "/en/focus",
+        label: "Focus",
       },
       {
         path: "/en/legal",

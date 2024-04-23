@@ -39,6 +39,30 @@ export const uiStrings: TypeUIStrings = {
     de: "Über uns",
     en: "About us",
   },
+  areaTitle: {
+    de: "Unsere Schwerpunkte",
+    en: "Our focus",
+  },
+  areaSubtitle: {
+    de: "Was macht uns aus?",
+    en: "Was macht uns aus?",
+  },
+  projectTitle: {
+    de: "Unsere Projekte",
+    en: "Our projects",
+  },
+  projectSubtitle: {
+    de: "Was tun wir?",
+    en: "Was tun wir?",
+  },
+  referencesTitle: {
+    de: "Unsere Referenzen",
+    en: "Our references",
+  },
+  referencesSubtitle: {
+    de: "Was sagen andere über uns?",
+    en: "Was sagen andere über uns?",
+  },
   tagHeadingSingular: {
     de: "Thema",
     en: "Tag",

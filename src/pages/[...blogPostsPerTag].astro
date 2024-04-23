@@ -1,0 +1,34 @@
+---
+import { locales } from "@i18n/i18n"
+import { uiStrings } from "@i18n/uiStrings"
+import PostsPerTag from "@layouts/PostsPerTag.astro"
+import { truncateDescription } from "@utilities/getPageDescription"
+import { getTagPath, getUniqueTags } from "@utilities/tags"
+import type { Tags } from "@utilities/tags"
+
+export async function getStaticPaths() {
+  const collection = "blog"
+  const allPostsPerTagPages: any[] = []
+  const getDescription = (locale: string, tagName: string): string =>
+    truncateDescription(`${uiStrings.postsPerTagPageDescription[locale]} ${tagName}.`)
+  for (const locale of locales) {
+    const realTags: Tags = (await getUniqueTags(collection, locale)).filter((tag) => {
+      return tag.slugified !== "other"
+    })
+    const posts = realTags.map((tag) => ({
+      params: {
+        blogPostsPerTag: `${getTagPath(locale, tag.slugified, false)}`,
+      },
+      props: {
+        title: `${uiStrings.tagHeadingSingular[locale]}: ${tag.name}`,
+        description: getDescription(locale, tag.name),
+        tag: tag.slugified,
+        collection: collection,
+      },
+    }))
+    allPostsPerTagPages.push(...posts)
+  }
+  return allPostsPerTagPages
+}
+---
+<PostsPerTag frontmatter={Astro.props}/>

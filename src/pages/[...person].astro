@@ -1,0 +1,25 @@
+---
+import { locales } from "@i18n/i18n"
+import Person from "@layouts/Person.astro"
+import { getPersonPath, people } from "@utilities/people"
+
+export async function getStaticPaths() {
+  const allPeoplePages = []
+  for (const locale of locales) {
+    const peopleParsed = people.map((person) => ({
+      params: {
+        person: `${getPersonPath(locale, person.id, false)}`,
+      },
+      props: {
+        title: person.name,
+        description: person.description[locale],
+        person: person,
+      },
+    }))
+    allPeoplePages.push(...peopleParsed)
+  }
+  return allPeoplePages
+}
+const frontmatter = Astro.props
+---
+<Person {frontmatter} />

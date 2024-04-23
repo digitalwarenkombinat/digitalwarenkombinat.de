@@ -1,0 +1,25 @@
+---
+import { locales } from "@i18n/i18n"
+import Focus from "@layouts/Focus.astro"
+import { area, getFocusPath } from "@src/utilities/area"
+
+export async function getStaticPaths() {
+  const allAreaPages = []
+  for (const locale of locales) {
+    const focusParsed = area.map((focus) => ({
+      params: {
+        focus: `${getFocusPath(locale, focus.id, false)}`,
+      },
+      props: {
+        title: focus.name,
+        description: focus.description[locale],
+        focus: focus,
+      },
+    }))
+    allAreaPages.push(...focusParsed)
+  }
+  return allAreaPages
+}
+const frontmatter = Astro.props
+---
+<Focus {frontmatter} />

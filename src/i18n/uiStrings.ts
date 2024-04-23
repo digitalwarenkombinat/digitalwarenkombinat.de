@@ -63,6 +63,18 @@ export const uiStrings: TypeUIStrings = {
     de: "Was sagen andere über uns?",
     en: "Was sagen andere über uns?",
   },
+  blogTitle: {
+    de: "Unser Blog",
+    en: "Our blog",
+  },
+  blogSubtitle: {
+    de: "Was gibt es neues?",
+    en: "Was gibt es neues?",
+  },
+  blogLink: {
+    de: "Alle Posts anzeigen",
+    en: "View All Posts",
+  },
   tagHeadingSingular: {
     de: "Thema",
     en: "Tag",

@@ -9,13 +9,13 @@ interface Props {
 }
 const { authorFullName = "", pubDate, updatedDate } = Astro.props
 const person: Person = people.find((person) => {
-  return person.fullName === authorFullName
+  return person.name === authorFullName
 })
 const hasAuthorLink: boolean = typeof person === "object"
 ---
 <p>
   {authorFullName &&
-    <span>{ hasAuthorLink && <a href={getPersonPath(Astro.currentLocale, person.id)}>{person.fullName}</a> }</span>
+    <span>{ hasAuthorLink && <a href={getPersonPath(Astro.currentLocale, person.id)}>{person.name}</a> }</span>
     <span>{ !hasAuthorLink && <span>{authorFullName}</span> }</span>
     <span>, </span>
   }

@@ -1,8 +1,6 @@
 ---
-import FormattedDate from "@components/FormattedDate.astro"
 import MainI18n from "@components/MainI18n.astro"
-import { getPostDescription } from "@utilities/getPageDescription"
-import { getRelativePostPath } from "@utilities/getPostPath"
+import Post from "@components/Post.astro"
 import getPublishedPosts from "@utilities/getPublishedPosts"
 
 const { frontmatter } = Astro.props
@@ -19,18 +17,7 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
     </header>
     <ul>
       {posts.map((post) => (
-        <li>
-          <a href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}>
-            <img width={720} height={360} src={post.data.previewImage} alt="" />
-            <h2 class="title">{post.data.title}</h2>
-            <p class="date">
-              <FormattedDate date={post.data.pubDate} />
-            </p>
-          </a>
-          <blockquote cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}>
-            {getPostDescription(post)}
-          </blockquote>
-        </li>
+        <Post post={post} collection={collection}/>
       ))}
     </ul>
   </main>

@@ -6,19 +6,13 @@ type ButtonProps = HTMLAttributes<"button"> & { href?: never }
 
 type Props = ButtonProps | AnchorProps
 
-const { href, class: className, ...rest } = Astro.props
-const buttonClasses =
-  "inline-flex items-center justify-center px-6 py-2 font-serif text-sm leading-tight italic rounded-full transition"
+const { href, ...rest } = Astro.props
 ---
 
 {
-    href ? (
-        <a href={href} class:list={[buttonClasses, className]} {...rest}>
-            <slot />
-        </a>
-    ) : (
-        <button class:list={[buttonClasses, className]} {...rest}>
-            <slot />
-        </button>
-    )
+  href ? (
+    <a href={href} {...rest}><slot /></a>
+  ) : (
+    <button {...rest}><slot /></button>
+  )
 }

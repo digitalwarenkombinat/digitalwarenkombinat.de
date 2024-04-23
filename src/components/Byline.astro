@@ -1,7 +1,9 @@
 ---
 import FormattedDate from "@components/FormattedDate.astro"
+import { uiStrings } from "@i18n/uiStrings"
 import type { Person } from "@utilities/people"
 import { getPersonPath, people } from "@utilities/people"
+const updated = `${uiStrings.updated[Astro.currentLocale]}`
 interface Props {
   authorFullName: string
   pubDate: Date
@@ -16,14 +18,12 @@ const hasAuthorLink: boolean = typeof person === "object"
 <p>
   {authorFullName &&
     <span>{ hasAuthorLink && <a href={getPersonPath(Astro.currentLocale, person.id)}>{person.name}</a> }</span>
-    <span>{ !hasAuthorLink && <span>{authorFullName}</span> }</span>
-    <span>, </span>
   }
   <FormattedDate date={pubDate} />
-    {updatedDate && (
-        <span >
-          Last updated on <FormattedDate date={updatedDate} />
-        </span>
-      )
-    }
+  {updatedDate && (
+      <span>
+        {updated}<FormattedDate date={updatedDate} />
+      </span>
+    )
+  }
 </p>

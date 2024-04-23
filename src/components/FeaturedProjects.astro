@@ -14,8 +14,8 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
 const featuredPosts = posts.filter(({ data }) => data.isFeatured)
 ---
 
-<div class="max-w-7xl mx-auto px-4">
-  <div class="w-full mb-4">
+<div>
+  <div>
     <Caption title={title} subtitle={subtitle}/>
   </div>
   {
@@ -27,7 +27,7 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured)
       </ul>
     )
   }
-  <div class="mt-16">
+  <div>
     <Button href="/projects">{link}</Button>
   </div>
 </div>

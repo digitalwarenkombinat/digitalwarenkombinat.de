@@ -15,8 +15,6 @@ const uiString =
   {uiString}:
   {tags.map((tag, index) => (
     <a href={`${getTagPath(Astro.currentLocale, tag)}`}>{tag}</a>
-    <span>{index < tags.length - 1 ?
-      ', ' : ''
-    }</span>
+    <span>{index < tags.length - 1 ? ', ' : ''}</span>
   ))}.
 </p>

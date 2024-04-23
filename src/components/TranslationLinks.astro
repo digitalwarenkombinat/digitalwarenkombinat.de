@@ -7,9 +7,9 @@ interface Props {
 
 const { translationLinks } = Astro.props
 ---
-<li class="border-t item">
+<li class="item">
   {translationLinks.map((translation) => (
-    <a class="link block p-2" href={translation.relativeURL} hreflang={translation.locale}>
+    <a class="link" href={translation.relativeURL} hreflang={translation.locale}>
       {translation.label}
     </a>
   ))}

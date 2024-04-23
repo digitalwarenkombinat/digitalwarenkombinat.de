@@ -10,7 +10,7 @@ const subtitle = `${uiStrings.referencesSubtitle[Astro.currentLocale]}`
   <Caption title={title} subtitle={subtitle}/>
   <div class="w-full grid grid-cols-1 gap-4">
     {referencesData.map((item) => (
-      <div class="py-4 px-4 mx-4 bg-white rounded-md border-primary border-4">
+      <div class="py-4 px-4 mx-4">
         <p class="mb-4 text-black">{item.description[Astro.currentLocale]}</p>
         <p class="font-medium text-secondary">{item.author[Astro.currentLocale]}</p>
       </div>

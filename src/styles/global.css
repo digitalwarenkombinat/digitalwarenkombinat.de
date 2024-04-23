@@ -79,6 +79,74 @@ body,
 	margin: 0;
 }
 
+header {
+  display: flex; 
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  flex-wrap: wrap; 
+  align-items: center; 
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.divider {
+  background-color: var(--primary-color);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; 
+  height: 0.25rem; 
+  margin-bottom: 2rem; 
+  margin-top: 0;
+  opacity: 0.5; 
+  padding-bottom: 0; 
+  padding-top: 0;
+  width: 16rem; 
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 700; 
+  line-height: 2rem;
+}
+
+.arealist-description {
+  margin-top: 1rem; 
+  margin-left: 1rem; 
+  font-size: 1rem;
+  line-height: 1.5rem; 
+  font-weight: 500; 
+}
+
+.social {
+  display: flex; 
+  margin-top: 2rem; 
+  align-items: center; 
+  height: 2rem; 
+  column-gap: 0.5rem; 
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 :where(ul, ol) {
 	list-style-type: '';
 	margin: 0;
@@ -121,6 +189,8 @@ body {
 main {
 	flex-grow: 1;
 	margin: 2rem;
+  display: grid;
+  grid-gap: 2rem;
 }
 
 /* hamburger */
@@ -129,27 +199,25 @@ main {
 }
 
 .button {
-  position: relative;
   background-color: var(--secondary-color);
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 1vh; 
-  right: 1vw; 
+  top: 2vh; 
+  right: 2vw; 
   z-index: 2000;
-  box-shadow: 0 1rem 3rem black;
   text-align: center; 
   cursor: pointer;
 }
 
 .background {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   position: fixed;
-  top: 1.5vh; 
-  right: 1.5vw; 
+  top: 2.5vh; 
+  right: 2.5vw; 
   background-color: var(--primary-color);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -178,10 +246,13 @@ main {
 
 .item {
   margin: 1rem;
+  border-top-width: 1px;
 }
 
 .link:link,
 .link:visited {
+  padding: .5rem;
+  display: block;
   font-size: 2rem;
   transition: all 0.4s;
 }
@@ -212,7 +283,7 @@ main {
 .icon,
 .icon::before,
 .icon::after {
-  width: 3rem;
+  width: 2rem;
   height: 3px;
   background-color: black;
   display: inline-block;

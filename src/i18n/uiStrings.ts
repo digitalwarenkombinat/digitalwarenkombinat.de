@@ -91,6 +91,10 @@ export const uiStrings: TypeUIStrings = {
     de: "Posts zum Thema",
     en: "Posts about",
   },
+  updated: {
+    de: "Zuletzt aktualisiert ",
+    en: "Last updated on ",
+  },
   pageNotFoundHeading: {
     de: "Seite nicht gefunden",
     en: "Page not found",

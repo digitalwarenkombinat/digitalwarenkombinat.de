@@ -8,10 +8,7 @@ export type Tags = {
   name: string
 }[]
 
-export async function getUniqueTags(
-  collection: any,
-  locale = ""
-): Promise<Tags> {
+export async function getUniqueTags(collection: any, locale = ""): Promise<Tags> {
   return (await getPublishedPosts(locale, collection, ""))
     .flatMap((post) => post.data.tags)
     .map((tag) => ({
@@ -26,11 +23,7 @@ export async function getUniqueTags(
     .sort((tagA, tagB) => tagA.slugified.localeCompare(tagB.slugified))
 }
 
-export async function getPostsByTag(
-  collection: "blog",
-  tag: string,
-  locale: string
-) {
+export async function getPostsByTag(collection: "blog", tag: string, locale: string) {
   return (await getPublishedPosts(locale, collection)).filter((post) =>
     post.data.tags
       .map((item) => {
@@ -40,11 +33,7 @@ export async function getPostsByTag(
   )
 }
 
-export const getTagPath = (
-  locale: string,
-  tag: string,
-  addLeadingSlash = true
-): string => {
+export const getTagPath = (locale: string, tag: string, addLeadingSlash = true): string => {
   const directories = [directoryNames.tags[locale]]
   return getPagePath(locale, directories, tag, addLeadingSlash)
 }

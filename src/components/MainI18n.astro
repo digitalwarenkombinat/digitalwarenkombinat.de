@@ -7,10 +7,7 @@ import { uiStrings } from "@i18n/uiStrings"
 import { getLocaleFromUrl } from "@i18n/utilities"
 import { site } from "@src/consts"
 import type { CommonFrontmatter } from "@src/types"
-import {
-  getAbsolutePostPath,
-  getRelativePostPath,
-} from "@utilities/getPostPath"
+import { getAbsolutePostPath, getRelativePostPath } from "@utilities/getPostPath"
 import getPublishedPosts from "@utilities/getPublishedPosts"
 
 interface Props {
@@ -36,9 +33,7 @@ if (reference) {
     const allPages = await Astro.glob("../pages/**/*.{md,mdx}")
     translationsAvailable = allPages
       .filter(({ frontmatter }) => {
-        return (
-          frontmatter.reference !== null && frontmatter.reference === reference
-        )
+        return frontmatter.reference !== null && frontmatter.reference === reference
       })
       .filter((page) => {
         return getLocaleFromUrl(page.url) !== Astro.currentLocale
@@ -57,9 +52,7 @@ if (reference) {
     }
   } else {
     // The current page is part of a collection
-    const translationsSlugs = (
-      await getPublishedPosts("", collection as "blog", "")
-    )
+    const translationsSlugs = (await getPublishedPosts("", collection as "blog", ""))
       .filter((post) => post.data.reference === reference)
       .filter((post) => getLocaleFromUrl(post.slug) !== Astro.currentLocale)
       .map((post) => post.slug)

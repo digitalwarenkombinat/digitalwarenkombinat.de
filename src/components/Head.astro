@@ -14,16 +14,11 @@ interface Props {
 }
 
 const { frontmatter, includeCanonicalMeta = true } = Astro.props
-const title = frontmatter.title
-  ? `${frontmatter.title} | ${siteTitle}`
-  : siteTitle
+const title = frontmatter.title ? `${frontmatter.title} | ${siteTitle}` : siteTitle
 const description = frontmatter.description
 const file = frontmatter.file
 const previewImage = frontmatter.previewImage || "/image.png"
-const canonicalURL = new URL(
-  frontmatter.canonicalURL || Astro.url.pathname,
-  Astro.site
-)
+const canonicalURL = new URL(frontmatter.canonicalURL || Astro.url.pathname, Astro.site)
 const faviconIco = "/favicon.ico"
 const faviconSVG = "/favicon.svg"
 const appleTouchIcon = "/apple-touch-icon.png"

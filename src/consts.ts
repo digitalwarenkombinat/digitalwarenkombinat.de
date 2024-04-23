@@ -5,8 +5,7 @@ export const site = "https://digitalwarenkombinat.de/"
 export const siteTitle = "Digitalwarenkombinat"
 export const siteKeywords =
   "Digitalagentur, Leipzig, Open Source, Kulturinstitutionen, Internet-Agentur, Webdesign, Entwicklung, Beratung, DIWAKO"
-export const siteMail =
-  "mailto:info@digitalwarenkombinat.de?subject=Hi Digitalwarenkombinat-Team!"
+export const siteMail = "mailto:info@digitalwarenkombinat.de?subject=Hi Digitalwarenkombinat-Team!"
 export const siteThemeColor = "#dd8d0e"
 export const pagination = {
   postsPerPage: 12,

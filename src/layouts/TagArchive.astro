@@ -13,9 +13,7 @@ interface Props {
 }
 
 const { frontmatter } = Astro.props
-const tags = (
-  await getUniqueTags(frontmatter.collection, Astro.currentLocale)
-).filter((tag) => {
+const tags = (await getUniqueTags(frontmatter.collection, Astro.currentLocale)).filter((tag) => {
   return tag.slugified !== "other"
 })
 ---

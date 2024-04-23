@@ -13,11 +13,7 @@ interface Props {
 }
 
 const { frontmatter } = Astro.props
-const filteredPosts = await getPostsByTag(
-  "blog",
-  frontmatter.tag,
-  Astro.currentLocale
-)
+const filteredPosts = await getPostsByTag("blog", frontmatter.tag, Astro.currentLocale)
 ---
 
 <Page {frontmatter}>

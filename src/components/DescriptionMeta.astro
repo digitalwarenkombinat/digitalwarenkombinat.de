@@ -1,9 +1,6 @@
 ---
 import { siteKeywords, siteTitle } from "@src/consts"
-import {
-  getPageDescription,
-  truncateDescription,
-} from "@utilities/getPageDescription"
+import { getPageDescription, truncateDescription } from "@utilities/getPageDescription"
 interface Props {
   description: string
   file: string
@@ -11,9 +8,7 @@ interface Props {
 
 let { description, file } = Astro.props
 if (!description) {
-  const page = (await Astro.glob("../**/*.{md,mdx}")).find(
-    (page) => page.file === file
-  )
+  const page = (await Astro.glob("../**/*.{md,mdx}")).find((page) => page.file === file)
   description = getPageDescription(page)
 } else description = truncateDescription(description)
 if (!description) console.warn("⚠️ This page doesn't have a description.")

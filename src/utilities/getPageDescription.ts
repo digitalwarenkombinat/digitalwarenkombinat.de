@@ -16,22 +16,15 @@ export function truncateDescription(description: string): string {
   const maxNumberOfWords = 22
   let truncatedDescription: string
   if (description.split(" ").length > maxNumberOfWords) {
-    truncatedDescription = `${description
-      .split(" ")
-      .splice(0, maxNumberOfWords)
-      .join(" ")} …`
+    truncatedDescription = `${description.split(" ").splice(0, maxNumberOfWords).join(" ")} …`
   }
-  if (description.length > 150)
-    truncatedDescription = `${description.substring(0, 150)} …`
+  if (description.length > 150) truncatedDescription = `${description.substring(0, 150)} …`
   return truncatedDescription
 }
 
 export function getPageDescription(page: any): string {
   // Unlike for getPostDescription(), here we don't attempt to get the first sentence. The body may be to short for it.
-  if (page)
-    return typeof page.rawContent() === "undefined"
-      ? ""
-      : truncateDescription(removeMd(page.rawContent()))
+  if (page) return typeof page.rawContent() === "undefined" ? "" : truncateDescription(removeMd(page.rawContent()))
   return ""
 }
 

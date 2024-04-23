@@ -3,23 +3,13 @@ import { locales } from "@i18n/i18n"
 import { site } from "@src/consts"
 import getPagePath from "@utilities/getPagePath"
 
-export function getRelativePostPath(
-  locale: string,
-  collection: string,
-  slug: string,
-  addLeadingSlash = true
-): string {
+export function getRelativePostPath(locale: string, collection: string, slug: string, addLeadingSlash = true): string {
   const trueSlug = slug.slice(slug.indexOf("/") + 1) // remove /[locale]/ from start of slug
   const collectionDirectory = [collectionDirectoryNames[collection][locale]]
-  if (locales.includes(locale))
-    return getPagePath(locale, collectionDirectory, trueSlug, addLeadingSlash)
+  if (locales.includes(locale)) return getPagePath(locale, collectionDirectory, trueSlug, addLeadingSlash)
   throw new Error(`Unknown locale: ${locale}`)
 }
 
-export function getAbsolutePostPath(
-  locale: string,
-  collection: string,
-  slug: string
-): string {
+export function getAbsolutePostPath(locale: string, collection: string, slug: string): string {
   return `${site}${getRelativePostPath(locale, collection, slug, true)}`
 }

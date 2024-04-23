@@ -4,14 +4,13 @@ type Props = HTMLAttributes<"a">
 
 const { href, class: className, ...props } = Astro.props
 const { pathname } = Astro.url
-const ariaCurrent =
-  href === pathname || href === pathname.replace(/\/$/, "") ? "page" : ""
+const ariaCurrent = href === pathname || href === pathname.replace(/\/$/, "") ? "page" : ""
 ---
 <li class="border-t item">
   <a
     href={href}
     class:list={[className]}
-    class="link font-medium text-black hover:text-tertiary block p-4"
+    class="link text-black block p-2"
     aria-current={ariaCurrent ? ariaCurrent : undefined}
     {...props}
   >

@@ -1,14 +1,14 @@
 ---
 import Button from "@components/Button.astro"
-import Post from "@components/Post.astro"
+import Project from "@components/Project.astro"
 import { uiStrings } from "@i18n/uiStrings"
 import getPublishedPosts from "@utilities/getPublishedPosts"
 import Caption from "./Caption.astro"
-const title = `${uiStrings.blogTitle[Astro.currentLocale]}`
-const subtitle = `${uiStrings.blogSubtitle[Astro.currentLocale]}`
-const link = `${uiStrings.blogLink[Astro.currentLocale]}`
+const title = `${uiStrings.projectTitle[Astro.currentLocale]}`
+const subtitle = `${uiStrings.projectSubtitle[Astro.currentLocale]}`
+const link = `${uiStrings.projectLink[Astro.currentLocale]}`
 
-const collection = "blog"
+const collection = "projects"
 
 const posts = await getPublishedPosts(Astro.currentLocale, collection)
 const featuredPosts = posts.filter(({ data }) => data.isFeatured)
@@ -22,12 +22,12 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured)
     featuredPosts?.length > 0 && (
       <ul>
         {featuredPosts.map((post) => (
-          <Post post={post} collection={collection}/>
+          <Project post={post} collection={collection}/>
         ))}
       </ul>
     )
   }
   <div class="mt-16">
-    <Button href="/blog">{link}</Button>
+    <Button href="/projects">{link}</Button>
   </div>
 </div>

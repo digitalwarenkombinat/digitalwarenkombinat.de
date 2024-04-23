@@ -20,6 +20,10 @@ export const collectionDirectoryNames: PathNames = {
     de: "blog",
     en: "blog",
   },
+  projects: {
+    de: "projects",
+    en: "projects",
+  },
 }
 export const directoryNames: PathNames = {
   // Define the path for the tag pages (tags list, posts per tag).

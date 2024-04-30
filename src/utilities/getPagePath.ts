@@ -10,7 +10,7 @@ export default function getPagePath(
   const leadingSlash = addLeadingSlash ? '/' : ''
   const localePath = locale === defaultLocale ? '' : `${locale}/`
 
-  const directoryPath = directories.map(dir => `${slugify(dir)}/`).join('')
+  const directoryPath = directories.map((dir) => `${slugify(dir)}/`).join('')
 
   const slugifiedString = slugify(slug)
 

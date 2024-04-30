@@ -8,7 +8,7 @@ export interface Person extends PersonData {
   id: string
 }
 
-export const people = peopleData.map(person => ({
+export const people = peopleData.map((person) => ({
   ...person,
   id: slugify(person.name),
 }))

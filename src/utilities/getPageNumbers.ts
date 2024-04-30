@@ -1,4 +1,4 @@
-import { pagination } from "../consts"
+import { pagination } from '../consts'
 
 const getPageNumbers = (numberOfPosts: number) => {
   const numberOfPages = numberOfPosts / Number(pagination.postsPerPage)

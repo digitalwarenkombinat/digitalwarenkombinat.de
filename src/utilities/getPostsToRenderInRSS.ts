@@ -10,7 +10,7 @@ export async function getPostsToRenderInRSS(
 ) {
   const posts = (await getPublishedPosts(locale, collection))
     .slice(0, 50)
-    .map(post => ({
+    .map((post) => ({
       ...post.data,
       link: getRelativePostPath(
         locale || getLocaleFromUrl(post.slug),

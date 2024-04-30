@@ -13,15 +13,15 @@ export async function getUniqueTags(
   locale = '',
 ): Promise<Tags> {
   return (await getPublishedPosts(locale, collection, ''))
-    .flatMap(post => post.data.tags)
-    .map(tag => ({
+    .flatMap((post) => post.data.tags)
+    .map((tag) => ({
       slugified: slugify(tag),
       name: tag,
     }))
     .filter(
       (value, index, self) =>
         // Tag is slugified here just in case in other places we'd use a different method to slugify it.
-        self.findIndex(tag => tag.slugified === value.slugified) === index,
+        self.findIndex((tag) => tag.slugified === value.slugified) === index,
     )
     .sort((tagA, tagB) => tagA.slugified.localeCompare(tagB.slugified))
 }
@@ -31,9 +31,9 @@ export async function getPostsByTag(
   tag: string,
   locale: string,
 ) {
-  return (await getPublishedPosts(locale, collection)).filter(post =>
+  return (await getPublishedPosts(locale, collection)).filter((post) =>
     post.data.tags
-      .map(item => {
+      .map((item) => {
         return slugify(item)
       })
       .includes(slugify(tag)),

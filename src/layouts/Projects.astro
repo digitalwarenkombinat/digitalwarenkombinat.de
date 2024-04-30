@@ -10,12 +10,12 @@ const collection = frontmatter.collection
 const posts = await getPublishedPosts(Astro.currentLocale, collection)
 ---
 
-<MainI18n {frontmatter} collection="pages">
-  <main id="main">
+<MainI18n {frontmatter} collection='pages'>
+  <main id='main'>
     <h1>{title}</h1>
     <slot />
     <ul>
-      {posts.map(post => <Project post={post} collection={collection} />)}
+      {posts.map((post) => <Project post={post} collection={collection} />)}
     </ul>
   </main>
 </MainI18n>

@@ -8,7 +8,7 @@ export interface Focus extends FocusData {
   id: string
 }
 
-export const area = areaData.map(focus => ({
+export const area = areaData.map((focus) => ({
   ...focus,
   id: slugify(focus.name),
 }))

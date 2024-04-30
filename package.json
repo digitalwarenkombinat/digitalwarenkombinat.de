@@ -10,7 +10,7 @@
     "astro": "astro",
     "fix": "npm run lint && npm run stylelint && npm run format",
     "lint": "eslint --fix \"./{src,test}/**/*.{css,md,mdx,js,jsx,json,ts,tsx}\"",
-    "stylelint": "stylelint --fix \"**/*.css\"",
+    "stylelint": "stylelint --fix \"./{src,test}/**/*.css\"",
     "format": "prettier --write \"./{src,test,server}/**/*.{css,md,mdx,js,jsx,json,ts,tsx}\""
   },
   "dependencies": {

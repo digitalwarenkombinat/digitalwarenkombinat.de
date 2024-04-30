@@ -1,25 +1,31 @@
 ---
-import { uiStrings } from "@i18n/uiStrings"
-import { area, getFocusPath } from "@src/utilities/area"
-import Caption from "./Caption.astro"
+import { uiStrings } from '@i18n/uiStrings'
+import { area, getFocusPath } from '@src/utilities/area'
+import Caption from './Caption.astro'
 const title = `${uiStrings.areaTitle[Astro.currentLocale]}`
 const subtitle = `${uiStrings.areaSubtitle[Astro.currentLocale]}`
 ---
 
 <div>
-  <Caption title={title} subtitle={subtitle}/>
+  <Caption title={title} subtitle={subtitle} />
   <div>
     <dl>
-      {area.map((focus) => (
-        <div class="relative">
-          <dt>
-            <p class='name'>
-              <a href={getFocusPath(Astro.currentLocale, focus.id)}>{focus.name}</a>
-            </p>
-          </dt>
-          <dd class='arealist-description'>{focus.description[Astro.currentLocale]}</dd>
-        </div>
-      ))}
+      {
+        area.map(focus => (
+          <div class="relative">
+            <dt>
+              <p class="name">
+                <a href={getFocusPath(Astro.currentLocale, focus.id)}>
+                  {focus.name}
+                </a>
+              </p>
+            </dt>
+            <dd class="arealist-description">
+              {focus.description[Astro.currentLocale]}
+            </dd>
+          </div>
+        ))
+      }
     </dl>
   </div>
 </div>

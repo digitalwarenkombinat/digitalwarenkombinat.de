@@ -1,12 +1,12 @@
 ---
-import { locales } from "@i18n/i18n"
-import Person from "@layouts/Person.astro"
-import { getPersonPath, people } from "@utilities/people"
+import { locales } from '@i18n/i18n'
+import Person from '@layouts/Person.astro'
+import { getPersonPath, people } from '@utilities/people'
 
 export async function getStaticPaths() {
   const allPeoplePages = []
   for (const locale of locales) {
-    const peopleParsed = people.map((person) => ({
+    const peopleParsed = people.map(person => ({
       params: {
         person: `${getPersonPath(locale, person.id, false)}`,
       },
@@ -22,4 +22,5 @@ export async function getStaticPaths() {
 }
 const frontmatter = Astro.props
 ---
+
 <Person {frontmatter} />

@@ -1,14 +1,14 @@
 ---
-import { locales } from "@i18n/i18n"
-import { getLocaleFromUrl } from "@i18n/utilities"
-import Post from "@layouts/Post.astro"
-import { getPostDescription } from "@utilities/getPageDescription"
-import { getRelativePostPath } from "@utilities/getPostPath"
-import getPublishedPosts from "@utilities/getPublishedPosts"
+import { locales } from '@i18n/i18n'
+import { getLocaleFromUrl } from '@i18n/utilities'
+import Post from '@layouts/Post.astro'
+import { getPostDescription } from '@utilities/getPageDescription'
+import { getRelativePostPath } from '@utilities/getPostPath'
+import getPublishedPosts from '@utilities/getPublishedPosts'
 
 export async function getStaticPaths() {
-  const collection = "blog"
-  const posts = await getPublishedPosts("", collection, "")
+  const collection = 'blog'
+  const posts = await getPublishedPosts('', collection, '')
   const postsToRender = []
 
   for (const locale of locales) {
@@ -32,4 +32,4 @@ post.data.description = getPostDescription(post)
 
 <Post {...post.data}>
   <Content />
-</Post
+</Post>

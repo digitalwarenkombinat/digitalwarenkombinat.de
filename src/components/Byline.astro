@@ -1,28 +1,39 @@
 ---
-import FormattedDate from "@components/FormattedDate.astro"
-import { uiStrings } from "@i18n/uiStrings"
-import type { Person } from "@utilities/people"
-import { getPersonPath, people } from "@utilities/people"
+import FormattedDate from '@components/FormattedDate.astro'
+import { uiStrings } from '@i18n/uiStrings'
+import type { Person } from '@utilities/people'
+import { getPersonPath, people } from '@utilities/people'
 const updated = `${uiStrings.updated[Astro.currentLocale]}`
 interface Props {
   authorFullName: string
   pubDate: Date
   updatedDate: Date
 }
-const { authorFullName = "", pubDate, updatedDate } = Astro.props
-const person: Person = people.find((person) => {
+const { authorFullName = '', pubDate, updatedDate } = Astro.props
+const person: Person = people.find(person => {
   return person.name === authorFullName
 })
-const hasAuthorLink: boolean = typeof person === "object"
+const hasAuthorLink: boolean = typeof person === 'object'
 ---
+
 <p>
-  {authorFullName &&
-    <span>{ hasAuthorLink && <a href={getPersonPath(Astro.currentLocale, person.id)}>{person.name}</a> }</span>
+  {
+    authorFullName && (
+      <span>
+        {hasAuthorLink && (
+          <a href={getPersonPath(Astro.currentLocale, person.id)}>
+            {person.name}
+          </a>
+        )}
+      </span>
+    )
   }
   <FormattedDate date={pubDate} />
-  {updatedDate && (
+  {
+    updatedDate && (
       <span>
-        {updated}<FormattedDate date={updatedDate} />
+        {updated}
+        <FormattedDate date={updatedDate} />
       </span>
     )
   }

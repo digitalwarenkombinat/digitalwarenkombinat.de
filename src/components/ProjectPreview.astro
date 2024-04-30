@@ -1,15 +1,22 @@
 ---
-import type { CollectionEntry } from "astro:content"
+import type { CollectionEntry } from 'astro:content'
 
-type Props = { project: CollectionEntry<"projects"> }
+type Props = { project: CollectionEntry<'projects'> }
 
 const { project } = Astro.props
 const { title, description } = project.data
 ---
 
-<a class='flex justify-between items-start gap-8 group mb-10' href={`/projects/${project.slug}/`}>
+<a
+  class="flex justify-between items-start gap-8 group mb-10"
+  href={`/projects/${project.slug}/`}
+>
   <div class="grow">
     <h2 class="text-xl font-serif">{title}</h2>
-    {description && <div class="mt-1 text-sm leading-normal">{description}</div>}
+    {
+      description && (
+        <div class="mt-1 text-sm leading-normal">{description}</div>
+      )
+    }
   </div>
 </a>

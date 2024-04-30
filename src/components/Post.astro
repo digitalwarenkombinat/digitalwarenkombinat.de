@@ -1,20 +1,24 @@
 ---
-import FormattedDate from "@components/FormattedDate.astro"
-import { getPostDescription } from "@utilities/getPageDescription"
-import { getRelativePostPath } from "@utilities/getPostPath"
+import FormattedDate from '@components/FormattedDate.astro'
+import { getPostDescription } from '@utilities/getPageDescription'
+import { getRelativePostPath } from '@utilities/getPostPath'
 
 const { collection, post } = Astro.props
 ---
 
 <li>
-  <a href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}>
+  <a
+    href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
+  >
     <h4 class="title">{post.data.title}</h4>
     <p class="date">
       <FormattedDate date={post.data.pubDate} />
     </p>
     <img width={720} height={360} src={post.data.previewImage} alt="" />
   </a>
-  <blockquote cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}>
+  <blockquote
+    cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
+  >
     {getPostDescription(post)}
   </blockquote>
 </li>

@@ -1,41 +1,46 @@
 ---
-import type { CollectionEntry } from "astro:content"
-import ProjectPreview from "@components/ProjectPreview.astro"
-import { locales } from "@i18n/i18n"
-import { getLocaleFromUrl } from "@i18n/utilities"
-import Project from "@layouts/Project.astro"
-import { getPostDescription } from "@utilities/getPageDescription"
-import { getRelativePostPath } from "@utilities/getPostPath"
-import getPublishedPosts from "@utilities/getPublishedPosts"
+import type { CollectionEntry } from 'astro:content'
+import ProjectPreview from '@components/ProjectPreview.astro'
+import { locales } from '@i18n/i18n'
+import { uiStrings } from '@i18n/uiStrings'
+import { getLocaleFromUrl } from '@i18n/utilities'
+import Project from '@layouts/Project.astro'
+import { getPostDescription } from '@utilities/getPageDescription'
+import { getRelativePostPath } from '@utilities/getPostPath'
+import getPublishedPosts from '@utilities/getPublishedPosts'
+const next = `${uiStrings.projectNext[Astro.currentLocale]}`
 
 export async function getStaticPaths() {
-  const collection = "projects"
-  const posts = await getPublishedPosts("", collection, "")
-  const postsCount = posts.length
+  const collection = 'projects'
+  const posts = await getPublishedPosts('', collection)
   const postsToRender = []
 
   for (const locale of locales) {
-    const localePosts = posts
-      .filter((entry) => getLocaleFromUrl(entry.slug) === locale)
-      .map((post, index) => ({
-        params: {
-          projectsPost: `${getRelativePostPath(locale, collection, post.slug, false)}`,
-        },
-        props: {
-          post,
-          prevProject: index + 1 !== postsCount ? posts[index + 1] : null,
-          nextProject: index !== 0 ? posts[index - 1] : null,
-        },
-      }))
+    const localizedPosts = posts.filter(
+      entry => getLocaleFromUrl(entry.slug) === locale
+    )
+    const localizedPostsCount = localizedPosts.length
+    const localePosts = localizedPosts.map((post, index) => ({
+      params: {
+        projectsPost: getRelativePostPath(locale, collection, post.slug, false),
+      },
+      props: {
+        post,
+        prevProject:
+          index + 1 !== localizedPostsCount ? localizedPosts[index + 1] : null,
+        nextProject: index !== 0 ? localizedPosts[index - 1] : null,
+      },
+    }))
     postsToRender.push(...localePosts)
   }
+
   return postsToRender
 }
 
 type Props = {
-  post: CollectionEntry<"projects">
-  prevProject: CollectionEntry<"projects">
-  nextProject: CollectionEntry<"projects">
+  post: CollectionEntry<'projects'>
+  prevProject: CollectionEntry<'projects'>
+  nextProject: CollectionEntry<'projects'>
 }
 
 const { post, prevProject, nextProject } = Astro.props
@@ -49,9 +54,11 @@ post.data.description = getPostDescription(post)
   {
     (prevProject || nextProject) && (
       <div class="my-16">
+        <p class="mb-12 text-xl font-serif italic">{next}</p>
         {nextProject && <ProjectPreview project={nextProject} />}
         {prevProject && <ProjectPreview project={prevProject} />}
       </div>
     )
   }
-</Project
+  </Project</Project
+>

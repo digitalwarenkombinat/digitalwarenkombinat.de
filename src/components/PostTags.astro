@@ -1,6 +1,6 @@
 ---
-import { uiStrings } from "@i18n/uiStrings"
-import { getTagPath } from "@utilities/tags"
+import { uiStrings } from '@i18n/uiStrings'
+import { getTagPath } from '@utilities/tags'
 interface Props {
   tags: string[]
 }
@@ -13,8 +13,12 @@ const uiString =
 
 <p>
   {uiString}:
-  {tags.map((tag, index) => (
-    <a href={`${getTagPath(Astro.currentLocale, tag)}`}>{tag}</a>
-    <span>{index < tags.length - 1 ? ', ' : ''}</span>
-  ))}.
+  {
+    tags.map((tag, index) => (
+      <>
+        <a href={`${getTagPath(Astro.currentLocale, tag)}`}>{tag}</a>
+        <span>{index < tags.length - 1 ? ', ' : ''}</span>
+      </>
+    ))
+  }.
 </p>

@@ -1,7 +1,7 @@
 ---
-import Header from "@components/Header.astro"
-import Html from "@components/Html.astro"
-import type { CommonFrontmatter } from "@src/types"
+import Header from '@components/Header.astro'
+import Html from '@components/Html.astro'
+import type { CommonFrontmatter } from '@src/types'
 
 interface Props {
   frontmatter: CommonFrontmatter
@@ -10,12 +10,13 @@ interface Props {
 const { frontmatter } = Astro.props
 const title = frontmatter.title
 ---
-<Html {frontmatter} includeCanonicalMeta={false} >
+
+<Html {frontmatter} includeCanonicalMeta={false}>
   <Header />
   <main id="main">
     <article class="prose">
       <h1>{title}</h1>
-      <slot/>
+      <slot />
     </article>
   </main>
 </Html>

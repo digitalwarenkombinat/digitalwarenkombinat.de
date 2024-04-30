@@ -1,19 +1,23 @@
 ---
-import { uiStrings } from "@i18n/uiStrings"
-import { referencesData } from "@src/references"
-import Caption from "./Caption.astro"
+import { uiStrings } from '@i18n/uiStrings'
+import { referencesData } from '@src/references'
+import Caption from './Caption.astro'
 const title = `${uiStrings.referencesTitle[Astro.currentLocale]}`
 const subtitle = `${uiStrings.referencesSubtitle[Astro.currentLocale]}`
 ---
 
 <div class="container max-w-7xl mx-auto px-4">
-  <Caption title={title} subtitle={subtitle}/>
+  <Caption title={title} subtitle={subtitle} />
   <div class="w-full grid grid-cols-1 gap-4">
-    {referencesData.map((item) => (
-      <div class="py-4 px-4 mx-4">
-        <p class="mb-4 text-black">{item.description[Astro.currentLocale]}</p>
-        <p class="font-medium text-secondary">{item.author[Astro.currentLocale]}</p>
-      </div>
-    ))}
+    {
+      referencesData.map(item => (
+        <div class="py-4 px-4 mx-4">
+          <p class="mb-4 text-black">{item.description[Astro.currentLocale]}</p>
+          <p class="font-medium text-secondary">
+            {item.author[Astro.currentLocale]}
+          </p>
+        </div>
+      ))
+    }
   </div>
 </div>

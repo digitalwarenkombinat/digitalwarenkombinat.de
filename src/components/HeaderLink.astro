@@ -1,11 +1,13 @@
 ---
-import type { HTMLAttributes } from "astro/types"
-type Props = HTMLAttributes<"a">
+import type { HTMLAttributes } from 'astro/types'
+type Props = HTMLAttributes<'a'>
 
 const { href, class: className, ...props } = Astro.props
 const { pathname } = Astro.url
-const ariaCurrent = href === pathname || href === pathname.replace(/\/$/, "") ? "page" : ""
+const ariaCurrent =
+  href === pathname || href === pathname.replace(/\/$/, '') ? 'page' : ''
 ---
+
 <li class="item">
   <a
     href={href}
@@ -19,7 +21,7 @@ const ariaCurrent = href === pathname || href === pathname.replace(/\/$/, "") ? 
 </li>
 
 <style>
-  a[aria-current=page] {
+  a[aria-current='page'] {
     font-weight: bolder;
   }
 </style>

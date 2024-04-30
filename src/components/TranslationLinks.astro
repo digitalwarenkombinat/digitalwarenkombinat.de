@@ -1,5 +1,5 @@
 ---
-import type { TranslationLink } from "./MainI18n.astro"
+import type { TranslationLink } from './MainI18n.astro'
 
 interface Props {
   translationLinks: TranslationLink[]
@@ -7,10 +7,17 @@ interface Props {
 
 const { translationLinks } = Astro.props
 ---
+
 <li class="item">
-  {translationLinks.map((translation) => (
-    <a class="link" href={translation.relativeURL} hreflang={translation.locale}>
-      {translation.label}
-    </a>
-  ))}
+  {
+    translationLinks.map(translation => (
+      <a
+        class="link"
+        href={translation.relativeURL}
+        hreflang={translation.locale}
+      >
+        {translation.label}
+      </a>
+    ))
+  }
 </li>

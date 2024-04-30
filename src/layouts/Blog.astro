@@ -1,7 +1,7 @@
 ---
-import MainI18n from "@components/MainI18n.astro"
-import Post from "@components/Post.astro"
-import getPublishedPosts from "@utilities/getPublishedPosts"
+import MainI18n from '@components/MainI18n.astro'
+import Post from '@components/Post.astro'
+import getPublishedPosts from '@utilities/getPublishedPosts'
 
 const { frontmatter } = Astro.props
 const title = frontmatter.title
@@ -9,16 +9,13 @@ const collection = frontmatter.collection
 
 const posts = await getPublishedPosts(Astro.currentLocale, collection)
 ---
+
 <MainI18n {frontmatter} collection="pages">
   <main id="main">
-    <header class="prose">
-      <h1>{title}</h1>
-      <slot/>
-    </header>
+    <h1>{title}</h1>
+    <slot />
     <ul>
-      {posts.map((post) => (
-        <Post post={post} collection={collection}/>
-      ))}
+      {posts.map(post => <Post post={post} collection={collection} />)}
     </ul>
   </main>
 </MainI18n>

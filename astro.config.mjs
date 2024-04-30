@@ -1,14 +1,14 @@
-import mdx from "@astrojs/mdx";
-import { defineConfig } from "astro/config";
-import rehypeExternalLinks from "rehype-external-links";
-import { site } from "./src/consts";
-import { defaultLocale, locales } from "./src/i18n/i18n";
+import mdx from '@astrojs/mdx'
+import { defineConfig } from 'astro/config'
+import rehypeExternalLinks from 'rehype-external-links'
+import { site } from './src/consts'
+import { defaultLocale, locales } from './src/i18n/i18n'
 
 const sitemapLocales = Object.fromEntries(
-  locales.map((_, i) => [locales[i], locales[i]])
-); // Create an object with keys and values based on locales
+  locales.map((_, i) => [locales[i], locales[i]]),
+) // Create an object with keys and values based on locales
 
-import sitemap from "@astrojs/sitemap";
+import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,7 +16,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap({
-      filter: (page) => page.secret !== true,
+      filter: page => page.secret !== true,
       i18n: {
         defaultLocale: defaultLocale,
         locales: sitemapLocales,
@@ -32,10 +32,10 @@ export default defineConfig({
       [
         rehypeExternalLinks,
         {
-          target: "_blank",
-          rel: ["nofollow", "noreferrer"],
+          target: '_blank',
+          rel: ['nofollow', 'noreferrer'],
         },
       ],
     ],
   },
-});
+})

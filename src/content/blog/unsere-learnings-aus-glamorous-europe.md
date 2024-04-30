@@ -7,6 +7,7 @@ previewImage: '/blog1.jpg'
 reference: first-post
 tags: ['Wikidata', 'GLAM', 'Cultural Heritage']
 isFeatured: true
+relatedPosts: ['wir-sind-nominiert-fuer-den-dig-a-mus-award-2024']
 ---
 
 Prototyp unserer Webapp GLAMorous Europe ist endlich live! 🎉Probiert es aus, entdeckt Gemälde, Drucke und Skizzen und erstellt am Ende euer eigenes Kunstwerk. Wir freuen uns auf eure Rückmeldungen.

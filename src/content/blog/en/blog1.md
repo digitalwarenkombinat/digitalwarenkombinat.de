@@ -7,6 +7,7 @@ previewImage: '/blog1.jpg'
 reference: first-post
 tags: ['Wikidata', 'GLAM', 'Cultural Heritage']
 isFeatured: true
+relatedPosts: []
 ---
 
 GLAMorous Europe

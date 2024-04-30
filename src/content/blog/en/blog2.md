@@ -7,6 +7,7 @@ previewImage: '/blog2.jpg'
 reference: second-post
 tags: [DigAMus, IIIF, GLAM]
 isFeatured: true
+relatedPosts: []
 ---
 
 DigAMus Award 2024

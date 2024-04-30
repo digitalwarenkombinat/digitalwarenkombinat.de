@@ -8,31 +8,31 @@ export type FocusData = {
 
 export const areaData: FocusData[] = [
   {
-    name: "Open Source Lösungen",
+    name: 'Open Source Lösungen',
     description: {
-      de: "Open Source Software ...",
-      en: "Open Source Software ...",
+      de: 'Open Source Software ...',
+      en: 'Open Source Software ...',
     },
   },
   {
-    name: "Progressive Web Apps",
+    name: 'Progressive Web Apps',
     description: {
-      de: "Progressive Web Apps ...",
-      en: "Progressive Web Apps ...",
+      de: 'Progressive Web Apps ...',
+      en: 'Progressive Web Apps ...',
     },
   },
   {
-    name: "State of the Art Development",
+    name: 'State of the Art Development',
     description: {
-      de: "State of the Art Development ...",
-      en: "State of the Art Development ...",
+      de: 'State of the Art Development ...',
+      en: 'State of the Art Development ...',
     },
   },
   {
-    name: "Umweltfreundlichkeit",
+    name: 'Umweltfreundlichkeit',
     description: {
-      de: "Umweltfreundlichkeit ...",
-      en: "Umweltfreundlichkeit ...",
+      de: 'Umweltfreundlichkeit ...',
+      en: 'Umweltfreundlichkeit ...',
     },
   },
 ]

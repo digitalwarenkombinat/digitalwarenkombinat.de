@@ -1,11 +1,12 @@
 ---
-title: "About us"
+title: 'About us'
 layout: '@layouts/Page.astro'
 reference: about
 description: 'Digitalwarenkombinat | About us'
 ---
-import PeopleList from '@components/PeopleList.astro'
-import About from "@components/About.astro"
 
-<About />
+import PeopleList from '@components/PeopleList.astro'
+import Caption from '@components/Caption.astro'
+
+<Caption title={frontmatter.title} />
 <PeopleList />

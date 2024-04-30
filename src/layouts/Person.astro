@@ -1,7 +1,8 @@
 ---
-import Page from "@layouts/Page.astro"
-import type { CommonFrontmatter } from "@src/types"
-import type { Person } from "@utilities/people"
+import Page from '@layouts/Page.astro'
+import type { CommonFrontmatter } from '@src/types'
+import type { Person } from '@utilities/people'
+import People from '@components/People.astro'
 export interface PersonFrontmatter extends CommonFrontmatter {
   person: Person
 }
@@ -10,19 +11,8 @@ interface Props {
 }
 const { frontmatter } = Astro.props
 const person = frontmatter.person
-const contactDataAreAvailable = person.mail
 ---
 
 <Page {frontmatter}>
-  {contactDataAreAvailable &&
-    <table>
-      <tr>
-        {person.mail &&
-          <tr><td>Mail</td><td><a href={`mailto:${person.mail}`}>{person.mail}</a></td></tr>
-        }
-      </tr>
-    </table>
-  }
-
-  <p>{person.description[Astro.currentLocale]}</p>
+  <People {person} />
 </Page>

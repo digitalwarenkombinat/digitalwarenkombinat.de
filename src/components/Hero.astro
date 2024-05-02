@@ -1,6 +1,7 @@
 ---
 import { uiStrings } from '@i18n/uiStrings'
 import { siteMail } from '@src/consts'
+import Button from '@components/Button.astro'
 const title = `${uiStrings.title[Astro.currentLocale]}`
 const subtitle = `${uiStrings.subtitle[Astro.currentLocale]}`
 const description = `${uiStrings.description[Astro.currentLocale]}`
@@ -14,11 +15,8 @@ const primaryAction = `${uiStrings.primaryAction[Astro.currentLocale]}`
   </h1>
   <p class="mt-4">{description}</p>
   <div class="mt-4">
-    <a
-      href={siteMail}
-      class="block w-full py-2 rounded-md text-white bg-tertiary"
-    >
+    <Button href={siteMail}>
       {primaryAction}
-    </a>
+    </Button>
   </div>
 </div>

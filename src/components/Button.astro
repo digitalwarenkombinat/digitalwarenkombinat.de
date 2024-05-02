@@ -11,7 +11,11 @@ const { href, ...rest } = Astro.props
 
 {
   href ? (
-    <a href={href} {...rest}>
+    <a
+      class="block w-full py-2 rounded-md text-white bg-tertiary"
+      href={href}
+      {...rest}
+    >
       <slot />
     </a>
   ) : (

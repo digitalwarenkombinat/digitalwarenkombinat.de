@@ -1,6 +1,8 @@
 ---
+import Button from '@components/Button.astro'
 import { getPostDescription } from '@utilities/getPageDescription'
 import { getRelativePostPath } from '@utilities/getPostPath'
+import CustomImage from '@components/CustomImage.astro'
 
 const { collection, post } = Astro.props
 ---
@@ -9,12 +11,16 @@ const { collection, post } = Astro.props
   <a
     href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
   >
-    <h4>{post.data.title}</h4>
-    <img width={720} height={360} src={post.data.previewImage} alt="" />
+    <h3>{post.data.title}</h3>
+    <CustomImage imagePath={post.data.previewImage} altText={post.data.title} />
   </a>
   <blockquote
     cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
   >
     {getPostDescription(post)}
   </blockquote>
+  <Button
+    href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
+    >{post.data.title}</Button
+  >
 </li>

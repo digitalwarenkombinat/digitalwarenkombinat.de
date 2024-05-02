@@ -1,6 +1,6 @@
 ---
 import { getPersonPath, type Person } from '@utilities/people'
-import CustomImage from './CustomImage.astro'
+import CustomImage from '@components/CustomImage.astro'
 interface Props {
   person: Person
 }
@@ -8,17 +8,17 @@ const { person } = Astro.props
 ---
 
 <div>
-  <div class="about">
+  <div class='about'>
     <a href={getPersonPath(Astro.currentLocale, person.id)}>
       <CustomImage
         imagePath={person.image}
         altText={person.name}
-        class="rounded"
+        class='rounded'
       />
     </a>
     <div>
-      <p class="text-xl text-primary">{person.name}</p>
-      <p class="text-secondary">{person.description[Astro.currentLocale]}</p>
+      <p class='text-xl text-primary'>{person.name}</p>
+      <p class='text-secondary'>{person.description[Astro.currentLocale]}</p>
     </div>
   </div>
   <div>

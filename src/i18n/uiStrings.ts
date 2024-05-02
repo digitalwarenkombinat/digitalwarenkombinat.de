@@ -52,8 +52,8 @@ export const uiStrings: TypeUIStrings = {
     en: 'Was tun wir?',
   },
   projectLink: {
-    de: 'Alle Projekte anzeigen',
-    en: 'View All Projects',
+    de: 'Zu allen Projekten',
+    en: 'All Projects',
   },
   projectNext: {
     de: 'Weitere Projekte',

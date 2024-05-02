@@ -17,19 +17,17 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured)
 ---
 
 <div>
-  <div>
-    <Caption title={title} subtitle={subtitle} />
-  </div>
-  {
-    featuredPosts?.length > 0 && (
-      <ul>
-        {featuredPosts.map(post => (
-          <Project post={post} collection={collection} />
-        ))}
-      </ul>
-    )
-  }
-  <div>
+  <Caption title={title} subtitle={subtitle} />
+  <div class="text-center">
+    {
+      featuredPosts?.length > 0 && (
+        <ul>
+          {featuredPosts.map((post) => (
+            <Project post={post} collection={collection} />
+          ))}
+        </ul>
+      )
+    }
     <Button href={getLocalizedHref(locale, '/projects')}>{link}</Button>
   </div>
 </div>

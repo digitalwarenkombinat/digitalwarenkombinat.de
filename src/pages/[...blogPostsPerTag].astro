@@ -15,11 +15,11 @@ export async function getStaticPaths() {
     )
   for (const locale of locales) {
     const realTags: Tags = (await getUniqueTags(collection, locale)).filter(
-      tag => {
+      (tag) => {
         return tag.slugified !== 'other'
       }
     )
-    const posts = realTags.map(tag => ({
+    const posts = realTags.map((tag) => ({
       params: {
         blogPostsPerTag: `${getTagPath(locale, tag.slugified, false)}`,
       },

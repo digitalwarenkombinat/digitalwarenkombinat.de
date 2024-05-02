@@ -6,7 +6,7 @@ import { getPersonPath, people } from '@utilities/people'
 export async function getStaticPaths() {
   const allPeoplePages = []
   for (const locale of locales) {
-    const peopleParsed = people.map(person => ({
+    const peopleParsed = people.map((person) => ({
       params: {
         person: `${getPersonPath(locale, person.id, false)}`,
       },

@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 
   for (const locale of locales) {
     const localizedPosts = posts.filter(
-      entry => getLocaleFromUrl(entry.slug) === locale
+      (entry) => getLocaleFromUrl(entry.slug) === locale
     )
     const localizedPostsCount = localizedPosts.length
     const localePosts = localizedPosts.map((post, index) => ({
@@ -53,12 +53,11 @@ post.data.description = getPostDescription(post)
   <Content />
   {
     (prevProject || nextProject) && (
-      <div class="my-16">
-        <p class="mb-12 text-xl font-serif italic">{next}</p>
+      <div class='my-16'>
+        <p class='mb-12 text-xl font-serif italic'>{next}</p>
         {nextProject && <ProjectPreview project={nextProject} />}
         {prevProject && <ProjectPreview project={prevProject} />}
       </div>
     )
   }
-  </Project</Project
->
+</Project>

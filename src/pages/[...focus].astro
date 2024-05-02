@@ -6,7 +6,7 @@ import { area, getFocusPath } from '@src/utilities/area'
 export async function getStaticPaths() {
   const allAreaPages = []
   for (const locale of locales) {
-    const focusParsed = area.map(focus => ({
+    const focusParsed = area.map((focus) => ({
       params: {
         focus: `${getFocusPath(locale, focus.id, false)}`,
       },

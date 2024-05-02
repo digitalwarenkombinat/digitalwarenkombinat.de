@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content'
 import MainI18n from '@components/MainI18n.astro'
+import CustomImage from '@components/CustomImage.astro'
 
 type Props = CollectionEntry<'projects'>['data']
 
@@ -8,16 +9,12 @@ const frontmatter = Astro.props
 const { title, previewImage } = Astro.props
 ---
 
-<MainI18n {frontmatter} collection="projects">
-  <main id="main" tabindex="”1”">
+<MainI18n {frontmatter} collection='projects'>
+  <main id='main' tabindex='”1”'>
     <article>
       <h1>{title}</h1>
-      {
-        previewImage && (
-          <img width={1020} height={510} src={previewImage} alt="" />
-        )
-      }
-      <div class="prose">
+      {previewImage && <CustomImage imagePath={previewImage} altText={title} />}
+      <div class='prose'>
         <slot />
       </div>
     </article>

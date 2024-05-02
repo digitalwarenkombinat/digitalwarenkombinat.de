@@ -3,7 +3,7 @@ title: 'Unsere Learnings aus GLAMorous Europe'
 author: 'Anne Mühlich'
 description: 'GLAMorous Europe bringt Nutzer:innen und digitale Sammlungen von europäischen GLAM-Institutionen (Galleries, Libraries, Archives & Museums) auf künstlerisch-kreative Weise zusammen.'
 pubDate: '2024-03-10'
-previewImage: '/blog1.jpg'
+previewImage: '/src/assets/blog1.jpg'
 reference: first-post
 tags: ['Wikidata', 'GLAM', 'Cultural Heritage']
 isFeatured: true

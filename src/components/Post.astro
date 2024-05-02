@@ -2,6 +2,7 @@
 import FormattedDate from '@components/FormattedDate.astro'
 import { getPostDescription } from '@utilities/getPageDescription'
 import { getRelativePostPath } from '@utilities/getPostPath'
+import CustomImage from '@components/CustomImage.astro'
 
 const { collection, post } = Astro.props
 ---
@@ -10,11 +11,11 @@ const { collection, post } = Astro.props
   <a
     href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
   >
-    <h4 class="title">{post.data.title}</h4>
-    <p class="date">
+    <h3 class='title'>{post.data.title}</h3>
+    <p class='date'>
       <FormattedDate date={post.data.pubDate} />
     </p>
-    <img width={720} height={360} src={post.data.previewImage} alt="" />
+    <CustomImage imagePath={post.data.previewImage} altText={post.data.title} />
   </a>
   <blockquote
     cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}

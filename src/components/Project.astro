@@ -12,7 +12,11 @@ const { collection, post } = Astro.props
     href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
   >
     <h3>{post.data.title}</h3>
-    <CustomImage imagePath={post.data.previewImage} altText={post.data.title} />
+    <CustomImage
+      class='border-primary border-2 rounded-md'
+      imagePath={post.data.previewImage}
+      altText={post.data.title}
+    />
   </a>
   <blockquote
     cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}

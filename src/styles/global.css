@@ -101,8 +101,17 @@ nav {
   transition: all 0.8s;
 }
 
+nav ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+
 header {
-  box-shadow: 0 5px 10px 0 #aaa;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -111,25 +120,34 @@ header {
   z-index: 12;
   width: 100%;
   background: #fff;
-  color: #000;
 }
 
 main {
   display: grid;
   flex-grow: 1;
   grid-gap: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
   margin-top: 6rem;
 }
 
+section {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-family: Fabrik, serif;
+}
+
+h1 span {
+  color: var(--primary-color);
 }
 
 h2 {
   font-size: 2.25rem;
+  font-weight: bolder;
   line-height: 2.5rem;
 }
 
@@ -141,7 +159,16 @@ h2 strong {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+
+:where(main) li {
+  display: grid;
+  gap: 2rem;
+}
+
+:where(main) li:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -151,14 +178,7 @@ footer {
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
-}
-
-.arealist-description {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5rem;
+  margin-top: 2rem;
 }
 
 .about {
@@ -166,22 +186,6 @@ footer {
   align-items: center;
   gap: 2rem;
   margin-bottom: 1rem;
-}
-
-.rounded {
-  border-radius: 9999px;
-}
-
-.background {
-  position: fixed;
-  z-index: 1000;
-  top: 1.5rem;
-  right: 2.5vw;
-  width: 2rem;
-  height: 2rem;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: var(--primary-color);
-  border-radius: 50%;
 }
 
 .icon {
@@ -195,17 +199,17 @@ footer {
 .icon::before,
 .icon::after {
   display: inline-block;
-  width: 2rem;
+  width: 1.5rem;
   height: 3px;
   background-color: black;
 }
 
 .icon::after {
-  top: 0.8rem;
+  top: 0.5rem;
 }
 
 .icon::before {
-  top: -0.8rem;
+  top: -0.5rem;
 }
 
 .icon::before,
@@ -220,8 +224,8 @@ footer {
   position: fixed;
   z-index: 2000;
   right: 2vw;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--secondary-color);
   cursor: pointer;
   border-radius: 50%;
@@ -229,11 +233,22 @@ footer {
 }
 
 .button:hover .icon::after {
-  top: 1rem;
+  top: 0.5rem;
 }
 
 .button:hover .icon::before {
-  top: -1rem;
+  top: -0.5rem;
+}
+
+.background {
+  position: fixed;
+  z-index: 1000;
+  right: 2vw;
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: var(--primary-color);
+  border-radius: 50%;
 }
 
 /* hamburger */
@@ -260,8 +275,8 @@ footer {
 }
 
 .hamburger {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
 }
 
@@ -276,9 +291,9 @@ div:has(.checkbox:checked) ~ nav {
 }
 
 .divider {
-  opacity: 0.5;
-  width: 16rem;
-  height: 0.25rem;
+  opacity: 0.8;
+  width: 90vw;
+  height: 0.2rem;
   margin-top: 0;
   margin-bottom: 2rem;
   padding-top: 0;
@@ -307,16 +322,6 @@ div:has(.checkbox:checked) ~ nav {
   font-size: 2rem;
 }
 
-nav ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  list-style: none;
-}
-
 .logo {
   width: 6rem;
   height: 6rem;
@@ -324,14 +329,8 @@ nav ul {
 }
 
 :where(header.small) a .logo {
-  width: 5rem;
-  height: 5rem;
-}
-
-.name {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 2rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .social {
@@ -339,5 +338,4 @@ nav ul {
   align-items: center;
   column-gap: 0.5rem;
   height: 2rem;
-  margin-top: 2rem;
 }

@@ -1,14 +1,12 @@
 ---
-import Button from '@components/Button.astro'
 import Project from '@components/Project.astro'
 import { uiStrings } from '@i18n/uiStrings'
 import getPublishedPosts from '@utilities/getPublishedPosts'
 import Caption from './Caption.astro'
-import { getLocalizedHref } from '@i18n/utilities'
-const locale = Astro.currentLocale
-const title = `${uiStrings.projectTitle[Astro.currentLocale]}`
-const subtitle = `${uiStrings.projectSubtitle[Astro.currentLocale]}`
-const link = `${uiStrings.projectLink[Astro.currentLocale]}`
+import AllProjects from './AllProjects.astro'
+
+const title = uiStrings.projectTitle[Astro.currentLocale]
+const subtitle = uiStrings.projectSubtitle[Astro.currentLocale]
 
 const collection = 'projects'
 
@@ -16,18 +14,18 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
 const featuredPosts = posts.filter(({ data }) => data.isFeatured)
 ---
 
-<div>
+<section>
   <Caption title={title} subtitle={subtitle} />
-  <div class="text-center">
+  <div class='text-center'>
     {
       featuredPosts?.length > 0 && (
         <ul>
           {featuredPosts.map((post) => (
             <Project post={post} collection={collection} />
           ))}
+          <AllProjects />
         </ul>
       )
     }
-    <Button href={getLocalizedHref(locale, '/projects')}>{link}</Button>
   </div>
-</div>
+</section>

@@ -8,11 +8,11 @@ interface Props {
 const { translationLinks } = Astro.props
 ---
 
-<li class="item">
+<li class='item'>
   {
-    translationLinks.map(translation => (
+    translationLinks.map((translation) => (
       <a
-        class="link"
+        class='link'
         href={translation.relativeURL}
         hreflang={translation.locale}
       >

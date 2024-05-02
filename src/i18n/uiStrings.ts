@@ -51,6 +51,14 @@ export const uiStrings: TypeUIStrings = {
     de: 'Was tun wir?',
     en: 'Was tun wir?',
   },
+  projectAllTitle: {
+    de: 'Alle Projekte',
+    en: 'All Projects',
+  },
+  projectAllSubtitle: {
+    de: 'Seit 2018 (und damit bereits vor der Gründung des Digitalwarenkombinats) haben wir etliche Open Source Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen, wie z.B. Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons.',
+    en: 'Seit 2018 (und damit bereits vor der Gründung des Digitalwarenkombinats) haben wir etliche Open Source Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen, wie z.B. Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons.',
+  },
   projectLink: {
     de: 'Zu allen Projekten',
     en: 'All Projects',
@@ -76,6 +84,10 @@ export const uiStrings: TypeUIStrings = {
     en: 'Was gibt es neues?',
   },
   blogLink: {
+    de: 'Weiterlesen',
+    en: 'Weiterlesen',
+  },
+  blogAllLink: {
     de: 'Alle Posts anzeigen',
     en: 'View All Posts',
   },

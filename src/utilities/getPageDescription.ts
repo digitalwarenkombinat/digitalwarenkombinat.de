@@ -3,8 +3,8 @@ export function truncateDescription(description: string): string {
     return ''
   }
 
-  const maxWords = 22
-  const maxChars = 150
+  const maxWords = 40
+  const maxChars = 350
 
   const words = description.split(' ')
   let truncatedDescription: string

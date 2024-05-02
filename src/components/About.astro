@@ -1,10 +1,9 @@
 ---
-import { uiStrings } from "@i18n/uiStrings"
-import Caption from "./Caption.astro"
-const title = `${uiStrings.about[Astro.currentLocale]}`
+import { uiStrings } from '@i18n/uiStrings'
+import Caption from './Caption.astro'
+const title = uiStrings.about[Astro.currentLocale]
 ---
 
 <div>
-  <Caption title={title}/>
+  <Caption title={title} />
 </div>
-

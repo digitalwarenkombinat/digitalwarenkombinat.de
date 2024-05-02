@@ -8,11 +8,11 @@ const ariaCurrent =
   href === pathname || href === pathname.replace(/\/$/, '') ? 'page' : ''
 ---
 
-<li class="item">
+<li class='item'>
   <a
     href={href}
     class:list={[className]}
-    class="link"
+    class='link'
     aria-current={ariaCurrent ? ariaCurrent : undefined}
     {...props}
   >

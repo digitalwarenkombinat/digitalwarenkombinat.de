@@ -40,7 +40,7 @@ if (reference) {
           frontmatter.reference !== null && frontmatter.reference === reference
         )
       })
-      .filter(page => {
+      .filter((page) => {
         return getLocaleFromUrl(page.url) !== Astro.currentLocale
       })
     for (const translation of translationsAvailable) {
@@ -60,9 +60,9 @@ if (reference) {
     const translationsSlugs = (
       await getPublishedPosts('', collection as 'blog', '')
     )
-      .filter(post => post.data.reference === reference)
-      .filter(post => getLocaleFromUrl(post.slug) !== Astro.currentLocale)
-      .map(post => post.slug)
+      .filter((post) => post.data.reference === reference)
+      .filter((post) => getLocaleFromUrl(post.slug) !== Astro.currentLocale)
+      .map((post) => post.slug)
 
     for (const slug of translationsSlugs) {
       const locale = getLocaleFromUrl(slug)
@@ -80,12 +80,12 @@ if (reference) {
 
 <Html {frontmatter}>
   {
-    translationLinks.map(translation => (
+    translationLinks.map((translation) => (
       <link
-        rel="alternate"
+        rel='alternate'
         hreflang={translation.locale}
         href={translation.absoluteURL}
-        slot="head"
+        slot='head'
       />
     ))
   }

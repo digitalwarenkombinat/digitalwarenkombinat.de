@@ -53,3 +53,30 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
     ],
   },
 }
+
+export const footerMenu: Record<string, Record<string, navigationItem[]>> = {
+  de: {
+    items: [
+      {
+        path: '/contact',
+        label: 'Kontakt',
+      },
+      {
+        path: '/legal',
+        label: 'Impressum',
+      },
+    ],
+  },
+  en: {
+    items: [
+      {
+        path: '/en/contact',
+        label: 'Contact',
+      },
+      {
+        path: '/en/legal',
+        label: 'Legal Notices',
+      },
+    ],
+  },
+}

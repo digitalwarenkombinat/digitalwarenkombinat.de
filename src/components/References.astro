@@ -2,22 +2,18 @@
 import { uiStrings } from '@i18n/uiStrings'
 import { referencesData } from '@src/references'
 import Caption from './Caption.astro'
-const title = `${uiStrings.referencesTitle[Astro.currentLocale]}`
-const subtitle = `${uiStrings.referencesSubtitle[Astro.currentLocale]}`
+const title = uiStrings.referencesTitle[Astro.currentLocale]
+const subtitle = uiStrings.referencesSubtitle[Astro.currentLocale]
 ---
 
-<div class="container max-w-7xl mx-auto px-4">
+<section>
   <Caption title={title} subtitle={subtitle} />
-  <div class="w-full grid grid-cols-1 gap-4">
-    {
-      referencesData.map(item => (
-        <div class="py-4 px-4 mx-4">
-          <p class="mb-4 text-black">{item.description[Astro.currentLocale]}</p>
-          <p class="font-medium text-secondary">
-            {item.author[Astro.currentLocale]}
-          </p>
-        </div>
-      ))
-    }
-  </div>
-</div>
+  {
+    referencesData.map((item) => (
+      <div class='grid gap-4 p-4 border-secondary border-2 w-2/3 rounded-3xl even:place-self-end odd:place-self-start'>
+        <p>{item.description[Astro.currentLocale]}</p>
+        <p class='text-xs'>{item.author[Astro.currentLocale]}</p>
+      </div>
+    ))
+  }
+</section>

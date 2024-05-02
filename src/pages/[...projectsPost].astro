@@ -8,7 +8,7 @@ import Project from '@layouts/Project.astro'
 import { getPostDescription } from '@utilities/getPageDescription'
 import { getRelativePostPath } from '@utilities/getPostPath'
 import getPublishedPosts from '@utilities/getPublishedPosts'
-const next = `${uiStrings.projectNext[Astro.currentLocale]}`
+const next = uiStrings.projectNext[Astro.currentLocale]
 
 export async function getStaticPaths() {
   const collection = 'projects'

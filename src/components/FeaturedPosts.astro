@@ -6,27 +6,27 @@ import { getLocalizedHref } from '@i18n/utilities'
 import getPublishedPosts from '@utilities/getPublishedPosts'
 import Caption from './Caption.astro'
 const locale = Astro.currentLocale
-const title = `${uiStrings.blogTitle[Astro.currentLocale]}`
-const subtitle = `${uiStrings.blogSubtitle[Astro.currentLocale]}`
-const link = `${uiStrings.blogLink[Astro.currentLocale]}`
+const title = uiStrings.blogTitle[Astro.currentLocale]
+const subtitle = uiStrings.blogSubtitle[Astro.currentLocale]
+const link = uiStrings.blogAllLink[Astro.currentLocale]
 
 const collection = 'blog'
 const posts = await getPublishedPosts(Astro.currentLocale, collection)
 const featuredPosts = posts.filter(({ data }) => data.isFeatured)
 ---
 
-<div>
+<section>
   <Caption title={title} subtitle={subtitle} />
   {
     featuredPosts?.length > 0 && (
       <ul>
-        {featuredPosts.map(post => (
+        {featuredPosts.map((post) => (
           <Post post={post} collection={collection} />
         ))}
       </ul>
     )
   }
-  <div>
+  <div class='text-center'>
     <Button href={getLocalizedHref(locale, '/blog')}>{link}</Button>
   </div>
-</div>
+</section>

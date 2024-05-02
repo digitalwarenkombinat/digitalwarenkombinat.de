@@ -3,7 +3,7 @@ title: 'DigAMus Award 2024'
 author: Gerd Müller
 description: 'DigAMus Award 2024'
 pubDate: '2024-04-20'
-previewImage: '/src/assets/blog2.jpg'
+previewImage: '/src/assets/blog2.webp'
 reference: second-post
 tags: [DigAMus, IIIF, GLAM]
 isFeatured: true

@@ -6,11 +6,11 @@ const title = uiStrings.referencesTitle[Astro.currentLocale]
 const subtitle = uiStrings.referencesSubtitle[Astro.currentLocale]
 ---
 
-<section>
-  <Caption title={title} subtitle={subtitle} />
+<section class='mx-0'>
+  <Caption class='mx-4' title={title} subtitle={subtitle} />
   {
     referencesData.map((item) => (
-      <p class='text-lg border-2 border-secondary odd:place-self-start even:place-self-end overflow-hidden w-80 h-80 px-2 pt-4 rounded-full hyphens-auto [text-align-last:center]'>
+      <p class='text-lg border-2 mx-auto md:mx-0 border-secondary md:odd:place-self-start md:even:place-self-end overflow-hidden w-96 h-96 px-1 pt-4 rounded-full hyphens-auto [text-align-last:center]'>
         <span aria-hidden='true' />
         {item.description[Astro.currentLocale]}
         <span class='block mt-4'>{item.author[Astro.currentLocale]}</span>

@@ -67,6 +67,22 @@ export const uiStrings: TypeUIStrings = {
     de: 'Weitere Projekte',
     en: 'View Next',
   },
+  shopTitle: {
+    de: 'Unser Shop',
+    en: 'Our shop',
+  },
+  shopSubtitle: {
+    de: 'Welche Produkte kann man hier kaufen?',
+    en: 'Welche Produkte kann man hier kaufen?',
+  },
+  shopLinkText: {
+    de: 'In unserem kleinen Web-Shop findet ihr Merchandise und Schönes zu den einzelnen Projekten.',
+    en: 'In unserem kleinen Web-Shop findet ihr Merchandise und Schönes zu den einzelnen Projekten.',
+  },
+  shopLink: {
+    de: 'Zum Webshop',
+    en: 'Zum Webshop',
+  },
   referencesTitle: {
     de: 'Unsere Referenzen',
     en: 'Our references',

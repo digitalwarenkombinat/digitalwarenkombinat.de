@@ -13,12 +13,13 @@ const { collection, post } = Astro.props
   >
     <h3>{post.data.title}</h3>
     <CustomImage
-      class='border-primary border-2 rounded-md'
+      class='border-primary border-2 rounded-md md:w-1/2'
       imagePath={post.data.previewImage}
       altText={post.data.title}
     />
   </a>
   <blockquote
+    class='md:w-2/3 m-auto'
     cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
   >
     {getPostDescription(post)}

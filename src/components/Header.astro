@@ -1,11 +1,11 @@
 ---
 import Hamburger from './Hamburger.astro'
-import Logo from './Logo.astro'
+import HeaderLogo from './HeaderLogo.astro'
 import Navigation from './Navigation.astro'
 ---
 
-<header id='header'>
-  <Logo />
+<header class='bg-white dark:bg-tertiary' id='header'>
+  <HeaderLogo />
   <Hamburger />
   <Navigation>
     <slot />

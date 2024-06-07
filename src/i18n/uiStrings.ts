@@ -80,8 +80,8 @@ export const uiStrings: TypeUIStrings = {
     en: 'Our blog',
   },
   blogSubtitle: {
-    de: 'Was gibt es neues?',
-    en: 'Was gibt es neues?',
+    de: 'Was gibt es Neues?',
+    en: 'Was gibt es Neues?',
   },
   blogLink: {
     de: 'Weiterlesen',

@@ -10,10 +10,37 @@ const subtitle = uiStrings.referencesSubtitle[Astro.currentLocale]
   <Caption title={title} subtitle={subtitle} />
   {
     referencesData.map((item) => (
-      <div class='grid gap-4 p-4 border-secondary border-2 w-2/3 rounded-3xl even:place-self-end odd:place-self-start'>
-        <p>{item.description[Astro.currentLocale]}</p>
-        <p class='text-xs'>{item.author[Astro.currentLocale]}</p>
-      </div>
+      <p class='text-lg border-2 border-secondary odd:place-self-start even:place-self-end overflow-hidden w-80 h-80 px-2 pt-4 rounded-full hyphens-auto [text-align-last:center]'>
+        <span aria-hidden='true' />
+        {item.description[Astro.currentLocale]}
+        <span class='block mt-4'>{item.author[Astro.currentLocale]}</span>
+        <span class='block'>{item.role[Astro.currentLocale]}</span>
+      </p>
     ))
   }
 </section>
+
+<style>
+  [aria-hidden='true'] {
+    display: contents;
+  }
+
+  [aria-hidden='true']:before,
+  [aria-hidden='true']:after {
+    content: '';
+    float: left;
+    width: 50%;
+    height: 100%;
+    --bite: radial-gradient(
+      farthest-side at var(--pos-x, 100%),
+      transparent 99%,
+      black
+    );
+    shape-outside: var(--bite);
+  }
+
+  [aria-hidden='true']:after {
+    float: right;
+    --pos-x: 0;
+  }
+</style>

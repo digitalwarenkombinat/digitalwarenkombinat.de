@@ -24,10 +24,14 @@
 
 :root {
   --primary-color: #dd8d0e;
+  --hero-color: #dd8d0e;
+  --subheader-color: #dd8d0e;
   --secondary-color: #009599;
   --tertiary-color: #33006c;
   --border-color: #472f12;
   --background-color: #fff;
+  --text-color: #fff;
+  --icon-color: #000;
   --space-xs: 0.5rem;
   --space-s: 1rem;
   --space-m: 2rem;
@@ -73,17 +77,23 @@ html {
 }
 
 html.dark {
-  --primary-dark-color: #fff;
-  --secondary-dark-color: #009599;
-  --tertiary-dark-color: #33006c;
-  --border-dark-color: #472f12;
-  --background-dark-color: #33006c;
+  --primary-color: #fff;
+  --hero-color: #33006c;
+  --subheader-color: #dd8d0e;
+  --secondary-color: #dd8d0e;
+  --tertiary-color: #dd8d0e;
+  --border-color: #472f12;
+  --background-color: #33006c;
+  --icon-color: #fff;
+  --text-color: #000;
 
-  background-color: var(--background-dark-color);
-  color: var(--primary-dark-color);
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
   min-height: 100svh;
@@ -92,6 +102,7 @@ body {
 
 nav {
   position: fixed;
+  display: grid;
   z-index: 1500;
   top: 0;
   right: -60vw;
@@ -99,16 +110,20 @@ nav {
   width: 0;
   height: 100vh;
   transition: all 0.8s;
+  background-color: var(--hero-color);
 }
 
 nav ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  list-style: none;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  justify-self: center;
 }
 
 header {
@@ -119,7 +134,6 @@ header {
   position: fixed;
   z-index: 12;
   width: 100%;
-  background: #fff;
 }
 
 main {
@@ -152,10 +166,9 @@ h2 {
 }
 
 h2 strong {
-  color: var(--primary-color);
+  color: var(--subheader-color);
   display: block;
   font-size: 75%;
-  opacity: 0.75;
 }
 
 h3 {
@@ -240,6 +253,11 @@ footer {
   top: -0.5rem;
 }
 
+.buttonlink {
+  color: var(--text-color);
+  background-color: var(--tertiary-color);
+}
+
 .background {
   position: fixed;
   z-index: 1000;
@@ -284,10 +302,7 @@ div:has(.checkbox:checked) ~ nav {
   right: 0;
   opacity: 1;
   width: 100%;
-}
-
-.dark .nav-links a {
-  color: var(--primary-dark-color);
+  height: 100%;
 }
 
 .divider {
@@ -298,14 +313,19 @@ div:has(.checkbox:checked) ~ nav {
   margin-bottom: 2rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: var(--primary-color);
+  background-color: var(--subheader-color);
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
 .item {
-  margin: 1rem;
-  border-top-width: 1px;
+  width: 50%;
+  margin: auto;
+}
+
+.item:not(:last-child) {
+  border-bottom-width: 2px;
+  border-color: var(--tertiary-color);
 }
 
 .link:hover,
@@ -317,18 +337,25 @@ div:has(.checkbox:checked) ~ nav {
 .link:link,
 .link:visited {
   display: block;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
   transition: all 0.4s;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
-.logo {
+.logo,
+.headerlogo {
+  margin-left: 0.5rem;
   width: 6rem;
   height: 6rem;
   transition: all 0.4s;
 }
 
-:where(header.small) a .logo {
+header.small a div {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+:where(header.small) a .headerlogo {
   width: 4rem;
   height: 4rem;
 }
@@ -336,6 +363,7 @@ div:has(.checkbox:checked) ~ nav {
 .social {
   display: flex;
   align-items: center;
-  column-gap: 0.5rem;
+  justify-content: center;
+  gap: 0.5rem;
   height: 2rem;
 }

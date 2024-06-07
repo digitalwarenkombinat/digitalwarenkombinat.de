@@ -27,11 +27,11 @@ const relatedPostEntries = await getEntries(relatedPosts)
 
 <MainI18n {frontmatter} collection='blog'>
   <main id='main' tabindex='”1”'>
-    <article>
+    <article class='prose'>
       {previewImage && <CustomImage imagePath={previewImage} altText={title} />}
       <h1>{title}</h1>
       <Byline authorFullName={author} {pubDate} {updatedDate} />
-      <div class='prose'>
+      <div>
         <slot />
       </div>
       {relatedPostEntries.map((p) => <a href={p.slug}>{p.data.title}</a>)}

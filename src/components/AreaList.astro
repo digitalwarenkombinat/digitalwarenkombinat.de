@@ -8,14 +8,19 @@ const subtitle = uiStrings.areaSubtitle[Astro.currentLocale]
 
 <section>
   <Caption title={title} subtitle={subtitle} />
-  {
-    area.map((focus) => (
-      <div>
-        <h3>
-          <a href={getFocusPath(Astro.currentLocale, focus.id)}>{focus.name}</a>
-        </h3>
-        <div class='m-4'>{focus.description[Astro.currentLocale]}</div>
-      </div>
-    ))
-  }
+  <ul>
+    {
+      area.map((focus) => (
+        <li>
+          <div class='bg-secondary rounded-full absolute mt-1 -ml-2 h-10 w-10' />
+          <h3 class='z-10'>
+            <a href={getFocusPath(Astro.currentLocale, focus.id)}>
+              {focus.name}
+            </a>
+          </h3>
+          <p class='m-4'>{focus.description[Astro.currentLocale]}</p>
+        </li>
+      ))
+    }
+  </ul>
 </section>

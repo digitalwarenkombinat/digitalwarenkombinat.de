@@ -4,6 +4,8 @@ import { headerMenu } from '@src/header'
 import type { navigationItem } from '@src/header'
 import HeaderLink from './HeaderLink.astro'
 import ThemeIcon from './ThemeIcon.astro'
+import Logo from './Logo.astro'
+import SocialLinks from './SocialLinks.astro'
 
 const menuLocale: string = headerMenu[Astro.currentLocale]
   ? Astro.currentLocale
@@ -11,7 +13,7 @@ const menuLocale: string = headerMenu[Astro.currentLocale]
 const headerMenuItems: navigationItem[] = headerMenu[menuLocale].items
 ---
 
-<nav>
+<nav class='bg-primary dark:bg-tertiary'>
   <ThemeIcon />
   <ul>
     {
@@ -21,4 +23,6 @@ const headerMenuItems: navigationItem[] = headerMenu[menuLocale].items
     }
     <slot />
   </ul>
+  <Logo />
+  <SocialLinks />
 </nav>

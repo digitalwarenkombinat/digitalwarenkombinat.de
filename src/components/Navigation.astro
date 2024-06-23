@@ -14,10 +14,10 @@ const headerMenuItems: navigationItem[] = headerMenu[menuLocale].items
 ---
 
 <nav
-  class="bg-primary dark:bg-tertiary fixed grid z-[1500] right-[-60vw] opacity-0 w-0 h-screen transition-all top-0"
+  class='bg-primary dark:bg-tertiary fixed grid z-[1500] right-[-60vw] opacity-0 w-0 h-screen transition-all duration-700 top-0'
 >
   <ThemeIcon />
-  <ul class="flex-col text-center mb-8">
+  <ul class='flex-col text-center mb-8'>
     {
       headerMenuItems.map((item) => (
         <HeaderLink href={item.path}>{item.label}</HeaderLink>

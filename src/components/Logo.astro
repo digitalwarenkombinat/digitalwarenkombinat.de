@@ -7,9 +7,5 @@ const locale = Astro.currentLocale
 ---
 
 <a href={getLocalizedHref(locale, '/')}>
-  <Image
-    src={logo}
-    alt={siteTitle}
-    class="w-24 h-24 transition-all duration-[0.4s] ml-2"
-  />
+  <Image src={logo} alt={siteTitle} class='w-24 h-24 ml-2' />
 </a>

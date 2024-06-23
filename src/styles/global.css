@@ -99,8 +99,8 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .icon {
@@ -160,7 +160,7 @@ footer {
   right: 2vw;
   width: 3rem;
   height: 3rem;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
   border-radius: 50%;
 }
 
@@ -201,12 +201,12 @@ div:has(.checkbox:checked) ~ nav {
   font-size: 2.5rem;
 }
 
-header.small a div {
+header.small > a div {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-header.small a img {
+header.small > a img {
   width: 4rem;
   height: 4rem;
 }

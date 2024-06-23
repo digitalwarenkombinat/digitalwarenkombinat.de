@@ -1,0 +1,31 @@
+---
+import Page from '@layouts/Page.astro'
+import type { CommonFrontmatter } from '@src/types'
+import type { ShopItem } from '@src/utilities/shop'
+import CustomImage from '@components/CustomImage.astro'
+export interface ShopItemFrontmatter extends CommonFrontmatter {
+  shopItem: ShopItem
+}
+interface Props {
+  frontmatter: ShopItemFrontmatter
+}
+const { frontmatter } = Astro.props
+const locale = Astro.currentLocale
+const shopItem = frontmatter.shopItem
+---
+
+<Page {frontmatter}>
+  <div>
+    <CustomImage
+      class="border-tertiary dark:border-primary border-8 rounded-md"
+      imagePath={shopItem.image}
+      altText={shopItem.name}
+    />
+    <h3>{shopItem.name}</h3>
+    <p>{shopItem.project[locale]}</p>
+    <div>
+      <p>{shopItem.description[locale]}</p>
+      <p>{shopItem.price[locale]}</p>
+    </div>
+  </div>
+</Page>

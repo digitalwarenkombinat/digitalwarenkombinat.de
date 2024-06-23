@@ -5,13 +5,18 @@ import getPublishedPosts from '@utilities/getPublishedPosts'
 import Caption from './Caption.astro'
 import AllProjects from './AllProjects.astro'
 
-const title = uiStrings.projectTitle[Astro.currentLocale]
-const subtitle = uiStrings.projectSubtitle[Astro.currentLocale]
+const PROJECTS_COLLECTION = 'projects'
+const locale = Astro.currentLocale
 
-const collection = 'projects'
+const { projectTitle, projectSubtitle} = uiStrings
+const title = projectTitle[locale]
+const subtitle = projectSubtitle[locale]
 
-const posts = await getPublishedPosts(Astro.currentLocale, collection)
-const featuredPosts = posts.filter(({ data }) => data.isFeatured)
+async function getFeaturedPosts() {
+  const posts = await getPublishedPosts(locale, PROJECTS_COLLECTION);
+  return posts.filter(({ data }) => data.isFeatured);
+}
+const featuredPosts = await getFeaturedPosts();
 ---
 
 <section>
@@ -21,7 +26,7 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured)
       featuredPosts?.length > 0 && (
         <ul>
           {featuredPosts.map((post) => (
-            <Project post={post} collection={collection} />
+            <Project post={post} collection={PROJECTS_COLLECTION} />
           ))}
           <AllProjects />
         </ul>

@@ -2,19 +2,22 @@
 import { uiStrings } from '@i18n/uiStrings'
 import { referencesData } from '@src/references'
 import Caption from './Caption.astro'
-const title = uiStrings.referencesTitle[Astro.currentLocale]
-const subtitle = uiStrings.referencesSubtitle[Astro.currentLocale]
+
+const locale = Astro.currentLocale
+const { referencesTitle, referencesSubtitle} = uiStrings
+const title = referencesTitle[locale]
+const subtitle = referencesSubtitle[locale]
 ---
 
-<section class='mx-0'>
-  <Caption class='mx-4' title={title} subtitle={subtitle} />
+<section class="mx-0">
+  <Caption class="mx-4" title={title} subtitle={subtitle} />
   {
     referencesData.map((item) => (
-      <p class='text-lg border-2 mx-auto md:mx-0 border-secondary md:odd:place-self-start md:even:place-self-end overflow-hidden w-96 h-96 px-1 pt-4 rounded-full hyphens-auto [text-align-last:center]'>
-        <span aria-hidden='true' />
-        {item.description[Astro.currentLocale]}
-        <span class='block mt-4'>{item.author[Astro.currentLocale]}</span>
-        <span class='block'>{item.role[Astro.currentLocale]}</span>
+      <p class="text-lg border-2 mx-auto md:mx-8 xl:mx-48 border-secondary md:odd:place-self-start md:even:place-self-end overflow-hidden w-96 h-96 md:w-128 md:h-128 md:pt-28 lg:w-160 lg:h-160 lg:pt-48 px-1 pt-4 rounded-full hyphens-auto [text-align-last:center]">
+        <span aria-hidden="true" />
+        {item.description[locale]}
+        <span class="block mt-4">{item.author[locale]}</span>
+        <span class="block">{item.role[locale]}</span>
       </p>
     ))
   }

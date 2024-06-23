@@ -8,16 +8,18 @@ export interface ShopItem extends ShopItemData {
   id: string
 }
 
-export const shop = shopData.map((items) => ({
-  ...items,
-  id: slugify(items.name),
-}))
+const generateShopItem = (shopItemData: ShopItemData): ShopItem => ({
+  ...shopItemData,
+  id: slugify(shopItemData.name),
+})
 
-export const getFocusPath = (
+export const shop = shopData.map(generateShopItem)
+
+export const getShopItemPath = (
   locale: string,
   id: string,
   addLeadingSlash = true,
 ) => {
-  const directories = [directoryNames.focus[locale]]
+  const directories = [directoryNames.shopItem[locale]]
   return getPagePath(locale, directories, id, addLeadingSlash)
 }

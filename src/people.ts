@@ -1,12 +1,10 @@
+import type { LocalizedText } from '@src/types.ts'
+
 export type PersonData = {
   name: string
   mail: string
-  content: {
-    [key: string]: string
-  }
-  description: {
-    [key: string]: string
-  }
+  content: LocalizedText
+  description: LocalizedText
   image?: string
 }
 

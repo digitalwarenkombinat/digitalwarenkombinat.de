@@ -14,33 +14,6 @@
   font-display: swap;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-:root {
-  --primary-color: #dd8d0e;
-  --hero-color: #dd8d0e;
-  --subheader-color: #dd8d0e;
-  --secondary-color: #009599;
-  --tertiary-color: #33006c;
-  --border-color: #472f12;
-  --background-color: #fff;
-  --text-color: #fff;
-  --icon-color: #000;
-  --space-xs: 0.5rem;
-  --space-s: 1rem;
-  --space-m: 2rem;
-}
-
-:target {
-  scroll-margin-block: 1em;
-}
-
 :where(h1, h2, h3, h4) {
   text-wrap: balance;
 }
@@ -65,30 +38,8 @@
   list-style-type: '';
 }
 
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --duration-link: 5ms;
-    --duration-link-hover: 5ms;
-  }
-}
-
-html {
-  text-size-adjust: none;
-}
-
 html.dark {
-  --primary-color: #fff;
-  --hero-color: #33006c;
-  --subheader-color: #dd8d0e;
-  --secondary-color: #dd8d0e;
-  --tertiary-color: #dd8d0e;
-  --border-color: #472f12;
-  --background-color: #33006c;
-  --icon-color: #fff;
-  --text-color: #000;
-
-  background-color: var(--background-color);
-  color: var(--primary-color);
+  color: #fff;
 }
 
 body {
@@ -100,40 +51,8 @@ body {
   font-family: 'Fundamental Brigade', sans-serif;
 }
 
-nav {
-  position: fixed;
-  display: grid;
-  z-index: 1500;
-  top: 0;
-  right: -60vw;
-  opacity: 0;
-  width: 0;
-  height: 100vh;
-  transition: all 0.8s;
-  background-color: var(--hero-color);
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 nav a {
   justify-self: center;
-}
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 12;
-  width: 100%;
 }
 
 main {
@@ -155,20 +74,10 @@ h1 {
   font-family: Fabrik, serif;
 }
 
-h1 span {
-  color: var(--primary-color);
-}
-
 h2 {
   font-size: 2.25rem;
   font-weight: bolder;
   line-height: 2.5rem;
-}
-
-h2 strong {
-  color: var(--subheader-color);
-  display: block;
-  font-size: 75%;
 }
 
 h3 {
@@ -192,13 +101,6 @@ footer {
   gap: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
 }
 
 .icon {
@@ -239,7 +141,6 @@ footer {
   right: 2vw;
   width: 3rem;
   height: 3rem;
-  background-color: var(--secondary-color);
   cursor: pointer;
   border-radius: 50%;
   text-align: center;
@@ -253,11 +154,6 @@ footer {
   top: -0.5rem;
 }
 
-.buttonlink {
-  color: var(--text-color);
-  background-color: var(--tertiary-color);
-}
-
 .background {
   position: fixed;
   z-index: 1000;
@@ -265,11 +161,9 @@ footer {
   width: 3rem;
   height: 3rem;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: var(--primary-color);
   border-radius: 50%;
 }
 
-/* hamburger */
 .checkbox {
   display: none;
 }
@@ -292,46 +186,11 @@ footer {
   transform: scale(90);
 }
 
-.hamburger {
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-}
-
 div:has(.checkbox:checked) ~ nav {
   right: 0;
   opacity: 1;
   width: 100%;
   height: 100%;
-}
-
-.divider {
-  opacity: 0.8;
-  width: 90vw;
-  height: 0.2rem;
-  margin-top: 0;
-  margin-bottom: 2rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: var(--subheader-color);
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.item {
-  width: 50%;
-  margin: auto;
-}
-
-.item:not(:last-child) {
-  border-bottom-width: 2px;
-  border-color: var(--tertiary-color);
-}
-
-.link:hover,
-.link:active {
-  cursor: pointer;
-  color: var(--secondary-color);
 }
 
 .link:link,
@@ -342,28 +201,12 @@ div:has(.checkbox:checked) ~ nav {
   font-size: 2.5rem;
 }
 
-.logo,
-.headerlogo {
-  margin-left: 0.5rem;
-  width: 6rem;
-  height: 6rem;
-  transition: all 0.4s;
-}
-
 header.small a div {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-:where(header.small) a .headerlogo {
+header.small a img {
   width: 4rem;
   height: 4rem;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  height: 2rem;
 }

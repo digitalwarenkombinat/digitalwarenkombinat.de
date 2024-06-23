@@ -4,7 +4,10 @@ import HeaderLogo from './HeaderLogo.astro'
 import Navigation from './Navigation.astro'
 ---
 
-<header class='bg-white dark:bg-tertiary' id='header'>
+<header
+  class="bg-white dark:bg-tertiary flex flex-wrap justify-between items-center fixed z-[12] w-full"
+  id="header"
+>
   <HeaderLogo />
   <Hamburger />
   <Navigation>

@@ -1,8 +1,8 @@
+import type { LocalizedText } from '@src/types.ts'
+
 export type FocusData = {
   name: string
-  description: {
-    [key: string]: string
-  }
+  description: LocalizedText
   image?: string
 }
 
@@ -10,8 +10,8 @@ export const areaData: FocusData[] = [
   {
     name: 'Open Source Lösungen',
     description: {
-      de: 'Open-Source Software kann von jedem Menschen weiterentwickelt werden und ermöglicht GLAMs damit eine größere Unabhängkeit von propriätärer Software und limitierenden Lizenzverträgen.',
-      en: 'Open-Source Software kann von jedem Menschen weiterentwickelt werden und ermöglicht GLAMs damit eine größere Unabhängkeit von propriätärer Software und limitierenden Lizenzverträgen.',
+      de: 'Open-Source Software kann von jedem Menschen weiterentwickelt werden und ermöglicht GLAMs damit eine größere Unabhängigkeit von proprietärer Software und limitierenden Lizenzverträgen.',
+      en: 'Open-Source Software kann von jedem Menschen weiterentwickelt werden und ermöglicht GLAMs damit eine größere Unabhängigkeit von proprietärer Software und limitierenden Lizenzverträgen.',
     },
   },
   {
@@ -24,8 +24,8 @@ export const areaData: FocusData[] = [
   {
     name: 'State of the Art Development',
     description: {
-      de: 'Wir entwickeln nach dem aktuellen technlogischen Standard und probieren neue Technologien gern im Rahmen unserer aktuellen Projekte aus. Somit sind unsere Projekte immer auf dem neuesten Stand.',
-      en: 'Wir entwickeln nach dem aktuellen technlogischen Standard und probieren neue Technologien gern im Rahmen unserer aktuellen Projekte aus. Somit sind unsere Projekte immer auf dem neuesten Stand.',
+      de: 'Wir entwickeln nach dem aktuellen technologischen Standard und probieren neue Technologien gern im Rahmen unserer aktuellen Projekte aus. Somit sind unsere Projekte immer auf dem neuesten Stand.',
+      en: 'Wir entwickeln nach dem aktuellen technologischen Standard und probieren neue Technologien gern im Rahmen unserer aktuellen Projekte aus. Somit sind unsere Projekte immer auf dem neuesten Stand.',
     },
   },
   {

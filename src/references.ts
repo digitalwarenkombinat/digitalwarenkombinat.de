@@ -1,13 +1,9 @@
+import type { LocalizedText } from '@src/types.ts'
+
 export type ReferencesData = {
-  author: {
-    [key: string]: string
-  }
-  role: {
-    [key: string]: string
-  }
-  description: {
-    [key: string]: string
-  }
+  author: LocalizedText
+  role: LocalizedText
+  description: LocalizedText
 }
 
 export const referencesData: ReferencesData[] = [

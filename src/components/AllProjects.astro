@@ -4,10 +4,11 @@ import { uiStrings } from '@i18n/uiStrings'
 import { getLocalizedHref } from '@i18n/utilities'
 import CustomImage from '@components/CustomImage.astro'
 const locale = Astro.currentLocale
-const allTitle = uiStrings.projectAllTitle[Astro.currentLocale]
-const allSubtitle = uiStrings.projectAllSubtitle[Astro.currentLocale]
+const { projectAllTitle, projectAllSubtitle, projectLink } = uiStrings
+const allTitle = projectAllTitle[locale]
+const allSubtitle = projectAllSubtitle[locale]
 const allPreview = '/src/assets/protestory.webp'
-const link = uiStrings.projectLink[Astro.currentLocale]
+const link = projectLink[locale]
 ---
 
 <li>

@@ -2,16 +2,19 @@
 import { uiStrings } from '@i18n/uiStrings'
 import { siteMail } from '@src/consts'
 import Button from '@components/Button.astro'
-const title = uiStrings.title[Astro.currentLocale]
-const subtitle = uiStrings.subtitle[Astro.currentLocale]
-const description = uiStrings.description[Astro.currentLocale]
-const primaryAction = uiStrings.primaryAction[Astro.currentLocale]
+
+const locale = Astro.currentLocale
+const { title, subtitle, description, primaryAction } = uiStrings
+const heroTitle = title[locale]
+const heroSubtitle = subtitle[locale]
+const heroDescription = description[locale]
+const heroPrimaryAction = primaryAction[locale]
 ---
 
-<section class='text-center'>
-  <h1>{title} <span class='text-primary'>{subtitle}</span></h1>
-  <p>{description}</p>
+<section class="text-center">
+  <h1>{heroTitle} <span class="text-primary">{heroSubtitle}</span></h1>
+  <p>{heroDescription}</p>
   <Button href={siteMail}>
-    {primaryAction}
+    {heroPrimaryAction}
   </Button>
 </section>

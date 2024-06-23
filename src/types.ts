@@ -7,3 +7,7 @@ export interface CommonFrontmatter {
   canonicalURL?: string
   file?: string
 }
+
+export type LocalizedText = {
+  [languageKey: string]: string
+}

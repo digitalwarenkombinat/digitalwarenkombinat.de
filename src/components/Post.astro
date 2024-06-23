@@ -7,13 +7,14 @@ import { getPostDescription } from '@utilities/getPageDescription'
 import { getRelativePostPath } from '@utilities/getPostPath'
 
 const { collection, post } = Astro.props
+const locale = Astro.currentLocale
 
-const blogLink = uiStrings.blogLink[Astro.currentLocale]
+const blogLink = uiStrings.blogLink[locale]
 ---
 
 <li>
   <a
-    href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
+    href={`${getRelativePostPath(locale, collection, post.slug)}`}
   >
     <h3>{post.data.title}</h3>
     <p class='date'>
@@ -22,13 +23,13 @@ const blogLink = uiStrings.blogLink[Astro.currentLocale]
     <CustomImage imagePath={post.data.previewImage} altText={post.data.title} />
   </a>
   <blockquote
-    cite={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
+    cite={`${getRelativePostPath(locale, collection, post.slug)}`}
   >
     {getPostDescription(post)}
   </blockquote>
   <div class='text-center'>
     <Button
-      href={`${getRelativePostPath(Astro.currentLocale, collection, post.slug)}`}
+      href={`${getRelativePostPath(locale, collection, post.slug)}`}
       >{blogLink}</Button
     >
   </div>

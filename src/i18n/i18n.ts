@@ -36,9 +36,14 @@ export const directoryNames: PathNames = {
     de: 'about',
     en: 'about',
   },
-  // Define the path for focus's detail pages. Should arguably be the same as the locale's Focus page's slug.
+  // Define the path for area's detail pages. Should arguably be the same as the locale's Focus page's slug.
   focus: {
     de: 'focus',
     en: 'focus',
+  },
+  // Define the path for shop's detail pages. Should arguably be the same as the locale's ShopItem page's slug.
+  shopItem: {
+    de: 'shop',
+    en: 'shop',
   },
 }

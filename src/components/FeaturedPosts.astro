@@ -5,14 +5,20 @@ import { uiStrings } from '@i18n/uiStrings'
 import { getLocalizedHref } from '@i18n/utilities'
 import getPublishedPosts from '@utilities/getPublishedPosts'
 import Caption from './Caption.astro'
-const locale = Astro.currentLocale
-const title = uiStrings.blogTitle[Astro.currentLocale]
-const subtitle = uiStrings.blogSubtitle[Astro.currentLocale]
-const link = uiStrings.blogAllLink[Astro.currentLocale]
 
-const collection = 'blog'
-const posts = await getPublishedPosts(Astro.currentLocale, collection)
-const featuredPosts = posts.filter(({ data }) => data.isFeatured)
+const BLOG_COLLECTION = 'blog'
+const locale = Astro.currentLocale
+
+const { blogTitle, blogSubtitle, blogAllLink } = uiStrings
+const title = blogTitle[locale]
+const subtitle = blogSubtitle[locale]
+const link = blogAllLink[locale]
+
+async function getFeaturedPosts() {
+  const posts = await getPublishedPosts(locale, BLOG_COLLECTION);
+  return posts.filter(({ data }) => data.isFeatured);
+}
+const featuredPosts = await getFeaturedPosts();
 ---
 
 <section>
@@ -21,7 +27,7 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured)
     featuredPosts?.length > 0 && (
       <ul>
         {featuredPosts.map((post) => (
-          <Post post={post} collection={collection} />
+          <Post post={post} collection={BLOG_COLLECTION} />
         ))}
       </ul>
     )

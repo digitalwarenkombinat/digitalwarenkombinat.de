@@ -3,12 +3,12 @@ interface Props {
   date: Date
 }
 const { date } = Astro.props
-const lang = Astro.currentLocale
+const locale = Astro.currentLocale
 ---
 
 <time datetime={date.toISOString()}>
   {
-    date.toLocaleDateString(lang, {
+    date.toLocaleDateString(locale, {
       year: 'numeric',
       month: 'long',
       day: 'numeric',

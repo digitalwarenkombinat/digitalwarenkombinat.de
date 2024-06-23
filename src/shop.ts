@@ -1,20 +1,16 @@
+import type { LocalizedText } from '@src/types.ts'
+
 export type ShopItemData = {
   name: string
-  project: {
-    [key: string]: string
-  }
-  description: {
-    [key: string]: string
-  }
-  price: {
-    [key: string]: string
-  }
+  project: LocalizedText
+  description: LocalizedText
+  price: LocalizedText
   image?: string
 }
 
 export const shopData: ShopItemData[] = [
   {
-    name: 'Postkarten',
+    name: 'Postkarten GLAM',
     project: {
       de: 'GLAMorous Europe',
       en: 'GLAMorous Europe',
@@ -30,7 +26,7 @@ export const shopData: ShopItemData[] = [
     image: '/src/assets/shop1.webp',
   },
   {
-    name: 'Postkarten',
+    name: 'Postkarten Plantala',
     project: {
       de: 'Plantala',
       en: 'Plantala',

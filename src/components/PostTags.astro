@@ -5,10 +5,13 @@ interface Props {
   tags: string[]
 }
 const { tags } = Astro.props
+const locale = Astro.currentLocale
+
+const { tagHeadingSingular, tagHeadingPlural} = uiStrings
 const uiString =
   tags.length === 1
-    ? uiStrings.tagHeadingSingular[Astro.currentLocale]
-    : uiStrings.tagHeadingPlural[Astro.currentLocale]
+    ? tagHeadingSingular[locale]
+    : tagHeadingPlural[locale]
 ---
 
 <p>
@@ -16,7 +19,7 @@ const uiString =
   {
     tags.map((tag, index) => (
       <>
-        <a href={`${getTagPath(Astro.currentLocale, tag)}`}>{tag}</a>
+        <a href={`${getTagPath(locale, tag)}`}>{tag}</a>
         <span>{index < tags.length - 1 ? ', ' : ''}</span>
       </>
     ))

@@ -14,11 +14,11 @@
     "format": "prettier --write \"./{src,test,server}/**/*.{css,md,mdx,js,jsx,json,ts,tsx}\""
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.3.1",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.1.4",
+    "@astrojs/mdx": "^3.1.1",
+    "@astrojs/rss": "^4.0.6",
+    "@astrojs/sitemap": "^3.1.6",
     "@sindresorhus/slugify": "^2.2.1",
-    "astro": "^4.6.3",
+    "astro": "^4.11.0",
     "markdown-it": "^14.1.0",
     "rehype-external-links": "^3.0.0",
     "sanitize-html": "^2.13.0"
@@ -27,22 +27,22 @@
     "@astrojs/tailwind": "^5.1.0",
     "@eslint/js": "^9.1.1",
     "@tailwindcss/typography": "^0.5.13",
-    "@types/markdown-it": "^14.0.1",
+    "@types/markdown-it": "^14.1.1",
     "@types/sanitize-html": "^2.11.0",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
     "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.2",
+    "cssnano": "^7.0.3",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
-    "globals": "^15.1.0",
+    "globals": "^15.6.0",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "stylelint": "^16.4.0",
     "stylelint-config-standard": "^36.0.0",
-    "tailwindcss": "^3.4.3",
+    "tailwindcss": "^3.4.4",
     "typescript-eslint": "^7.7.1"
   }
 }

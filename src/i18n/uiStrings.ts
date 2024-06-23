@@ -107,21 +107,17 @@ export const uiStrings: TypeUIStrings = {
     de: 'Alle Posts anzeigen',
     en: 'View All Posts',
   },
-  tagHeadingSingular: {
-    de: 'Thema',
-    en: 'Tag',
-  },
-  tagHeadingPlural: {
-    de: 'Themen',
-    en: 'Tags',
-  },
   postsPerTagPageDescription: {
     de: 'Posts zum Thema',
     en: 'Posts about',
   },
   updated: {
-    de: 'Zuletzt aktualisiert ',
-    en: 'Last updated on ',
+    de: 'zuletzt aktualisiert ',
+    en: 'last updated on ',
+  },
+  from: {
+    de: 'von ',
+    en: 'from ',
   },
   pageNotFoundHeading: {
     de: 'Seite nicht gefunden',

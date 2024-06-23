@@ -1,6 +1,7 @@
 ---
 layout: '@layouts/Blog.astro'
 title: Unser Blog
+subTitle: Was gibt es Neues?
 collection: blog
 reference: blog
 ---

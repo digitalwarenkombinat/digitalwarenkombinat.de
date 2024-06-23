@@ -4,8 +4,10 @@ import { uiStrings } from '@i18n/uiStrings'
 import type { Person } from '@utilities/people'
 import { getPersonPath, people } from '@utilities/people'
 
-const updated = uiStrings.updated[Astro.currentLocale]
-const EMPTY_STRING = ""
+const locale = Astro.currentLocale
+const updated = uiStrings.updated[locale]
+const from = uiStrings.from[locale]
+const EMPTY_STRING = ''
 
 interface Props {
   authorFullName: string
@@ -14,30 +16,29 @@ interface Props {
 }
 
 const { authorFullName = EMPTY_STRING, pubDate, updatedDate } = Astro.props
-const person: Person = people.find((person) => {
-  return person.name === authorFullName
-})
-const hasAuthorLink: boolean = typeof person === 'object'
+const person: Person = people.find((person) => person.name === authorFullName)
+const hasAuthorLink: boolean = !!person
 ---
 
 <p>
-  {
-    authorFullName && (
-      <span>
-        {hasAuthorLink && (
-          <a href={getPersonPath(Astro.currentLocale, person.id)}>
-            {person.name}
-          </a>
-        )}
-      </span>
-    )
-  }
   <FormattedDate date={pubDate} />
   {
     updatedDate && (
       <span>
-        {updated}
-        <FormattedDate date={updatedDate} />
+        ({updated} <FormattedDate date={updatedDate} />)
+      </span>
+    )
+  }
+  {
+    authorFullName && (
+      <span>
+        {hasAuthorLink ? (
+          <a href={getPersonPath(locale, person.id)}>
+            {`${from} ${person.name}`}
+          </a>
+        ) : (
+          `${from} ${authorFullName}`
+        )}
       </span>
     )
   }

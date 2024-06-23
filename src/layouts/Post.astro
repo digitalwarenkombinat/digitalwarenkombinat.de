@@ -27,7 +27,7 @@ const relatedPostEntries = await getEntries(relatedPosts)
 
 <MainI18n {frontmatter} collection='blog'>
   <main id='main' tabindex='”1”'>
-    <article class='prose'>
+    <article>
       {previewImage && <CustomImage imagePath={previewImage} altText={title} />}
       <h1>{title}</h1>
       <Byline authorFullName={author} {pubDate} {updatedDate} />
@@ -35,13 +35,7 @@ const relatedPostEntries = await getEntries(relatedPosts)
         <slot />
       </div>
       {relatedPostEntries.map((p) => <a href={p.slug}>{p.data.title}</a>)}
-      {
-        realTags.length > 0 && (
-          <footer>
-            <PostTags tags={realTags} />
-          </footer>
-        )
-      }
+      {realTags.length > 0 && <PostTags tags={realTags} />}
     </article>
   </main>
 </MainI18n>

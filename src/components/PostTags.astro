@@ -1,27 +1,26 @@
 ---
-import { uiStrings } from '@i18n/uiStrings'
 import { getTagPath } from '@utilities/tags'
+
 interface Props {
   tags: string[]
 }
+
 const { tags } = Astro.props
 const locale = Astro.currentLocale
-
-const { tagHeadingSingular, tagHeadingPlural} = uiStrings
-const uiString =
-  tags.length === 1
-    ? tagHeadingSingular[locale]
-    : tagHeadingPlural[locale]
 ---
 
-<p>
-  {uiString}:
+<div class='inline-block mx-auto'>
   {
-    tags.map((tag, index) => (
-      <>
-        <a href={`${getTagPath(locale, tag)}`}>{tag}</a>
-        <span>{index < tags.length - 1 ? ', ' : ''}</span>
-      </>
-    ))
-  }.
-</p>
+    tags.map((tag) => {
+      const tagPath = getTagPath(locale, tag)
+      return (
+        <a
+          class='text-tertiary dark:text-white tracking-wider border-2 rounded-md p-1 m-2 inline-block border-primary'
+          href={tagPath}
+        >
+          <strong>{`#${tag}`}</strong>
+        </a>
+      )
+    })
+  }
+</div>

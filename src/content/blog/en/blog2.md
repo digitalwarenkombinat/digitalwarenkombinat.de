@@ -1,6 +1,6 @@
 ---
 title: 'DigAMus Award 2024'
-author: Gerd Müller
+author: Anne Mühlich
 description: 'DigAMus Award 2024'
 pubDate: '2024-04-20'
 previewImage: '/src/assets/blog2.webp'

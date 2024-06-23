@@ -15,10 +15,10 @@ const subtitle = blogSubtitle[locale]
 const link = blogAllLink[locale]
 
 async function getFeaturedPosts() {
-  const posts = await getPublishedPosts(locale, BLOG_COLLECTION);
-  return posts.filter(({ data }) => data.isFeatured);
+  const posts = await getPublishedPosts(locale, BLOG_COLLECTION)
+  return posts.filter(({ data }) => data.isFeatured)
 }
-const featuredPosts = await getFeaturedPosts();
+const featuredPosts = await getFeaturedPosts()
 ---
 
 <section>
@@ -27,7 +27,7 @@ const featuredPosts = await getFeaturedPosts();
     featuredPosts?.length > 0 && (
       <ul>
         {featuredPosts.map((post) => (
-          <Post post={post} collection={BLOG_COLLECTION} />
+          <Post isFeature={true} post={post} collection={BLOG_COLLECTION} />
         ))}
       </ul>
     )

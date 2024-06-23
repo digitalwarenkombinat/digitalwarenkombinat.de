@@ -24,7 +24,7 @@ export async function getStaticPaths() {
         blogPostsPerTag: `${getTagPath(locale, tag.slugified, false)}`,
       },
       props: {
-        title: `${uiStrings.tagHeadingSingular[locale]}: ${tag.name}`,
+        title: tag.name,
         description: getDescription(locale, tag.name),
         tag: tag.slugified,
         collection: collection,

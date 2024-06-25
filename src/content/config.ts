@@ -15,6 +15,7 @@ const contentCollection = defineCollection({
     isFeatured: z.boolean().default(false),
     tags: z.array(z.string()).default(['other']),
     canonicalURL: z.string().optional(),
+    relatedShopItem: z.string().optional(),
     relatedPosts: z.array(reference('blog')).optional(),
   }),
 })

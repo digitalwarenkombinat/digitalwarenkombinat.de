@@ -1,4 +1,5 @@
 ---
+import Caption from '@components/Caption.astro'
 import Page from '@layouts/Page.astro'
 import type { CommonFrontmatter } from '@src/types'
 import type { Focus } from '@src/utilities/area'
@@ -13,5 +14,8 @@ const focus = frontmatter.focus
 ---
 
 <Page {frontmatter}>
-  <p>{focus.description[Astro.currentLocale]}</p>
+  <section>
+    <Caption title={focus.name} />
+    <p>{focus.description[Astro.currentLocale]}</p>
+  </section>
 </Page>

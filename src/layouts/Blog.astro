@@ -13,7 +13,7 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
 ---
 
 <MainI18n {frontmatter} collection='pages'>
-  <main id='main' class='bg-white dark:bg-tertiary'>
+  <main id='main'>
     <section>
       <Caption title={title} subtitle={subtitle} />
       <slot />

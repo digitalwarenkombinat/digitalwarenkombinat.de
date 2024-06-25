@@ -107,6 +107,18 @@ export const uiStrings: TypeUIStrings = {
     de: 'Alle Posts anzeigen',
     en: 'View All Posts',
   },
+  blogRelated: {
+    de: 'Weitere Blogbeiträge',
+    en: 'Weitere Blogbeiträge',
+  },
+  blogShop: {
+    de: 'Produkte im Webshop',
+    en: 'Produkte im Webshop',
+  },
+  blogShopRelated: {
+    de: 'Merchandise zum Projekt',
+    en: 'Merchandise zum Projekt',
+  },
   postsPerTagPageDescription: {
     de: 'Posts zum Thema',
     en: 'Posts about',

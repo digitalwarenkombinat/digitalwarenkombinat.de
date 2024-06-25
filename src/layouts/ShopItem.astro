@@ -15,17 +15,19 @@ const shopItem = frontmatter.shopItem
 ---
 
 <Page {frontmatter}>
-  <div>
+  <article>
     <CustomImage
-      class="border-tertiary dark:border-primary border-8 rounded-md"
+      class='border-tertiary dark:border-primary border-8 rounded-md'
       imagePath={shopItem.image}
       altText={shopItem.name}
     />
-    <h3>{shopItem.name}</h3>
-    <p>{shopItem.project[locale]}</p>
+    <header>
+      <h1>{shopItem.name}</h1>
+      <p>{shopItem.project[locale]}</p>
+    </header>
     <div>
       <p>{shopItem.description[locale]}</p>
       <p>{shopItem.price[locale]}</p>
     </div>
-  </div>
+  </article>
 </Page>

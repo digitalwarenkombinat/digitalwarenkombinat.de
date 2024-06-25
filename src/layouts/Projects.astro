@@ -1,10 +1,12 @@
 ---
+import Caption from '@components/Caption.astro'
 import MainI18n from '@components/MainI18n.astro'
 import Project from '@components/Project.astro'
 import getPublishedPosts from '@utilities/getPublishedPosts'
 
 const { frontmatter } = Astro.props
 const title = frontmatter.title
+const subtitle = frontmatter.subtitle
 const collection = frontmatter.collection
 
 const posts = await getPublishedPosts(Astro.currentLocale, collection)
@@ -12,10 +14,14 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
 
 <MainI18n {frontmatter} collection='pages'>
   <main id='main'>
-    <h1>{title}</h1>
-    <slot />
-    <ul>
-      {posts.map((post) => <Project post={post} collection={collection} />)}
-    </ul>
+    <section>
+      <Caption title={title} subtitle={subtitle} />
+      <slot />
+      <div class='text-center'>
+        <ul>
+          {posts.map((post) => <Project post={post} collection={collection} />)}
+        </ul>
+      </div>
+    </section>
   </main>
 </MainI18n>

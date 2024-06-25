@@ -1,22 +1,23 @@
 ---
+import AllProjects from '@components/AllProjects.astro'
+import Caption from '@components/Caption.astro'
 import Project from '@components/Project.astro'
 import { uiStrings } from '@i18n/uiStrings'
 import getPublishedPosts from '@utilities/getPublishedPosts'
-import Caption from './Caption.astro'
-import AllProjects from './AllProjects.astro'
 
 const PROJECTS_COLLECTION = 'projects'
 const locale = Astro.currentLocale
 
-const { projectTitle, projectSubtitle} = uiStrings
+const { projectTitle, projectSubtitle } = uiStrings
 const title = projectTitle[locale]
 const subtitle = projectSubtitle[locale]
 
 async function getFeaturedPosts() {
-  const posts = await getPublishedPosts(locale, PROJECTS_COLLECTION);
-  return posts.filter(({ data }) => data.isFeatured);
+  const posts = await getPublishedPosts(locale, PROJECTS_COLLECTION)
+  return posts.filter(({ data }) => data.isFeatured)
 }
-const featuredPosts = await getFeaturedPosts();
+
+const featuredPosts = await getFeaturedPosts()
 ---
 
 <section>

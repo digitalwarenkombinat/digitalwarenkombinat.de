@@ -7,7 +7,7 @@ previewImage: '/src/assets/blog1.webp'
 reference: first-post
 tags: [PrototypeFund, Webapp, OpenArt, Wikidata, OpenGLAM]
 isFeatured: true
-relatedPosts: ['wir-sind-nominiert-fuer-den-dig-a-mus-award-2024']
+relatedPosts: []
 ---
 
 Prototyp unserer Webapp GLAMorous Europe ist endlich live! 🎉Probiert es aus, entdeckt Gemälde, Drucke und Skizzen und erstellt am Ende euer eigenes Kunstwerk. Wir freuen uns auf eure Rückmeldungen.

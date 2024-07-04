@@ -26,19 +26,21 @@ const description = getPostDescription(post)
 ---
 
 <li>
-  <a href={postPath}>
-    <article>
-      <header>
+  <article>
+    <header>
+      <a href={postPath}>
         <h3>{title}</h3>
-        <Byline
-          authorFullName={author}
-          pubDate={pubDate}
-          updatedDate={updatedDate}
-        />
-      </header>
+      </a>
+      <Byline
+        authorFullName={author}
+        pubDate={pubDate}
+        updatedDate={updatedDate}
+      />
+    </header>
+    <a href={postPath}>
       <CustomImage imagePath={previewImage} altText={title} />
-    </article>
-  </a>
+    </a>
+  </article>
   <blockquote cite={postPath}>
     {description}
   </blockquote>

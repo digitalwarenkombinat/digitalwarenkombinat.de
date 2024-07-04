@@ -2,7 +2,6 @@
 import { ViewTransitions } from 'astro:transitions'
 import { siteKeywords, siteThemeColor, siteTitle } from '@src/consts'
 import type { CommonFrontmatter } from '@src/types'
-import DescriptionMeta from './DescriptionMeta.astro'
 
 import '../styles/global.css'
 
@@ -16,7 +15,6 @@ const title = frontmatter.title
   ? `${frontmatter.title} | ${siteTitle}`
   : siteTitle
 const description = frontmatter.description
-const file = frontmatter.file
 const previewImage = frontmatter.previewImage || '/image.png'
 const canonicalURL = new URL(
   frontmatter.canonicalURL || Astro.url.pathname,

@@ -26,16 +26,6 @@
   text-wrap: pretty;
 }
 
-:where(ul, ol) {
-  margin: 0;
-  padding: 0;
-  list-style-type: '';
-}
-
-html.dark {
-  color: #fff;
-}
-
 body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -58,10 +48,12 @@ main {
 
 article,
 section {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: grid;
   gap: 2rem;
+  margin: auto;
+  max-width: 1000px;
 }
 
 h1 {
@@ -89,7 +81,7 @@ h4 {
 }
 
 :where(main) li:not(:last-child) {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 footer {
@@ -98,10 +90,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 2rem 1rem;
 }
 
 .icon {

@@ -11,7 +11,7 @@ const menuLocale: string = footerMenu[locale]
 const footerMenuItems: navigationItem[] = footerMenu[menuLocale].items
 ---
 
-<ol class='text-center'>
+<ul class='text-center'>
   {
     footerMenuItems.map((item) => (
       <li>
@@ -19,4 +19,4 @@ const footerMenuItems: navigationItem[] = footerMenu[menuLocale].items
       </li>
     ))
   }
-</ol>
+</ul>

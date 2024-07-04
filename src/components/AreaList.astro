@@ -5,7 +5,7 @@ import Caption from './Caption.astro'
 
 const locale = Astro.currentLocale
 
-const { areaTitle, areaSubtitle} = uiStrings
+const { areaTitle, areaSubtitle } = uiStrings
 const title = areaTitle[locale]
 const subtitle = areaSubtitle[locale]
 ---
@@ -18,11 +18,9 @@ const subtitle = areaSubtitle[locale]
         <li>
           <div class='bg-secondary rounded-full absolute mt-1 -ml-2 h-10 w-10' />
           <h3 class='z-10'>
-            <a href={getFocusPath(locale, focus.id)}>
-              {focus.name}
-            </a>
+            <a href={getFocusPath(locale, focus.id)}>{focus.name}</a>
           </h3>
-          <p class='m-4 md:w-2/3'>{focus.description[locale]}</p>
+          <p class='p-4 md:w-2/3'>{focus.description[locale]}</p>
         </li>
       ))
     }

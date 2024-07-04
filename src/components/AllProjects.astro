@@ -14,10 +14,10 @@ const link = projectLink[locale]
 <li>
   <h3>{allTitle}</h3>
   <CustomImage
-    class='border-primary border-2 rounded-md md:w-1/2'
+    class='border-primary border-2 rounded-md'
     imagePath={allPreview}
     altText={allTitle}
   />
-  <blockquote class='md:w-2/3 m-auto'>{allSubtitle}</blockquote>
+  <blockquote class='m-auto'>{allSubtitle}</blockquote>
   <Button href={getLocalizedHref(locale, '/projects')}>{link}</Button>
 </li>

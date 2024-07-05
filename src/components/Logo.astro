@@ -1,11 +1,9 @@
 ---
-import { Image } from 'astro:assets'
-import { siteTitle } from '@src/consts'
-import logo from '../../public/favicon.svg'
+import { Icon } from 'astro-icon/components'
 import { getLocalizedHref } from '@i18n/utilities'
 const locale = Astro.currentLocale
 ---
 
 <a href={getLocalizedHref(locale, '/')}>
-  <Image src={logo} alt={siteTitle} class='w-24 h-24 ml-2' />
+  <Icon name='logo' class='w-24 h-24 ml-2' />
 </a>

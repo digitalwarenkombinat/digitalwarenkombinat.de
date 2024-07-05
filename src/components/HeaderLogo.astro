@@ -1,8 +1,6 @@
 ---
-import { Image } from 'astro:assets'
-import { siteTitle } from '@src/consts'
-import logo from '../../public/favicon.svg'
 import { getLocalizedHref } from '@i18n/utilities'
+import { Icon } from 'astro-icon/components'
 const locale = Astro.currentLocale
 ---
 
@@ -11,9 +9,5 @@ const locale = Astro.currentLocale
     class='bg-primary rounded-full absolute -z-50 transition-all top-1 left-1 h-16 w-16'
   >
   </div>
-  <Image
-    src={logo}
-    alt={siteTitle}
-    class='w-24 h-24 transition-all duration-700 ml-2'
-  />
+  <Icon name='logo' class='w-24 h-24 transition-all duration-700 ml-2' />
 </a>

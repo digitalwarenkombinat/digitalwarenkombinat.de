@@ -13,7 +13,7 @@ export const referencesData: ReferencesData[] = [
       en: 'Philippe Genêt',
     },
     role: {
-      de: 'Coding da Vinci',
+      de: 'Projektkoordinator Coding da Vinci',
       en: 'Coding da Vinci',
     },
     description: {
@@ -27,21 +27,21 @@ export const referencesData: ReferencesData[] = [
       en: 'Maria Daldrup',
     },
     role: {
-      de: 'Archiv der Arbeiterjugendbewegung',
+      de: 'Leiterin des Archivs der Arbeiterjugendbewegung',
       en: 'Archiv der Arbeiterjugendbewegung',
     },
     description: {
-      de: 'Wir sind überzeugt von der Kreativität und Professionalität des Teams, sondern auch von der unkomplizierten und konstruktiven Zusammenarbeit.',
+      de: 'Anne Mühlich und Gerd Müller haben mit den Quellen des Archivs der Arbeiterjugendbewegung im Rahmen des Kulturhackathons „Coding da Vinci“ Fantastisches vollbracht: eine ästhetisch ansprechende, technisch einwandfreie und zielgruppengerechte Homepage zu den Kinderrepubliken der 1920er Jahre! Wir sind aber nicht nur überzeugt von der Kreativität und Professionalität des Teams, sondern auch von der unkomplizierten und konstruktiven Zusammenarbeit.',
       en: "Anne Mühlich and Gerd Müller have achieved fantastic things with the sources of the Archive of the Workers' Youth Movement within the framework of the cultural hackathon 'Coding da Vinci': an aesthetically pleasing, technically flawless and target group-oriented homepage on the Children's Republics of the 1920s! But we are not only convinced by the creativity and professionalism of the team, but also by the uncomplicated and constructive cooperation.",
     },
   },
   {
     author: {
-      de: 'Karsten Heck, ',
+      de: 'Karsten Heck',
       en: 'Karsten Heck',
     },
     role: {
-      de: 'Universität Göttingen Forum Wissen',
+      de: 'Universität Göttingen / Forum Wissen',
       en: 'Göttingen University Forum Wissen',
     },
     description: {

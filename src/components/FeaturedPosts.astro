@@ -9,10 +9,11 @@ import Caption from './Caption.astro'
 const BLOG_COLLECTION = 'blog'
 const locale = Astro.currentLocale
 
-const { blogTitle, blogSubtitle, blogAllLink } = uiStrings
+const { blogTitle, blogSubtitle, blogAllLink, blogAllText } = uiStrings
 const title = blogTitle[locale]
 const subtitle = blogSubtitle[locale]
 const link = blogAllLink[locale]
+const text = blogAllText[locale]
 
 async function getFeaturedPosts() {
   const posts = await getPublishedPosts(locale, BLOG_COLLECTION)
@@ -32,7 +33,6 @@ const featuredPosts = await getFeaturedPosts()
       </ul>
     )
   }
-  <div class='text-center'>
-    <Button href={getLocalizedHref(locale, '/blog')}>{link}</Button>
-  </div>
+  <blockquote>{text}</blockquote>
+  <Button href={getLocalizedHref(locale, '/blog')}>{link}</Button>
 </section>

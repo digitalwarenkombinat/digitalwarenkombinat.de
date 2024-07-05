@@ -45,9 +45,7 @@ const description = getPostDescription(post)
   <blockquote cite={postPath}>
     {description}
   </blockquote>
-  <div class='text-center'>
-    <Button href={postPath}>{blogLink}</Button>
-  </div>
+  <Button href={postPath}>{blogLink}</Button>
   {!isFeature && realTags.length > 0 && <PostTags tags={realTags} />}
   {!isFeature && !isLast && <Divider />}
 </li>

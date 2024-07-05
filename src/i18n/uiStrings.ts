@@ -111,6 +111,10 @@ export const uiStrings: TypeUIStrings = {
     de: 'Alle Posts anzeigen',
     en: 'View All Posts',
   },
+  blogAllText: {
+    de: 'Hier geht es zu unseren weiteren Blogposts.',
+    en: 'Hier geht es zu unseren weiteren Blogposts.',
+  },
   blogRelated: {
     de: 'Weitere Blogbeiträge',
     en: 'Weitere Blogbeiträge',

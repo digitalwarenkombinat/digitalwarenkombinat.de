@@ -9,43 +9,21 @@ const title = referencesTitle[locale]
 const subtitle = referencesSubtitle[locale]
 ---
 
-<section class='px-0'>
+<section>
   <Caption title={title} subtitle={subtitle} />
   <div class='flex flex-wrap gap-8'>
     {
       referencesData.map((item) => (
-        <p class='text-lg border-2 mx-auto border-secondary overflow-hidden w-96 h-96 px-1 pt-4 rounded-full hyphens-auto [text-align-last:center]'>
-          <span aria-hidden='true' />
-          {item.description[locale]}
-          <span class='block pt-4'>{item.author[locale]}</span>
-          <span class='block'>{item.role[locale]}</span>
-        </p>
+        <div class='flex flex-col md:flex-row text-lg text-center border-secondary border-2 rounded-lg md:even:flex-row-reverse'>
+          <p class='p-4 hyphens-auto md:basis-3/4'>
+            {item.description[locale]}
+          </p>
+          <p class='flex flex-col p-4 justify-center md:basis-1/4 bg-secondary rounded-md'>
+            <span class='block'>{`${item.author[locale]},`}</span>
+            <span class='block'>{item.role[locale]}</span>
+          </p>
+        </div>
       ))
     }
   </div>
 </section>
-
-<style>
-  [aria-hidden='true'] {
-    display: contents;
-  }
-
-  [aria-hidden='true']:before,
-  [aria-hidden='true']:after {
-    content: '';
-    float: left;
-    width: 50%;
-    height: 100%;
-    --bite: radial-gradient(
-      farthest-side at var(--pos-x, 100%),
-      transparent 99%,
-      black
-    );
-    shape-outside: var(--bite);
-  }
-
-  [aria-hidden='true']:after {
-    float: right;
-    --pos-x: 0;
-  }
-</style>

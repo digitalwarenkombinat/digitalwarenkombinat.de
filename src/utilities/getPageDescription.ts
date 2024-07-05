@@ -1,3 +1,5 @@
+import type { PostProps } from '@src/types'
+
 export function truncateDescription(description: string): string {
   if (!description) {
     return ''
@@ -20,7 +22,7 @@ export function truncateDescription(description: string): string {
   return truncatedDescription
 }
 
-export function getPostDescription(post: any): string {
+export function getPostDescription(post: PostProps): string {
   if (!post) {
     return ''
   }

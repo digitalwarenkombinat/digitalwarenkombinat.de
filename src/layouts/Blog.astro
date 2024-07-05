@@ -2,6 +2,7 @@
 import Caption from '@components/Caption.astro'
 import MainI18n from '@components/MainI18n.astro'
 import Post from '@components/Post.astro'
+import type { PostProps } from '@src/types'
 import getPublishedPosts from '@utilities/getPublishedPosts'
 
 const { frontmatter } = Astro.props
@@ -9,7 +10,10 @@ const title = frontmatter.title
 const subtitle = frontmatter.subTitle
 const collection = frontmatter.collection
 
-const posts = await getPublishedPosts(Astro.currentLocale, collection)
+const posts: PostProps[] = await getPublishedPosts(
+  Astro.currentLocale,
+  collection
+)
 ---
 
 <MainI18n {frontmatter} collection='pages'>

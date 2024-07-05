@@ -9,7 +9,7 @@ export type Tags = {
 }[]
 
 export async function getUniqueTags(
-  collection: any,
+  collection: 'blog' | 'projects',
   locale = '',
 ): Promise<Tags> {
   return (await getPublishedPosts(locale, collection, ''))

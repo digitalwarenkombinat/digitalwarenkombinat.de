@@ -5,13 +5,14 @@ import CustomImage from '@components/CustomImage.astro'
 import Divider from '@components/Divider.astro'
 import PostTags from '@components/PostTags.astro'
 import { uiStrings } from '@i18n/uiStrings'
+import type { PostProps } from '@src/types'
 import { getPostDescription } from '@utilities/getPageDescription'
 import { getRelativePostPath } from '@utilities/getPostPath'
 
 interface Props {
   collection: string
   isLast?: boolean
-  post: any
+  post: PostProps
   isFeature?: boolean
 }
 

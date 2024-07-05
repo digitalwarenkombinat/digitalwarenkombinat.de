@@ -1,3 +1,5 @@
+import type { InferEntrySchema } from 'astro:content'
+
 export interface CommonFrontmatter {
   title?: string
   reference?: string
@@ -10,4 +12,12 @@ export interface CommonFrontmatter {
 
 export type LocalizedText = {
   [languageKey: string]: string
+}
+
+export type PostProps = {
+  id: string
+  slug: string
+  body: string
+  collection: 'blog' | 'projects'
+  data: InferEntrySchema<'blog' | 'projects'>
 }

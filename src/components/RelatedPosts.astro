@@ -2,6 +2,11 @@
 import Divider from '@components/Divider.astro'
 import PreviewPost from '@components/Post.astro'
 import { uiStrings } from '@i18n/uiStrings'
+import type { PostProps } from '@src/types'
+
+interface Props {
+  posts: PostProps[]
+}
 
 const { posts } = Astro.props
 const locale = Astro.currentLocale
@@ -12,7 +17,7 @@ const blogRelated = uiStrings.blogRelated[locale]
 <Divider />
 <h2>{blogRelated}</h2>
 {
-  posts.map((post: any) => (
+  posts.map((post) => (
     <PreviewPost collection='blog' post={post} isFeature={true} />
   ))
 }

@@ -6,14 +6,18 @@ import CustomImage from '@components/CustomImage.astro'
 type Props = CollectionEntry<'projects'>['data']
 
 const frontmatter = Astro.props
-const { title, previewImage } = Astro.props
+const { title, previewImage, description } = Astro.props
 ---
 
 <MainI18n {frontmatter} collection='projects'>
   <main id='main' tabindex='1'>
     <article>
       <h1>{title}</h1>
-      {previewImage && <CustomImage imagePath={previewImage} altText={title} />}
+      {
+        previewImage && (
+          <CustomImage imagePath={previewImage} altText={description} />
+        )
+      }
       <div>
         <slot />
       </div>

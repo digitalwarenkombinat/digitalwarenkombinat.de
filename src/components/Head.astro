@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from 'astro:transitions'
 import { siteKeywords, siteThemeColor, siteTitle } from '@src/consts'
 import type { CommonFrontmatter } from '@src/types'
 
@@ -65,5 +64,3 @@ const appleTouchIcon = '/apple-touch-icon.png'
 <meta property='twitter:title' content={title} />
 {description && <meta property='twitter:description' content={description} />}
 <meta property='twitter:image' content={new URL(previewImage, Astro.url)} />
-
-<ViewTransitions />

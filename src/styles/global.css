@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 :where(h1, h2, h3, h4) {
   text-wrap: balance;
 }
@@ -196,7 +200,7 @@ header.small > a div {
   height: 2.5rem;
 }
 
-header.small > a img {
+header.small > a svg {
   width: 4rem;
   height: 4rem;
 }

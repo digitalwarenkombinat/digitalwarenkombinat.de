@@ -4,10 +4,16 @@ import { uiStrings } from '@i18n/uiStrings'
 import { getLocalizedHref } from '@i18n/utilities'
 import CustomImage from '@components/CustomImage.astro'
 const locale = Astro.currentLocale
-const { projectAllTitle, projectAllSubtitle, projectLink } = uiStrings
+const {
+  projectAllTitle,
+  projectAllSubtitle,
+  projectLink,
+  projectAllImageAltText,
+} = uiStrings
 const allTitle = projectAllTitle[locale]
 const allSubtitle = projectAllSubtitle[locale]
 const allPreview = '/src/assets/protestory.webp'
+const allImageAltText = projectAllImageAltText[locale]
 const link = projectLink[locale]
 ---
 
@@ -16,7 +22,7 @@ const link = projectLink[locale]
   <CustomImage
     class='border-primary border-2 rounded-md'
     imagePath={allPreview}
-    altText={allTitle}
+    altText={allImageAltText}
   />
   <blockquote class='m-auto'>{allSubtitle}</blockquote>
   <Button href={getLocalizedHref(locale, '/projects')}>{link}</Button>

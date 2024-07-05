@@ -9,8 +9,15 @@
           "apply",
           "variants",
           "responsive",
-          "screen"
+          "screen",
+          "view-transition"
         ]
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["navigation"]
       }
     ],
     "no-descending-specificity": null

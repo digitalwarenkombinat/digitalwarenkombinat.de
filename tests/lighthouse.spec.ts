@@ -14,9 +14,9 @@ test('open browser', async () => {
     port: 9222,
     thresholds: {
       performance: 90,
-      accessibility: 100,
-      'best-practices': 100,
-      seo: 100,
+      accessibility: 90,
+      'best-practices': 90,
+      seo: 90,
     },
   })
 

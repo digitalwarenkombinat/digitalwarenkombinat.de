@@ -18,7 +18,9 @@ export default defineConfig({
       defaultLocale: defaultLocale,
       locales: sitemapLocales
     }
-  }), tailwind(), icon()],
+  }), tailwind({
+    applyBaseStyles: false,
+  }), icon()],
   i18n: {
     defaultLocale: defaultLocale,
     locales: locales

@@ -12,11 +12,7 @@ const { title, description } = project.data
   href={`/projects/${project.slug}/`}
 >
   <div class='grow'>
-    <h3 class='text-xl font-serif'>{title}</h3>
-    {
-      description && (
-        <div class='mt-1 text-sm leading-normal'>{description}</div>
-      )
-    }
+    <h3 class='text-xl'>{title}</h3>
+    {description && <div class='mt-1 text-sm'>{description}</div>}
   </div>
 </a>

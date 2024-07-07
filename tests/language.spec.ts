@@ -5,13 +5,11 @@ test.use({
   timezoneId: 'Europe/Berlin',
 })
 
-test('has title', async ({ page }) => {
+test('has German title', async ({ page }) => {
   await page.goto('/')
 
-  // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Start | Digitalwarenkombinat/)
 
-  // Expects page to have a heading with the name of Installation.
   await expect(
     page.getByRole('heading', { name: 'Wir sind das Digitalwarenkombinat' }),
   ).toBeVisible()

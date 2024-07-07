@@ -22,17 +22,17 @@ async function getFeaturedPosts() {
 const featuredPosts = await getFeaturedPosts()
 ---
 
-<section>
+<article>
   <Caption title={title} subtitle={subtitle} />
   {
     featuredPosts?.length > 0 && (
       <ul>
         {featuredPosts.map((post) => (
-          <Post isFeature={true} post={post} collection={BLOG_COLLECTION} />
+          <Post isFeature post={post} collection={BLOG_COLLECTION} />
         ))}
       </ul>
     )
   }
   <blockquote>{text}</blockquote>
   <Button href={getLocalizedHref(locale, '/blog')}>{link}</Button>
-</section>
+</article>

@@ -5,7 +5,7 @@ import { getUniqueTags } from '@utilities/tags'
 import { getTagPath } from '@utilities/tags'
 
 interface Frontmatter extends CommonFrontmatter {
-  collection: string
+  collection: 'blog' | 'projects'
 }
 
 interface Props {
@@ -13,6 +13,7 @@ interface Props {
 }
 
 const { frontmatter } = Astro.props
+const locale = Astro.currentLocale
 const tags = (
   await getUniqueTags(frontmatter.collection, Astro.currentLocale)
 ).filter((tag) => {
@@ -21,16 +22,26 @@ const tags = (
 ---
 
 <Page {frontmatter}>
-  <slot />
-  {frontmatter.title && <h1>{frontmatter.title}</h1>}
-  {frontmatter.description && <h2>{frontmatter.description}</h2>}
-  <ul>
-    {
-      tags.map(({ slugified, name }) => (
-        <li>
-          <a href={getTagPath(Astro.currentLocale, slugified)}>{name}</a>
-        </li>
-      ))
-    }
-  </ul>
+  <article>
+    <slot />
+    {frontmatter.title && <h1>{frontmatter.title}</h1>}
+    {frontmatter.description && <h2>{frontmatter.description}</h2>}
+    <ul>
+      {
+        tags.map(({ slugified, name }) => {
+          const tagPath = getTagPath(locale, slugified)
+          return (
+            <li>
+              <a
+                class='w-auto mx-auto text-tertiary dark:text-white tracking-wider border-2 rounded-md p-1 inline-block border-primary'
+                href={tagPath}
+              >
+                <strong>{`#${name}`}</strong>
+              </a>
+            </li>
+          )
+        })
+      }
+    </ul>
+  </article>
 </Page>

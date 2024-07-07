@@ -27,7 +27,7 @@ const description = getPostDescription(post)
 ---
 
 <li>
-  <article>
+  <section>
     <header>
       <a href={postPath}>
         <h3>{title}</h3>
@@ -41,7 +41,7 @@ const description = getPostDescription(post)
     <a href={postPath}>
       <CustomImage imagePath={previewImage} altText={title} />
     </a>
-  </article>
+  </section>
   <blockquote cite={postPath}>
     {description}
   </blockquote>

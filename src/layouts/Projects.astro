@@ -14,7 +14,7 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
 
 <MainI18n {frontmatter} collection='pages'>
   <main id='main'>
-    <section>
+    <article>
       <Caption title={title} subtitle={subtitle} />
       <slot />
       <div class='text-center'>
@@ -22,6 +22,6 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
           {posts.map((post) => <Project post={post} collection={collection} />)}
         </ul>
       </div>
-    </section>
+    </article>
   </main>
 </MainI18n>

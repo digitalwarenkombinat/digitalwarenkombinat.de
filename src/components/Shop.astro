@@ -8,22 +8,22 @@ import CustomImage from '@components/CustomImage.astro'
 
 const locale = Astro.currentLocale
 
-const { shopTitle, shopSubtitle, shopLinkText,shopLink } = uiStrings
+const { shopTitle, shopSubtitle, shopLinkText, shopLink } = uiStrings
 const title = shopTitle[locale]
 const subtitle = shopSubtitle[locale]
 const linkText = shopLinkText[locale]
 const link = shopLink[locale]
 ---
 
-<section>
+<article>
   <Caption title={title} subtitle={subtitle} />
-  <ul class="flex flex-wrap justify-between items-start gap-8">
+  <ul class='flex flex-wrap justify-between items-start gap-8'>
     {
       shop.map((shopItem) => (
-        <li class="md:w-1/4">
+        <li class='md:w-1/4'>
           <a href={getShopItemPath(locale, shopItem.id)}>
             <CustomImage
-              class="border-tertiary dark:border-primary border-8 rounded-md"
+              class='border-tertiary dark:border-primary border-8 rounded-md'
               imagePath={shopItem.image}
               altText={shopItem.name}
             />
@@ -38,8 +38,8 @@ const link = shopLink[locale]
       ))
     }
   </ul>
-  <div class="text-center">
-    <blockquote class="mb-4">{linkText}</blockquote>
+  <div class='text-center'>
+    <blockquote class='mb-4'>{linkText}</blockquote>
     <Button href={getLocalizedHref(locale, '/shop')}>{link}</Button>
   </div>
-</section>
+</article>

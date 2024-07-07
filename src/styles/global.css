@@ -34,14 +34,18 @@ main {
   margin-top: 6rem;
 }
 
-article,
-section {
+article {
   padding-left: 1rem;
   padding-right: 1rem;
   display: grid;
-  gap: 6rem;
+  gap: 4rem;
   margin: auto;
   max-width: 1000px;
+}
+
+section {
+  display: grid;
+  gap: 2rem;
 }
 
 h1 {

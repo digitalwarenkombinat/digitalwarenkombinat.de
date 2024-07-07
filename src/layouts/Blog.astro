@@ -18,7 +18,7 @@ const posts: PostProps[] = await getPublishedPosts(
 
 <MainI18n {frontmatter} collection='pages'>
   <main id='main'>
-    <section>
+    <article>
       <Caption title={title} subtitle={subtitle} />
       <slot />
       <ul>
@@ -32,6 +32,6 @@ const posts: PostProps[] = await getPublishedPosts(
           ))
         }
       </ul>
-    </section>
+    </article>
   </main>
 </MainI18n>

@@ -93,11 +93,7 @@ if (reference) {
     {translationLinks.length > 0 && <TranslationLinks {translationLinks} />}
   </Header>
   <slot />
-  {
-    translationLinks.length > 0 && (
-      <footer class='dark:bg-tertiary'>
-        <Footer />
-      </footer>
-    )
-  }
+  <footer class='dark:bg-tertiary'>
+    <Footer />
+  </footer>
 </Html>

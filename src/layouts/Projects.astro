@@ -18,9 +18,15 @@ const posts = await getPublishedPosts(Astro.currentLocale, collection)
       <Caption title={title} subtitle={subtitle} />
       <slot />
       <div class='text-center'>
-        <ul>
-          {posts.map((post) => <Project post={post} collection={collection} />)}
-        </ul>
+        {
+          posts?.length > 0 && (
+            <ul>
+              {posts.map((post) => (
+                <Project post={post} collection={collection} />
+              ))}
+            </ul>
+          )
+        }
       </div>
     </article>
   </main>

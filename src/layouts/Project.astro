@@ -18,7 +18,7 @@ const { title, previewImage, description } = Astro.props
           <CustomImage imagePath={previewImage} altText={description} />
         )
       }
-      <div>
+      <div class='prose'>
         <slot />
       </div>
     </article>

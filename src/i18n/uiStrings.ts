@@ -28,8 +28,8 @@ export const uiStrings: TypeUIStrings = {
     en: 'Digitalwarenkombinat',
   },
   description: {
-    de: 'Wir entwickeln Open-Source-Webanwendungen für Museen, Galerien, Archive und Bibliotheken (GLAMs), um deren digitalisierte Sammlungen erfahrbar zu machen.',
-    en: 'The Digitalwarenkombinat (DIWAKO) is dedicated to the creative use of open cultural data and develops web applications and merchandise for and with GLAM institutions under the motto „Shaping digital worlds together“. We are committed to the sustainable use of open cultural data and support museums, galleries, archives and libraries in opening up digitally to the whole society.',
+    de: 'Wir entwickeln Open-Source-Webanwendungen für Museen, Galerien, Archive, Bibliotheken (GLAMs) und andere Kulturinstitutionen, um digitalisierte Sammlungen erfahrbar und zugänglich zu machen. Wir erstellen außerdem Grafikprodukte, die aus unseren digitalen Projekten hervorgehen.',
+    en: 'We develop open source web applications for museums, galleries, archives, libraries (GLAMs) and other cultural institutions to make digitized collections experienceable and accessible. We also create graphic design products based on our digital projects.',
   },
   primaryAction: {
     de: 'Schreib uns!',
@@ -37,95 +37,95 @@ export const uiStrings: TypeUIStrings = {
   },
   areaTitle: {
     de: 'Unsere Schwerpunkte',
-    en: 'Our focus',
+    en: 'Our Focus',
   },
   areaSubtitle: {
     de: 'Was macht uns aus?',
-    en: 'Was macht uns aus?',
+    en: 'What defines us?',
   },
   projectTitle: {
     de: 'Unsere Projekte',
-    en: 'Our projects',
+    en: 'Our Projects',
   },
   projectSubtitle: {
     de: 'Was tun wir?',
-    en: 'Was tun wir?',
+    en: 'What do we do?',
   },
   projectAllTitle: {
     de: 'Alle Projekte',
-    en: 'All Projects',
+    en: 'All projects',
   },
   projectAllSubtitle: {
-    de: 'Seit 2018 (und damit bereits vor der Gründung des Digitalwarenkombinats) haben wir etliche Open Source Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen, wie z.B. Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons.',
-    en: 'Seit 2018 (und damit bereits vor der Gründung des Digitalwarenkombinats) haben wir etliche Open Source Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen, wie z.B. Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons.',
+    de: 'Seit 2018 haben wir etliche Open-Source-Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen, wie z.B. Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons. Seit 2022 realisieren wir Projekte als Digtalwarenkombinat. Hier findet ihr alle unsere finalisierten und aktuellen Projekte.',
+    en: 'Since 2018, we have implemented a number of open source projects with open cultural data. Some of these web applications, such as Plantala or Demokratie Erleben (Living Democracy), were created as part of the Coding da Vinci cultural hackathon. Since 2022 we have been realizing projects as Digtalwarenkombinat. Here you can find all our completed and ongoing projects.',
   },
   projectAllImageAltText: {
     de: 'Referenzbild für alle Projekte',
-    en: 'Referenzbild für alle Projekte',
+    en: 'Reference image for all projects',
   },
   projectLink: {
     de: 'Zu allen Projekten',
-    en: 'All Projects',
+    en: 'All projects',
   },
   projectNext: {
     de: 'Weitere Projekte',
-    en: 'View Next',
+    en: 'View other projects',
   },
   shopTitle: {
     de: 'Unser Shop',
-    en: 'Our shop',
+    en: 'Our Shop',
   },
   shopSubtitle: {
-    de: 'Welche Produkte kann man hier kaufen?',
-    en: 'Welche Produkte kann man hier kaufen?',
+    de: 'Was habt ihr auf Lager?',
+    en: 'What have you got in store?',
   },
   shopLinkText: {
-    de: 'In unserem kleinen Web-Shop findet ihr Merchandise und Schönes zu den einzelnen Projekten.',
-    en: 'In unserem kleinen Web-Shop findet ihr Merchandise und Schönes zu den einzelnen Projekten.',
+    de: 'In unserem kleinen Web-Shop findet ihr GLAM-Merchandise und Schönes zu den einzelnen Projekten.',
+    en: 'In our small web shop you will find GLAM merchandise and nice things connected with our individual projects.',
   },
   shopLink: {
     de: 'Zum Webshop',
-    en: 'Zum Webshop',
+    en: 'Go to webshop',
   },
   referencesTitle: {
     de: 'Unsere Referenzen',
-    en: 'Our references',
+    en: 'Our References',
   },
   referencesSubtitle: {
     de: 'Was sagen andere über uns?',
-    en: 'Was sagen andere über uns?',
+    en: 'What do others say about us?',
   },
   blogTitle: {
     de: 'Unser Blog',
-    en: 'Our blog',
+    en: 'Our Blog',
   },
   blogSubtitle: {
     de: 'Was gibt es Neues?',
-    en: 'Was gibt es Neues?',
+    en: 'What is new?',
   },
   blogLink: {
     de: 'Weiterlesen',
-    en: 'Weiterlesen',
+    en: 'Read more',
   },
   blogAllLink: {
     de: 'Alle Posts anzeigen',
-    en: 'View All Posts',
+    en: 'View all posts',
   },
   blogAllText: {
-    de: 'Hier geht es zu unseren weiteren Blogposts.',
-    en: 'Hier geht es zu unseren weiteren Blogposts.',
+    de: 'Hier geht es zu unseren anderen Blogposts.',
+    en: 'Click here to read our other blog posts.',
   },
   blogRelated: {
     de: 'Weitere Blogbeiträge',
-    en: 'Weitere Blogbeiträge',
+    en: 'Other blog posts',
   },
   blogShop: {
     de: 'Produkte im Webshop',
-    en: 'Produkte im Webshop',
+    en: 'products in the webshop',
   },
   blogShopRelated: {
     de: 'Merchandise zum Projekt',
-    en: 'Merchandise zum Projekt',
+    en: 'Merchandise from the project',
   },
   postsPerTagPageDescription: {
     de: 'Posts zum Thema',

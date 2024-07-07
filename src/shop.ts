@@ -17,11 +17,11 @@ export const shopData: ShopItemData[] = [
     },
     description: {
       de: 'versch. Motive',
-      en: 'versch. Motive',
+      en: 'various motives',
     },
     price: {
       de: 'ab 2,50€ pro Stück',
-      en: 'ab 2,50€ pro Stück',
+      en: 'from €2.50 per item',
     },
     image: '/src/assets/shop1.webp',
   },
@@ -33,11 +33,11 @@ export const shopData: ShopItemData[] = [
     },
     description: {
       de: 'versch. Motive',
-      en: 'versch. Motive',
+      en: 'various motives',
     },
     price: {
       de: 'ab 2,50€ pro Stück',
-      en: 'ab 2,50€ pro Stück',
+      en: 'from €2.50 per item',
     },
     image: '/src/assets/shop2.webp',
   },
@@ -49,11 +49,11 @@ export const shopData: ShopItemData[] = [
     },
     description: {
       de: 'versch. Motive',
-      en: 'versch. Motive',
+      en: 'various motives',
     },
     price: {
       de: 'ab 1,50€ pro Stück',
-      en: 'ab 1,50€ pro Stück',
+      en: 'from €1.50 per item',
     },
     image: '/src/assets/shop3.webp',
   },

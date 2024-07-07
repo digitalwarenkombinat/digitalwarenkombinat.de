@@ -14,7 +14,7 @@ export const referencesData: ReferencesData[] = [
     },
     role: {
       de: 'Projektkoordinator Coding da Vinci',
-      en: 'Coding da Vinci',
+      en: 'project coordinator Coding da Vinci',
     },
     description: {
       de: 'Die Projekte von Anne Mühlich und Gerd Müller sind eine große Bereicherung für den Kultur-Hackathon Coding da Vinci. Mit jeder Teilnahme beweisen die beiden aufs Neue ihre Kreativität und ihren sensiblen Umgang mit offenen Kulturdaten und den dahinterstehenden Institutionen – das beweisen nicht zuletzt die Coding da Vinci-Stipendien, mit denen sie mehrfach ausgezeichnet wurden.',
@@ -28,7 +28,7 @@ export const referencesData: ReferencesData[] = [
     },
     role: {
       de: 'Leiterin des Archivs der Arbeiterjugendbewegung',
-      en: 'Archiv der Arbeiterjugendbewegung',
+      en: 'head of the Archive of the Archive of the Workers´ Youth Movement',
     },
     description: {
       de: 'Anne Mühlich und Gerd Müller haben mit den Quellen des Archivs der Arbeiterjugendbewegung im Rahmen des Kulturhackathons „Coding da Vinci“ Fantastisches vollbracht: eine ästhetisch ansprechende, technisch einwandfreie und zielgruppengerechte Homepage zu den Kinderrepubliken der 1920er Jahre! Wir sind aber nicht nur überzeugt von der Kreativität und Professionalität des Teams, sondern auch von der unkomplizierten und konstruktiven Zusammenarbeit.',
@@ -41,8 +41,8 @@ export const referencesData: ReferencesData[] = [
       en: 'Karsten Heck',
     },
     role: {
-      de: 'Universität Göttingen / Forum Wissen',
-      en: 'Göttingen University Forum Wissen',
+      de: 'Universität Göttingen/ Forum Wissen',
+      en: 'Göttingen University/ Forum Wissen',
     },
     description: {
       de: 'Mit Plantala ist Anne Mühlich und Gerd Müller wunderbares gelungen: offene Kulturdaten in einer Software und ästhetischen Sprache zu präsentieren, die direkt ins Analoge zurückkoppelt. Große Spielfreude mit großem Mehrwert. Danke!',

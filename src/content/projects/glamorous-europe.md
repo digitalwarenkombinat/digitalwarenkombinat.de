@@ -8,8 +8,6 @@ isFeatured: true
 tags: ['Wikidata', 'GLAM', 'Cultural Heritage']
 ---
 
----
-
 **GLAMorous Europe – Entdecke das digitale Kulturerbe deiner Nachbarn**
 
 Die Open-Source-Webanwendung **GLAMorous Europe** bringt Kulturenthusiast:innen mit Sammlungsobjekten europäischer Museen, Bibliotheken, Galerien und Archive zusammen.

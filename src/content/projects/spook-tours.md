@@ -20,6 +20,8 @@ Jede Szene enthält die Übersetzung für eine okkulte Rune, mit der am Ende die
 
 Die browserbasierte Webapp kann mit bis zu 3 Personen gespielt werden.
 
-**Spook Tours** ist eine Produktion von **GEOMAZING**, die in Kooperation mit der **Digitalwarenkombinat GbR** entwickelt und erstellt wurde.
+**Spook Tours** ist eine Produktion von **GEOMAZING**, die in Kooperation mit der **Digitalwarenkombinat GbR** erstellt wurde.
 
 Hier geht es zur **Spook Tour** mit direkter Buchungsoption: https://www.gregorassfalg.de/spooktour/
+
+Repository auf Github: https://github.com/digitalwarenkombinat/ghosthunt

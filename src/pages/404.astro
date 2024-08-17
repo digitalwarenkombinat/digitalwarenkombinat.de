@@ -8,15 +8,15 @@ const title = uiStrings.pageNotFoundHeading[defaultLocale]
 
 <Html frontmatter={{ title, description: title }}>
   <Header />
-  <main id="main">
-    <article class="prose">
+  <main id='main'>
+    <article class='prose'>
       {
         locales.map((locale) => (
           <>
-            <h1 lang={locale} style="display: none">
+            <h1 lang={locale} style='display: none'>
               {uiStrings.pageNotFoundHeading[locale]}
             </h1>
-            <p lang={locale} style="display: none">
+            <p lang={locale} style='display: none'>
               {uiStrings.pageNotFoundBody[locale]}
             </p>
             <>
@@ -43,7 +43,7 @@ const title = uiStrings.pageNotFoundHeading[defaultLocale]
   ;(function () {
     const agentLanguage = window.navigator.language.slice(
       0,
-      defaultLocale.length,
+      defaultLocale.length
     )
     const selectedLanguage = locales.includes(agentLanguage)
       ? agentLanguage

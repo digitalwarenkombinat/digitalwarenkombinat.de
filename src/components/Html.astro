@@ -14,10 +14,10 @@ const lang = Astro.currentLocale
 <html lang={lang}>
   <head>
     <Head {frontmatter} {includeCanonicalMeta}>
-      <slot name="head" />
+      <slot name='head' />
     </Head>
   </head>
-  <body class="dark:bg-tertiary dark:text-white">
+  <body class='dark:bg-tertiary dark:text-white'>
     <slot />
   </body>
 </html>

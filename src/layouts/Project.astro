@@ -9,8 +9,8 @@ const frontmatter = Astro.props
 const { title, previewImage, description } = Astro.props
 ---
 
-<MainI18n {frontmatter} collection="projects">
-  <main id="main" tabindex="1">
+<MainI18n {frontmatter} collection='projects'>
+  <main id='main' tabindex='1'>
     <article>
       <h1>{title}</h1>
       {
@@ -18,7 +18,7 @@ const { title, previewImage, description } = Astro.props
           <CustomImage imagePath={previewImage} altText={description} />
         )
       }
-      <div class="prose">
+      <div class='prose'>
         <slot />
       </div>
     </article>

@@ -9,17 +9,17 @@ const locale = Astro.currentLocale
 ---
 
 <section>
-  <div class="flex items-center gap-6">
-    <a class="min-w-40" href={getPersonPath(locale, person.id)}>
+  <div class='flex items-center gap-6'>
+    <a class='min-w-40' href={getPersonPath(locale, person.id)}>
       <CustomImage
         imagePath={person.image}
         altText={person.name}
-        class="rounded-full"
+        class='rounded-full'
       />
     </a>
     <div>
-      <h2 class="text-primary dark:text-white">{person.name}</h2>
-      <p class="text-lg text-secondary dark:text-primary">
+      <h2 class='text-primary dark:text-white'>{person.name}</h2>
+      <p class='text-lg text-secondary dark:text-primary'>
         {person.description[locale]}
       </p>
     </div>

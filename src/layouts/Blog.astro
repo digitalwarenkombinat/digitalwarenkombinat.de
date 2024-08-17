@@ -12,12 +12,12 @@ const collection = frontmatter.collection
 
 const posts: PostProps[] = await getPublishedPosts(
   Astro.currentLocale,
-  collection,
+  collection
 )
 ---
 
-<MainI18n {frontmatter} collection="pages">
-  <main id="main">
+<MainI18n {frontmatter} collection='pages'>
+  <main id='main'>
     <article>
       <Caption title={title} subtitle={subtitle} />
       <slot />

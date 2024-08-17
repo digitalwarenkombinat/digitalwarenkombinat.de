@@ -23,13 +23,13 @@ export async function getStaticPaths() {
   const allPostsPerTagPages: PostPerTagProps[] = []
   const getDescription = (locale: string, tagName: string): string =>
     truncateDescription(
-      `${uiStrings.postsPerTagPageDescription[locale]} ${tagName}.`,
+      `${uiStrings.postsPerTagPageDescription[locale]} ${tagName}.`
     )
   for (const locale of locales) {
     const realTags: Tags = (await getUniqueTags(collection, locale)).filter(
       (tag) => {
         return tag.slugified !== 'other'
-      },
+      }
     )
     const posts = realTags.map((tag) => ({
       params: {

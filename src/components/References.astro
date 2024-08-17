@@ -11,14 +11,14 @@ const subtitle = referencesSubtitle[locale]
 
 <article>
   <Caption title={title} subtitle={subtitle} />
-  <div class="md:w-[80%] m-auto flex flex-wrap gap-12">
+  <div class='md:w-[80%] m-auto flex flex-wrap gap-12'>
     {
       referencesData.map((item) => (
-        <div class="flex flex-col md:flex-row text-lg text-center border-secondary border-2 rounded-lg md:even:flex-row-reverse">
-          <p class="p-8 md:basis-3/4">{item.description[locale]}</p>
-          <p class="flex flex-col p-8 justify-center md:basis-1/4 bg-secondary rounded-md">
-            <span class="block">{`${item.author[locale]},`}</span>
-            <span class="block">{item.role[locale]}</span>
+        <div class='flex flex-col md:flex-row text-lg text-center border-secondary border-2 rounded-lg md:even:flex-row-reverse'>
+          <p class='p-8 md:basis-3/4'>{item.description[locale]}</p>
+          <p class='flex flex-col p-8 justify-center md:basis-1/4 bg-secondary rounded-md'>
+            <span class='block'>{`${item.author[locale]},`}</span>
+            <span class='block'>{item.role[locale]}</span>
           </p>
         </div>
       ))

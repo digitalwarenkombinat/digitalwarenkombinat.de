@@ -16,11 +16,11 @@ const subtitle = areaSubtitle[locale]
     {
       area.map((focus) => (
         <li>
-          <span class="bg-secondary rounded-full absolute -ml-3 h-10 w-10" />
-          <h3 class="z-10">
+          <span class='bg-secondary rounded-full absolute -ml-3 h-10 w-10' />
+          <h3 class='z-10'>
             <a href={getFocusPath(locale, focus.id)}>{focus.name}</a>
           </h3>
-          <p class="p-4">{focus.description[locale]}</p>
+          <p class='p-4'>{focus.description[locale]}</p>
         </li>
       ))
     }

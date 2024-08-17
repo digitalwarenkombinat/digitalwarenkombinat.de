@@ -3,11 +3,11 @@ import Button from '@components/Button.astro'
 import Byline from '@components/Byline.astro'
 import CustomImage from '@components/CustomImage.astro'
 import Divider from '@components/Divider.astro'
-import PostTags from '@components/PostTags.astro'
-import { uiStrings } from '@i18n/uiStrings'
 import type { PostProps } from '@src/types'
+import PostTags from '@components/PostTags.astro'
 import { getPostDescription } from '@utilities/getPageDescription'
 import { getRelativePostPath } from '@utilities/getPostPath'
+import { uiStrings } from '@i18n/uiStrings'
 
 interface Props {
   collection: string

@@ -1,7 +1,7 @@
 ---
-import { uiStrings } from '@i18n/uiStrings'
-import { siteMail } from '@src/consts'
 import Button from '@components/Button.astro'
+import { siteMail } from '@src/consts'
+import { uiStrings } from '@i18n/uiStrings'
 
 const locale = Astro.currentLocale
 const { title, subtitle, description, primaryAction } = uiStrings
@@ -11,8 +11,8 @@ const heroDescription = description[locale]
 const heroPrimaryAction = primaryAction[locale]
 ---
 
-<article class='text-center'>
-  <h1>{heroTitle} <span class='text-primary'>{heroSubtitle}</span></h1>
+<article class="text-center">
+  <h1>{heroTitle} <span class="text-primary">{heroSubtitle}</span></h1>
   <p>{heroDescription}</p>
   <Button href={siteMail}>
     {heroPrimaryAction}

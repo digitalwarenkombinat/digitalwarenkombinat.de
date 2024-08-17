@@ -1,7 +1,7 @@
 import { directoryNames } from '@i18n/i18n'
-import slugify from '@sindresorhus/slugify'
 import getPagePath from '@src/utilities/getPagePath'
 import getPublishedPosts from '@utilities/getPublishedPosts'
+import slugify from '@sindresorhus/slugify'
 
 export type Tags = {
   slugified: string

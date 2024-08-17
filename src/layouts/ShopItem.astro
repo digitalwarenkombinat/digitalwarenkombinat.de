@@ -1,8 +1,8 @@
 ---
-import Page from '@layouts/Page.astro'
 import type { CommonFrontmatter } from '@src/types'
-import type { ShopItem } from '@src/utilities/shop'
 import CustomImage from '@components/CustomImage.astro'
+import Page from '@layouts/Page.astro'
+import type { ShopItem } from '@src/utilities/shop'
 export interface ShopItemFrontmatter extends CommonFrontmatter {
   shopItem: ShopItem
 }
@@ -17,7 +17,7 @@ const shopItem = frontmatter.shopItem
 <Page {frontmatter}>
   <article>
     <CustomImage
-      class='border-tertiary dark:border-primary border-8 rounded-md'
+      class="border-tertiary dark:border-primary border-8 rounded-md"
       imagePath={shopItem.image}
       altText={shopItem.name}
     />

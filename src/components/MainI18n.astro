@@ -1,17 +1,17 @@
 ---
-import Footer from '@components/Footer.astro'
-import Header from '@components/Header.astro'
-import Html from '@components/Html.astro'
-import TranslationLinks from '@components/TranslationLinks.astro'
-import { uiStrings } from '@i18n/uiStrings'
-import { getLocaleFromUrl } from '@i18n/utilities'
-import { site } from '@src/consts'
-import type { CommonFrontmatter } from '@src/types'
 import {
   getAbsolutePostPath,
   getRelativePostPath,
 } from '@utilities/getPostPath'
+import type { CommonFrontmatter } from '@src/types'
+import Footer from '@components/Footer.astro'
+import Header from '@components/Header.astro'
+import Html from '@components/Html.astro'
+import TranslationLinks from '@components/TranslationLinks.astro'
+import { getLocaleFromUrl } from '@i18n/utilities'
 import getPublishedPosts from '@utilities/getPublishedPosts'
+import { site } from '@src/consts'
+import { uiStrings } from '@i18n/uiStrings'
 
 interface Props {
   frontmatter: CommonFrontmatter
@@ -82,10 +82,10 @@ if (reference) {
   {
     translationLinks.map((translation) => (
       <link
-        rel='alternate'
+        rel="alternate"
         hreflang={translation.locale}
         href={translation.absoluteURL}
-        slot='head'
+        slot="head"
       />
     ))
   }
@@ -93,7 +93,7 @@ if (reference) {
     {translationLinks.length > 0 && <TranslationLinks {translationLinks} />}
   </Header>
   <slot />
-  <footer class='dark:bg-tertiary'>
+  <footer class="dark:bg-tertiary">
     <Footer />
   </footer>
 </Html>

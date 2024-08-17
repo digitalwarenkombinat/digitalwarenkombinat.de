@@ -12,12 +12,12 @@ const collection = frontmatter.collection
 const posts = await getPublishedPosts(Astro.currentLocale, collection)
 ---
 
-<MainI18n {frontmatter} collection='pages'>
-  <main id='main'>
+<MainI18n {frontmatter} collection="pages">
+  <main id="main">
     <article>
       <Caption title={title} subtitle={subtitle} />
       <slot />
-      <div class='text-center'>
+      <div class="text-center">
         {
           posts?.length > 0 && (
             <ul>

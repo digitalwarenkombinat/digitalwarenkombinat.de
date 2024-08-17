@@ -1,10 +1,10 @@
 ---
 import Button from '@components/Button.astro'
+import Caption from './Caption.astro'
 import Post from '@components/Post.astro'
-import { uiStrings } from '@i18n/uiStrings'
 import { getLocalizedHref } from '@i18n/utilities'
 import getPublishedPosts from '@utilities/getPublishedPosts'
-import Caption from './Caption.astro'
+import { uiStrings } from '@i18n/uiStrings'
 
 const BLOG_COLLECTION = 'blog'
 const locale = Astro.currentLocale

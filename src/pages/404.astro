@@ -1,22 +1,22 @@
 ---
+import { defaultLocale, locales } from '@i18n/i18n'
 import Header from '@components/Header.astro'
 import Html from '@components/Html.astro'
-import { defaultLocale, locales } from '@i18n/i18n'
 import { uiStrings } from '@i18n/uiStrings'
 const title = uiStrings.pageNotFoundHeading[defaultLocale]
 ---
 
 <Html frontmatter={{ title, description: title }}>
   <Header />
-  <main id='main'>
-    <article class='prose'>
+  <main id="main">
+    <article class="prose">
       {
         locales.map((locale) => (
           <>
-            <h1 lang={locale} style='display: none'>
+            <h1 lang={locale} style="display: none">
               {uiStrings.pageNotFoundHeading[locale]}
             </h1>
-            <p lang={locale} style='display: none'>
+            <p lang={locale} style="display: none">
               {uiStrings.pageNotFoundBody[locale]}
             </p>
             <>
@@ -43,7 +43,7 @@ const title = uiStrings.pageNotFoundHeading[defaultLocale]
   ;(function () {
     const agentLanguage = window.navigator.language.slice(
       0,
-      defaultLocale.length
+      defaultLocale.length,
     )
     const selectedLanguage = locales.includes(agentLanguage)
       ? agentLanguage

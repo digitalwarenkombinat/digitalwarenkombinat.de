@@ -1,7 +1,7 @@
 ---
-import { locales } from '@i18n/i18n'
-import Person from '@layouts/Person.astro'
 import { getPersonPath, people } from '@utilities/people'
+import Person from '@layouts/Person.astro'
+import { locales } from '@i18n/i18n'
 
 export async function getStaticPaths() {
   const allPeoplePages = []

@@ -1,7 +1,7 @@
 ---
+import type { CommonFrontmatter } from '@src/types'
 import Page from '@layouts/Page.astro'
 import Post from '@components/Post.astro'
-import type { CommonFrontmatter } from '@src/types'
 import { getPostsByTag } from '@utilities/tags'
 
 interface Frontmatter extends CommonFrontmatter {
@@ -18,7 +18,7 @@ const { frontmatter } = Astro.props
 const filteredPosts = await getPostsByTag(
   BLOG_COLLECTION,
   frontmatter.tag,
-  Astro.currentLocale
+  Astro.currentLocale,
 )
 ---
 

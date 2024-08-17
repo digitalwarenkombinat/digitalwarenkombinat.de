@@ -1,7 +1,7 @@
+import { type ShopItemData, shopData } from '@src/shop'
 import { directoryNames } from '@i18n/i18n'
-import slugify from '@sindresorhus/slugify'
-import { shopData, type ShopItemData } from '@src/shop'
 import getPagePath from '@src/utilities/getPagePath'
+import slugify from '@sindresorhus/slugify'
 
 export interface ShopItem extends ShopItemData {
   name: string

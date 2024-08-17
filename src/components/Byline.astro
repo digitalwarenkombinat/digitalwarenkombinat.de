@@ -1,8 +1,8 @@
 ---
-import FormattedDate from '@components/FormattedDate.astro'
-import { uiStrings } from '@i18n/uiStrings'
-import type { Person } from '@utilities/people'
 import { getPersonPath, people } from '@utilities/people'
+import FormattedDate from '@components/FormattedDate.astro'
+import type { Person } from '@utilities/people'
+import { uiStrings } from '@i18n/uiStrings'
 
 const locale = Astro.currentLocale
 const updated = uiStrings.updated[locale]

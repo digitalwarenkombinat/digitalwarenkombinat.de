@@ -1,7 +1,7 @@
-import { getLocaleFromUrl } from '@i18n/utilities'
-import { getRelativePostPath } from '@utilities/getPostPath'
-import getPublishedPosts from '@utilities/getPublishedPosts'
 import type { APIContext } from 'astro'
+import { getLocaleFromUrl } from '@i18n/utilities'
+import getPublishedPosts from '@utilities/getPublishedPosts'
+import { getRelativePostPath } from '@utilities/getPostPath'
 
 export async function getPostsToRenderInRSS(
   _context: APIContext,

@@ -1,14 +1,14 @@
 ---
 import type { CollectionEntry } from 'astro:content'
 import Divider from '@components/Divider.astro'
+import Project from '@layouts/Project.astro'
 import ProjectPreview from '@components/ProjectPreview.astro'
+import { getLocaleFromUrl } from '@i18n/utilities'
+import { getPostDescription } from '@utilities/getPageDescription'
+import getPublishedPosts from '@utilities/getPublishedPosts'
+import { getRelativePostPath } from '@utilities/getPostPath'
 import { locales } from '@i18n/i18n'
 import { uiStrings } from '@i18n/uiStrings'
-import { getLocaleFromUrl } from '@i18n/utilities'
-import Project from '@layouts/Project.astro'
-import { getPostDescription } from '@utilities/getPageDescription'
-import { getRelativePostPath } from '@utilities/getPostPath'
-import getPublishedPosts from '@utilities/getPublishedPosts'
 const next = uiStrings.projectNext[Astro.currentLocale]
 
 export async function getStaticPaths() {
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 
   for (const locale of locales) {
     const localizedPosts = posts.filter(
-      (entry) => getLocaleFromUrl(entry.slug) === locale
+      (entry) => getLocaleFromUrl(entry.slug) === locale,
     )
     const localizedPostsCount = localizedPosts.length
     const localePosts = localizedPosts.map((post, index) => ({
@@ -54,9 +54,9 @@ post.data.description = getPostDescription(post)
   <Content />
   {
     (prevProject || nextProject) && (
-      <div class='my-16'>
+      <div class="my-16">
         <Divider />
-        <h2 class='mb-12'>{next}</h2>
+        <h2 class="mb-12">{next}</h2>
         {nextProject && <ProjectPreview project={nextProject} />}
         {prevProject && <ProjectPreview project={prevProject} />}
       </div>

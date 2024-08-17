@@ -1,16 +1,16 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-import { getEntries } from 'astro:content'
 import Byline from '@components/Byline.astro'
 import Caption from '@components/Caption.astro'
+import type { CollectionEntry } from 'astro:content'
 import CustomImage from '@components/CustomImage.astro'
 import MainI18n from '@components/MainI18n.astro'
 import PostTags from '@components/PostTags.astro'
 import RelatedPosts from '@components/RelatedPosts.astro'
 import ShopItem from '@components/ShopItem.astro'
-import { uiStrings } from '@i18n/uiStrings'
 import type { ShopItem as ShopItemType } from '@utilities/shop'
+import { getEntries } from 'astro:content'
 import { shop } from '@utilities/shop'
+import { uiStrings } from '@i18n/uiStrings'
 
 const locale = Astro.currentLocale
 const blogTitle = uiStrings.blogTitle[locale]
@@ -32,19 +32,19 @@ const {
 const realTags: string[] = tags.filter((tag) => tag !== 'other')
 
 const shopItem: ShopItemType | undefined = shop.find(
-  (item) => item.name === relatedShopItem
+  (item) => item.name === relatedShopItem,
 )
 
 const relatedPostEntries = await getEntries(relatedPosts)
 ---
 
-<MainI18n {frontmatter} collection='blog'>
-  <main id='main' tabindex='1'>
+<MainI18n {frontmatter} collection="blog">
+  <main id="main" tabindex="1">
     <article>
       <Caption title={title} subtitle={blogTitle} />
       <Byline authorFullName={author} {pubDate} {updatedDate} />
       {previewImage && <CustomImage imagePath={previewImage} altText={title} />}
-      <div class='prose'>
+      <div class="prose">
         <slot />
       </div>
       {realTags.length > 0 && <PostTags tags={realTags} />}

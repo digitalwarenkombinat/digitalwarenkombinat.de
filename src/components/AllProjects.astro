@@ -1,8 +1,8 @@
 ---
 import Button from '@components/Button.astro'
-import { uiStrings } from '@i18n/uiStrings'
-import { getLocalizedHref } from '@i18n/utilities'
 import CustomImage from '@components/CustomImage.astro'
+import { getLocalizedHref } from '@i18n/utilities'
+import { uiStrings } from '@i18n/uiStrings'
 const locale = Astro.currentLocale
 const {
   projectAllTitle,
@@ -12,7 +12,7 @@ const {
 } = uiStrings
 const allTitle = projectAllTitle[locale]
 const allSubtitle = projectAllSubtitle[locale]
-const allPreview = '/src/assets/protestory.webp'
+const allPreview = '/src/assets/protestory.jpg'
 const allImageAltText = projectAllImageAltText[locale]
 const link = projectLink[locale]
 ---
@@ -20,7 +20,7 @@ const link = projectLink[locale]
 <li>
   <h3>{allTitle}</h3>
   <CustomImage
-    class='border-primary border-2 rounded-md'
+    class="border-primary border-2 rounded-md"
     imagePath={allPreview}
     altText={allImageAltText}
   />

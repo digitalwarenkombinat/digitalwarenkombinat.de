@@ -1,10 +1,10 @@
-import rss from '@astrojs/rss'
-import { uiStrings } from '@i18n/uiStrings'
-import { getPostsToRenderInRSS } from '@utilities/getPostsToRenderInRSS'
 import type { APIContext } from 'astro'
 import MarkdownIt from 'markdown-it'
+import { getPostsToRenderInRSS } from '@utilities/getPostsToRenderInRSS'
+import rss from '@astrojs/rss'
 import sanitizeHtml from 'sanitize-html'
 import { siteTitle } from '../consts'
+import { uiStrings } from '@i18n/uiStrings'
 const parser = new MarkdownIt()
 
 export async function GET(context: APIContext) {

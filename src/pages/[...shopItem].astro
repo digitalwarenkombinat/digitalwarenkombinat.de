@@ -1,7 +1,7 @@
 ---
-import { locales } from '@i18n/i18n'
+import { getShopItemPath, shop } from '@src/utilities/shop'
 import ShopItem from '@layouts/ShopItem.astro'
-import { shop, getShopItemPath } from '@src/utilities/shop'
+import { locales } from '@i18n/i18n'
 
 export async function getStaticPaths() {
   const allShopPages = []

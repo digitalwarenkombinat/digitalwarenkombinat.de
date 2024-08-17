@@ -1,10 +1,10 @@
 ---
-import { locales } from '@i18n/i18n'
-import { uiStrings } from '@i18n/uiStrings'
-import PostsPerTag from '@layouts/PostsPerTag.astro'
-import { truncateDescription } from '@utilities/getPageDescription'
 import { getTagPath, getUniqueTags } from '@utilities/tags'
+import PostsPerTag from '@layouts/PostsPerTag.astro'
 import type { Tags } from '@utilities/tags'
+import { locales } from '@i18n/i18n'
+import { truncateDescription } from '@utilities/getPageDescription'
+import { uiStrings } from '@i18n/uiStrings'
 
 interface PostPerTagProps {
   params: {
@@ -23,13 +23,13 @@ export async function getStaticPaths() {
   const allPostsPerTagPages: PostPerTagProps[] = []
   const getDescription = (locale: string, tagName: string): string =>
     truncateDescription(
-      `${uiStrings.postsPerTagPageDescription[locale]} ${tagName}.`
+      `${uiStrings.postsPerTagPageDescription[locale]} ${tagName}.`,
     )
   for (const locale of locales) {
     const realTags: Tags = (await getUniqueTags(collection, locale)).filter(
       (tag) => {
         return tag.slugified !== 'other'
-      }
+      },
     )
     const posts = realTags.map((tag) => ({
       params: {

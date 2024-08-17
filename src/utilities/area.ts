@@ -1,7 +1,7 @@
-import { directoryNames } from '@i18n/i18n'
-import slugify from '@sindresorhus/slugify'
 import { type FocusData, areaData } from '@src/area'
+import { directoryNames } from '@i18n/i18n'
 import getPagePath from '@src/utilities/getPagePath'
+import slugify from '@sindresorhus/slugify'
 
 export interface Focus extends FocusData {
   name: string

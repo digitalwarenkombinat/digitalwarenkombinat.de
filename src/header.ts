@@ -14,10 +14,10 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
         path: '/projects',
         label: 'Projekte',
       },
-      {
-        path: '/shop',
-        label: 'Shop',
-      },
+      // {
+      //   path: '/shop',
+      //   label: 'Shop',
+      // },
       {
         path: '/blog',
         label: 'Blog',
@@ -42,10 +42,10 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
         path: '/en/projects',
         label: 'Projects',
       },
-      {
-        path: '/en/shop',
-        label: 'Shop',
-      },
+      // {
+      //   path: '/en/shop',
+      //   label: 'Shop',
+      // },
       {
         path: '/en/blog',
         label: 'Blog',

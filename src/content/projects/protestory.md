@@ -4,7 +4,7 @@ description: PROTESTORY! ist ein Projekt des Archivs der Arbeiterjugendbewegung 
 pubDate: '2023-03-10'
 previewImage: '/src/assets/protestory.jpg'
 reference: protestory
-isFeatured: false
+isFeatured: true
 ---
 
 **PROTESTORY!** ist eine Webanwendung, die wir gemeinsam mit dem Archiv der Arbeiterjugendbewegung umgesetzt haben. **PROTESTORY!** bietet eine spielerische Auseinandersetzung mit Protestkulturen der Arbeiter:innenjugend seit dem frühen 20. Jahrhundert.

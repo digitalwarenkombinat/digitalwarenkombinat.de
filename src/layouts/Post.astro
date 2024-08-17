@@ -23,6 +23,7 @@ const {
   pubDate,
   updatedDate,
   previewImage,
+  previewImageCredit,
   tags,
   author,
   relatedShopItem,
@@ -38,13 +39,20 @@ const shopItem: ShopItemType | undefined = shop.find(
 const relatedPostEntries = await getEntries(relatedPosts)
 ---
 
-<MainI18n {frontmatter} collection='blog'>
-  <main id='main' tabindex='1'>
+<MainI18n {frontmatter} collection="blog">
+  <main id="main" tabindex="1">
     <article>
       <Caption title={title} subtitle={blogTitle} />
       <Byline authorFullName={author} {pubDate} {updatedDate} />
-      {previewImage && <CustomImage imagePath={previewImage} altText={title} />}
-      <div class='prose'>
+      <div>
+        {
+          previewImage && (
+            <CustomImage imagePath={previewImage} altText={title} />
+          )
+        }
+        {previewImageCredit && <em>{previewImageCredit}</em>}
+      </div>
+      <div class="prose">
         <slot />
       </div>
       {realTags.length > 0 && <PostTags tags={realTags} />}

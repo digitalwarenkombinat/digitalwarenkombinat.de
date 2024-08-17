@@ -12,6 +12,7 @@ const contentCollection = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     previewImage: z.string().optional(),
+    previewImageCredit: z.string().optional(),
     isFeatured: z.boolean().default(false),
     tags: z.array(z.string()).default(['other']),
     canonicalURL: z.string().optional(),

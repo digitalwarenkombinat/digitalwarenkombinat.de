@@ -59,10 +59,6 @@ export const uiStrings: TypeUIStrings = {
     de: 'Seit 2018 haben wir etliche Open-Source-Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen, wie z.B. Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons. Seit 2022 realisieren wir Projekte als Digtalwarenkombinat. Hier findet ihr alle unsere finalisierten und aktuellen Projekte.',
     en: 'Since 2018, we have implemented a number of open source projects with open cultural data. Some of these web applications, such as Plantala or Demokratie Erleben (Living Democracy), were created as part of the Coding da Vinci cultural hackathon. Since 2022 we have been realizing projects as Digtalwarenkombinat. Here you can find all our completed and ongoing projects.',
   },
-  projectAllImageAltText: {
-    de: 'Referenzbild für alle Projekte',
-    en: 'Reference image for all projects',
-  },
   projectLink: {
     de: 'Zu allen Projekten',
     en: 'All projects',

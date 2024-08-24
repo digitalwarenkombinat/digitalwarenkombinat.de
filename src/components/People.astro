@@ -8,7 +8,7 @@ const { person } = Astro.props
 const locale = Astro.currentLocale
 ---
 
-<section>
+<div class='prose dark:prose-invert px-4'>
   <div class='flex items-center gap-6'>
     <a class='min-w-40' href={getPersonPath(locale, person.id)}>
       <CustomImage
@@ -27,4 +27,4 @@ const locale = Astro.currentLocale
   <div>
     <p>{person.content[locale]}</p>
   </div>
-</section>
+</div>

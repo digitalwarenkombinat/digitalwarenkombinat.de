@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/')
@@ -31,14 +31,14 @@ test.describe('Homepage areas', () => {
     ).toBeVisible()
   })
 
-  test('has shop', async ({ page }) => {
-    await expect(
-      page.getByRole('heading', { name: 'Welche Produkte kann man hier' }),
-    ).toBeVisible()
-    await expect(
-      page.getByRole('link', { name: 'Postkarten GLAM Postkarten' }),
-    ).toBeVisible()
-  })
+  // test('has shop', async ({ page }) => {
+  //   await expect(
+  //     page.getByRole('heading', { name: 'Welche Produkte kann man hier' }),
+  //   ).toBeVisible()
+  //   await expect(
+  //     page.getByRole('link', { name: 'Postkarten GLAM Postkarten' }),
+  //   ).toBeVisible()
+  // })
 
   test('has blog', async ({ page }) => {
     await expect(

@@ -2,7 +2,7 @@
 title: 'Demokratie erLeben'
 description: Demokratie erLeben ist eine Scrollytelling-Website über drei Kinder aus der Arbeiterklasse in den 1920er Jahren, die an einer Kinderrepublik teilnehmen. Das Projekt wurde im Rahmen eines Coding da Vinci Stipendiums 2020 entwickelt.
 pubDate: '2020-02-01'
-previewImage: '/src/assets/demol.jpg'
+previewImage: '/src/assets/demol.webp'
 reference: demol
 tags: ['Coding da Vinci', 'GLAM', 'Cultural Heritage']
 isFeatured: false
@@ -14,7 +14,7 @@ Als Scrollytelling-Website realisiert, begleiten wir bei **Demokratie erLeben** 
 
 Die Geschichte der drei Kinder wurde ausgestaltet mit vielen kleinen Trickfilmen, Minigames und Soundscapes, die den Alltag in einer Kinderrepublik als Ort der demokratischen Kinder- und Jugendbildung in der Weimarer Republik erlebbar machen.
 
-![Demokratie erLeben](/src/assets/demol1.jpg)
+![Demokratie erLeben](/src/assets/demol1.webp)
 
 **Demokratie erLeben** wurde im Rahmen des Kulturhackathons _Coding da Vinci Westfalen-Ruhrgebiet_ 2019 entwickelt. Das Projekt basiert auf Fotos und Material des Archivs der Arbeiterjugendbewegung in Oer-Erkenschwick. 2020 haben wir das Projekt im Rahmen eines Stipendiums des Coding da Vinci für die Zwecke des Archivs ergänzt und ausgebaut.
 

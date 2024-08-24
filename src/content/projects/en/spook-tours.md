@@ -2,7 +2,7 @@
 title: 'Spook Tours'
 description: Spook Tours are GPS-based scavenger hunts in which you discover spooky AR locations. The browser-based web app can be played with up to 3 people. You can play our first Spook Tour in Leipzig's Friedenspark.
 pubDate: '2024-02-01'
-previewImage: '/src/assets/SpookTour_Hero.jpg'
+previewImage: '/src/assets/SpookTour_Hero.webp'
 reference: geomazing
 tags: ['Game', 'Leipzig', 'Augmented Reality']
 isFeatured: true
@@ -16,7 +16,7 @@ The aim of the **Spook Tour** is to decode a secret message and free amateur gho
 
 A total of ten spooky AR scenes are waiting to be explored and decoded. Each scene contains the translation for an occult rune, which can be used to decode the secret message at the end.
 
-![Spook Tours](/src/assets/Spooktours1.jpg)
+![Spook Tours](/src/assets/Spooktours1.webp)
 
 The **Spook Tours** work as a browser-based web app and can be played with up to 3 people.
 

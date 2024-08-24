@@ -2,7 +2,7 @@
 title: 'Plantala'
 description: Mit Plantala hauchten wir archivierten und digitalisierten Biologie-Lehrtafeln der Zentralen Kustodie der Universität Göttingen ein neues Leben ein. Mit Plantala lassen sich aus einzelnen Pflanzenteilen bunte und ausmalbare Mandalas gestalten.
 pubDate: '2022-03-10'
-previewImage: '/src/assets/plantala_hero.jpg'
+previewImage: '/src/assets/plantala_hero.webp'
 reference: plantala
 tags: ['Coding da Vinci', 'GLAM', 'Cultural Heritage', 'Open Data']
 isFeatured: false
@@ -13,7 +13,7 @@ Mit **Plantala** kannst du aus ästhetischen Pflanzenteilen dein eigenes Mandala
 
 Alle Bilder und erstellten Plantalas sind frei lizenziert und können vielfältig genutzt werden, z.B. für den Unterricht, für umweltpädagogische Angebote oder einfach für private Deko.
 
-![Plantala](../../assets/plantala1.jpg)
+![Plantala](../../assets/plantala1.webp)
 
 **Plantala** wurde im Rahmen eines Coding da Vinci Stipendiums 2021 entwickelt.
 
@@ -23,7 +23,7 @@ Das Repository findet ihr auf [Github.](https://github.com/digitalwarenkombinat/
 
 **Plantala** wurde im Rahmen des Coding da Vinci Nieder.Rhein.Land 2021 weiterentwickelt. Das Projekt **Julala** mit Bildern der "Fürstlich Jülich´schen Hochzeit“ aus dem Stadtmuseum Düsseldorf ermöglicht ebenso wie das Ursprungsprojekt die Erstellung von Bildreichen Mandalas.
 
-![Plantala](../../assets/julala.jpg)
+![Plantala](../../assets/julala.webp)
 
 Hier geht es zu [Julala.](https://digitalwarenkombinat.github.io/julala/)
 

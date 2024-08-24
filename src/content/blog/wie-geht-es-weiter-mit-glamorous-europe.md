@@ -6,7 +6,7 @@ pubDate: '2024-06-15'
 updatedDate: '2024-06-30'
 previewImage: '/src/assets/blog3.webp'
 reference: third-post
-tags: [PrototypeFund, Webapp, OpenArt, Wikidata, OpenGLAM]
+tags: [PrototypeFund, Webapp, OpenArt, Wikidata, GLAM]
 isFeatured: true
 # relatedShopItem: 'Postkarten GLAM'
 relatedPosts:

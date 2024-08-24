@@ -5,7 +5,7 @@ description: 'Nach rund sechs Monaten finanzieller Förderung durch den Prototyp
 pubDate: '2024-03-01'
 previewImage: '/src/assets/blog1.webp'
 reference: first-post
-tags: [PrototypeFund, Webapp, OpenArt, Wikidata, OpenGLAM]
+tags: [PrototypeFund, Webapp, OpenArt, Wikidata, GLAM]
 isFeatured: false
 relatedPosts: []
 ---
@@ -14,7 +14,7 @@ Nach rund sechs Monaten finanzieller Förderung durch den Prototype Fund ist der
 
 Die Webapp ist so aufgebaut, dass ihr euch ganz einfach per Wisch-System (kennt man von einigen bekannten Dating-Apps) durch digitalisierte Sammlungen von Kultureinrichtungen navigieren könnt. Derzeit sind das vor allem Gemälde, aber auch Drucke, Skizzen, Plakate, Fotografien und Skulpturen. Alle diese Daten sind über eine Anbindung an Wikidata abrufbar. Das heißt, Kunstwerke, die beispielsweise direkt von Kulturinstitutionen bei Wikimedia Commons hochgeladen wurden und mit der Wikidata verknüpft wurden, können in GLAMorous Europe angezeigt werden. Wir haben uns dazu entschieden, nur Bilder in die Webapp zu laden, die über ein IIIF-Manifest verfügen. Dadurch können wir sicherstellen, dass die Bilder auch im nächsten Schritt des Projektes weiterverwendet werden können, auch wenn die Auswahl dadurch etwas eingeschränkt wird.
 
-![GLAMorous Europe](../../assets/GLAM1.jpg)
+![GLAMorous Europe](../../assets/glam1.jpg)
 
 Als erstes wählt ihr in der **_Auswahl_** eure Lieblingskunstwerke aus, indem ihr nach links oder rechts wischt (oder auf "Daumen hoch" oder "Daumen runter" klickt). Danach könnt ihr in der **_Sammlung_** dann die hochauflösenden Bilder bearbeiten und Bildausschnitte auswählen, die ihr für die spätere Collage weiterverwenden möchtet. Das geht aktuell per grober Lassoauswahl und per Hintergrundfreistellung. Bei beiden arbeiten wir noch mit viel Elan an einer Optimierung. Mehr Infos dazu gibt's in einem der nächsten Blogbeiträge.
 

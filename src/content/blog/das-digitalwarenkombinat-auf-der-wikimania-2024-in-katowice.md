@@ -30,7 +30,7 @@ Nach anfänglicher Überwältigung nutzten wir die Gelegenheit und besuchten ein
 Unsere Präsentation von <a href='/projects/glamorous-europe/'>**GLAMorous Europe**</a> in Form eines 5-minütigen Lightning-Talks sollte erst am dritten Tag der Konferenz stattfinden, wurde jedoch sehr ausführlich und empathisch vorbereitet.
 Nach einem ersten kurzen Kennenlernen mit den Organisator:innen der Lightning Talk Show Cases am ersten Konferenztag, konnten wir am Vormittag der Präsentation sogar noch einmal die Bühne antesten und alle Präsentationen durchgehen. So gut vorbereitet habe ich selten Konferenzpräsentationen erlebt. Das nahm allen Teilnehmenden auch die Aufregung und den Druck.
 
-![Wikimania](../../assets/blog4_1.webp)
+![Wikimania](/src/assets/blog4_1.webp)
 _Credit: Adjoajo, CC BY-SA 4.0, via Wikimedia Commons_
 
 Unsere fünf Minuten des Fame gingen sehr flott und entspannt über die Bühne.
@@ -44,5 +44,5 @@ Dank der neuen Onboarding-Optionen für Wiki-Einsteiger:innen nutzten wir den ü
 
 Wenn die Konferenz 2026 in Paris stattfinden wird, sind wir auf jeden Fall wieder mit dabei.
 
-![Wikimania](../../assets/blog4_2.webp)
+![Wikimania](/src/assets/blog4_2.webp)
 _Credit: Kasia Ostrowska (bazgra_nina), CC0, via Wikimedia Commons_

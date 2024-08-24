@@ -82,7 +82,7 @@ export const footerMenu: Record<string, Record<string, navigationItem[]>> = {
         label: 'Legal Notices',
       },
       {
-        path: '/privacy',
+        path: '/en/privacy',
         label: 'Privacy Policy',
       }
     ],

@@ -1,6 +1,6 @@
 ---
 title: 'GLAMorous Europe ist seit heute live!'
-author: 'Anne Mühlich'
+author: 'Gerd Müller'
 description: 'Nach rund sechs Monaten finanzieller Förderung durch den Prototype Fund ist der Prototyp unserer Webapp "GLAMorous Europe" nun endlich live! Mit GLAMorous Europe könnt ihr jetzt auf eine Entdeckungsreise durch die digitalen Sammlungen...'
 pubDate: '2024-03-01'
 previewImage: '/src/assets/blog1.webp'

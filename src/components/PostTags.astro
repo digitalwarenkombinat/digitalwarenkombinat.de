@@ -9,7 +9,7 @@ const { tags } = Astro.props
 const locale = Astro.currentLocale
 ---
 
-<div class='inline-flex gap-4 mx-auto flex-wrap justify-center'>
+<div class='inline-flex gap-4 mx-auto flex-wrap justify-center my-8'>
   {
     tags.map((tag) => {
       const tagPath = getTagPath(locale, tag)

@@ -5,6 +5,9 @@ reference: contact
 description: 'Digitalwarenkombinat | Contact'
 ---
 
+import Button from '@components/Button.astro'
+import { siteMail } from '@src/consts'
+
 <article>
   <h1>{frontmatter.title}</h1>
 
@@ -14,5 +17,7 @@ Eilenburger Straße 27<br/>
 04317 Leipzig<br/>
 
 e-mail: info@digitalwarenkombinat.de
+
+<Button href={siteMail}>Email us!</Button>
 
 </article>

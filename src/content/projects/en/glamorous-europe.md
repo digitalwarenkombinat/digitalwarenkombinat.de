@@ -28,7 +28,7 @@ Based on these decisions, a personalized, digital collection is created accordin
 
 Objects, image sections and prefabricated favorite pieces can then be dragged and dropped together to create a new work of art. The contrast, brightness and position of the elements can be adjusted. At the end, the resulting artwork can be shared digitally or analog.
 
-![GLAMorous Europe](/src/assets/GLAM1.webp)
+![GLAMorous Europe](/src/assets/glam1.webp)
 
 **GLAMorous Europe** is a prototype that is still undergoing further development. For example, we are planning to integrate Wikipedia information on the individual art objects, as well as additional collection and editing options.
 

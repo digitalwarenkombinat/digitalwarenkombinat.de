@@ -1,6 +1,6 @@
 ---
 title: 'GLAMorous Europe is live now!'
-author: 'Anne Mühlich'
+author: 'Gerd Müller'
 description: 'After around six months of funding from the Prototype Fund, the prototype of our GLAMorous Europe web app is finally live! With GLAMorous Europe you can go now on a discovery tour through the digital collections of galleries, libraries, archives and museums (GLAMs).'
 pubDate: '2024-03-01'
 previewImage: '/src/assets/blog1.webp'

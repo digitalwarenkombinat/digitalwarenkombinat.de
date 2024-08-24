@@ -41,7 +41,7 @@ const relatedPostEntries = await getEntries(relatedPosts)
 
 <MainI18n {frontmatter} collection='blog'>
   <main id='main' tabindex='1'>
-    <article>
+    <article class='gap-4'>
       <Caption title={title} subtitle={blogTitle} />
       <Byline authorFullName={author} {pubDate} {updatedDate} />
       <div>
@@ -52,7 +52,7 @@ const relatedPostEntries = await getEntries(relatedPosts)
         }
         {previewImageCredit && <em>{previewImageCredit}</em>}
       </div>
-      <div class='prose dark:prose-invert'>
+      <div class='prose dark:prose-invert m-auto'>
         <slot />
       </div>
       {realTags.length > 0 && <PostTags tags={realTags} />}

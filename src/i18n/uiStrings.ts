@@ -132,19 +132,19 @@ export const uiStrings: TypeUIStrings = {
     en: 'All posts from',
   },
   updated: {
-    de: 'zuletzt aktualisiert ',
-    en: 'last updated on ',
+    de: 'zuletzt aktualisiert am',
+    en: 'last updated on',
   },
   from: {
     de: 'von ',
     en: 'from ',
   },
   pageNotFoundHeading: {
-    de: 'Seite nicht gefunden',
-    en: 'Page not found',
+    de: 'Puh, wir haben wirklich lange gesucht, aber diese Seite scheint es nicht zu geben.',
+    en: 'Phew, we\'ve been looking for a really long time, but this page doesn\'t seem to exist.',
   },
   pageNotFoundBody: {
-    de: '404!',
-    en: '404!',
+    de: 'Zurück zur Startseite',
+    en: 'Back to the home page',
   },
 }

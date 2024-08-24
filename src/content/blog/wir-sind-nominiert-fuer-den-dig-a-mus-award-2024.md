@@ -6,7 +6,7 @@ pubDate: '2024-04-16'
 updatedDate: '2024-05-22'
 previewImage: '/src/assets/blog2.webp'
 reference: second-post
-tags: [DigAMus, IIIF, GLAM]
+tags: [DigAMus, GLAM]
 isFeatured: false
 relatedPosts: []
 ---

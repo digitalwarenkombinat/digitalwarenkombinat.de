@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 })
 
 test.describe('Project pages', () => {
-  test('has features projects', async ({ page }) => {
+  test('has featured projects', async ({ page }) => {
     await page.getByRole('link', { name: 'GLAMorous Europe GLAMorous' }).click()
     await expect(page).toHaveURL(/.*glamorous-europe/)
     await expect(
@@ -14,17 +14,17 @@ test.describe('Project pages', () => {
     await expect(page.getByText('Weitere Projekte Spook Tours')).toBeVisible()
 
     await page
-      .getByRole('link', { name: 'Spook Tours Spook Tours sind' })
+      .getByRole('link', { name: 'Spook Tours' })
       .click()
     await expect(page).toHaveURL(/.*spook-tours/)
     await expect(
       page.getByRole('heading', { name: 'Spook Tours' }),
     ).toBeVisible()
     await expect(
-      page.getByRole('link', { name: 'GLAMorous Europe GLAMorous' }),
+      page.getByRole('link', { name: 'GLAMorous Europe' }),
     ).toBeVisible()
 
-    await page.getByRole('link', { name: 'GLAMorous Europe GLAMorous' }).click()
+    await page.getByRole('link', { name: 'GLAMorous Europe' }).click()
     await expect(page).toHaveURL(/.*glamorous-europe/)
     await expect(
       page.getByRole('heading', { name: 'GLAMorous Europe' }),

@@ -18,7 +18,7 @@ test.describe('Homepage areas', () => {
     await expect(page.getByRole('link', { name: 'Schreib uns!' })).toBeVisible()
 
     await expect(
-      page.getByRole('img', { name: 'Digitalwarenkombinat' }),
+      page.getByRole('img', { name: 'Digitalwarenkombinat Hero' }),
     ).toBeVisible()
   })
 
@@ -45,7 +45,7 @@ test.describe('Homepage areas', () => {
       page.getByRole('heading', { name: 'Was gibt es Neues? Unser Blog' }),
     ).toBeVisible()
     await expect(
-      page.locator('section').filter({ hasText: 'Wir sind nominiert für den' }),
+      page.locator('section').filter({ hasText: 'Das Digitalwarenkombinat auf der Wikimania 2024 in Katowice' }),
     ).toBeVisible()
   })
 

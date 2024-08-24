@@ -1,5 +1,6 @@
 ---
 import { defaultLocale, fallback } from '@i18n/i18n'
+import FooterLinks from './FooterLinks.astro'
 import HeaderLink from './HeaderLink.astro'
 import Logo from './Logo.astro'
 import SocialLinks from './SocialLinks.astro'
@@ -26,5 +27,6 @@ const headerMenuItems: navigationItem[] = headerMenu[menuLocale].items
     <slot />
   </ul>
   <Logo />
+  <FooterLinks />
   <SocialLinks />
 </nav>

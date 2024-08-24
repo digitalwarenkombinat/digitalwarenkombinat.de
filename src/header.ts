@@ -25,11 +25,7 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: '/about',
         label: 'Über uns',
-      },
-      {
-        path: '/legal',
-        label: 'Impressum',
-      },
+      }
     ],
   },
   en: {
@@ -53,11 +49,7 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: '/en/about',
         label: 'About',
-      },
-      {
-        path: '/en/legal',
-        label: 'Legal Notices',
-      },
+      }
     ],
   },
 }

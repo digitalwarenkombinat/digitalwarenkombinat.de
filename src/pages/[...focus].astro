@@ -11,7 +11,7 @@ export async function getStaticPaths() {
         focus: `${getFocusPath(locale, focus.id, false)}`,
       },
       props: {
-        title: focus.name,
+        title: focus.name[locale],
         description: focus.description[locale],
         focus: focus,
       },

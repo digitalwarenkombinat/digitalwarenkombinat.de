@@ -1,16 +1,12 @@
-import { type FocusData, areaData } from '@src/area'
+import { areaData } from '@src/area'
 import { directoryNames } from '@i18n/i18n'
 import getPagePath from '@src/utilities/getPagePath'
 import slugify from '@sindresorhus/slugify'
 
-export interface Focus extends FocusData {
-  name: string
-  id: string
-}
 
 export const area = areaData.map((focus) => ({
   ...focus,
-  id: slugify(focus.name),
+  id: slugify(focus.id),
 }))
 
 export const getFocusPath = (

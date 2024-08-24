@@ -20,7 +20,7 @@ const filteredPosts = await getPostsByAuthor(
 )
 ---
 
-<div class='px-4'>
+<article class='px-4'>
   <div class='prose dark:prose-invert'>
     <div class='flex items-center gap-6'>
       <a class='min-w-40' href={getPersonPath(locale, person.id)}>
@@ -51,4 +51,4 @@ const filteredPosts = await getPostsByAuthor(
       </ul>
     )
   }
-</div>
+</article>

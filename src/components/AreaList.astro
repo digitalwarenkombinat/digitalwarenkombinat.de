@@ -1,6 +1,6 @@
 ---
-import { area, getFocusPath } from '@src/utilities/area'
 import Caption from './Caption.astro'
+import { area } from '@src/utilities/area'
 import { uiStrings } from '@i18n/uiStrings'
 
 const locale = Astro.currentLocale
@@ -17,9 +17,7 @@ const subtitle = areaSubtitle[locale]
       area.map((focus) => (
         <li>
           <span class='bg-secondary rounded-full absolute -ml-3 h-10 w-10' />
-          <h3 class='z-10'>
-            <a href={getFocusPath(locale, focus.id)}>{focus.name[locale]}</a>
-          </h3>
+          <h3 class='z-10'>{focus.name[locale]}</h3>
           <p class='p-4'>{focus.description[locale]}</p>
         </li>
       ))

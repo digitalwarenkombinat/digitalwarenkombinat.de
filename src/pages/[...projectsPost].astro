@@ -55,7 +55,7 @@ post.data.description = getPostDescription(post)
   {
     (prevProject || nextProject) && (
       <div class='my-16'>
-        <Divider />
+        <div class='opacity-80 h-1 bg-primary rounded' />
         <h2 class='mb-12'>{next}</h2>
         {nextProject && <ProjectPreview project={nextProject} />}
         {prevProject && <ProjectPreview project={prevProject} />}

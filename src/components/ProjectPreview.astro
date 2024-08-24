@@ -1,16 +1,17 @@
 ---
 import type { CollectionEntry } from 'astro:content'
+import { getRelativePostPath } from '@utilities/getPostPath'
 
 type Props = { project: CollectionEntry<'projects'> }
 
+const locale = Astro.currentLocale
+const collection = 'projects'
 const { project } = Astro.props
 const { title, description } = project.data
+const postPath = getRelativePostPath(locale, collection, project.slug)
 ---
 
-<a
-  class='flex justify-between items-start gap-8 mb-10'
-  href={`/projects/${project.slug}/`}
->
+<a class='flex justify-between items-start gap-8 mb-10' href={postPath}>
   <div class='grow'>
     <h3 class='text-xl'>{title}</h3>
     {description && <div class='mt-1 text-sm'>{description}</div>}

@@ -5,5 +5,3 @@ collection: projects
 reference: projects
 description: Digitalwarenkombinat | Our projects
 ---
-
-Our projects

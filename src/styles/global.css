@@ -63,10 +63,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-h4 {
-  font-size: 1.25rem;
-}
-
 :where(main) li {
   display: grid;
   gap: 2rem;
@@ -191,4 +187,8 @@ header.small > a div {
 header.small > a svg {
   width: 4rem;
   height: 4rem;
+}
+
+.prose:has(img):has(em) img {
+  margin-bottom: 0;
 }

@@ -22,13 +22,13 @@ Gefällt dem Nutzer oder der Nutzerin das angezeigte Bild, kann dieses per Swipe
 
 **_Sammlung_**
 
-Auf Basis dieser Entscheidungen entsteht eine personalisierte, digitale Sammlung nach den Interessen der Nutzer:innen, welche weiter durchstöbert werden kann. Die Einbindung des IIIF-Viewers _Clover_ ermöglicht dabei auch einen „Deep Zoom“ in die hochauflösend gescannten Kunstwerke und es können einzelne Bildelemente per Lasso oder Bildausschnitte zur weiteren Verwendung auf der Leinwand erstellt werden.
+Auf Basis dieser Entscheidungen entsteht eine personalisierte, digitale Sammlung nach den Interessen der Nutzer:innen, welche weiter durchstöbert werden kann. Die Einbindung des IIIF-Viewers _Clover_ ermöglicht dabei auch einen _Deep Zoom_ in die hochauflösend gescannten Kunstwerke und es können einzelne Bildelemente per Lasso oder Bildausschnitte zur weiteren Verwendung auf der Leinwand erstellt werden.
 
 **_Leinwand_**
 
 Freigestellte Objekte, Bildausschnitte und vorgefertigte Lieblingsstücke können anschließend per _drag&drop_ zu einem neuen Kunstwerk zusammengefügt werden. Dabei können Kontrast, Helligkeit und Position der Elemente nachbearbeitet werden. Am Schluss kann das so entstandene eigene Kunstwerk digital oder analog geteilt werden.
 
-![GLAMorous Europe](../../assets/GLAM1.jpg)
+![GLAMorous Europe](/src/assets/GLAM1.jpg)
 
 Bei **GLAMorous Europe** handelt es sich um einen Prototypen, der sich noch in der Weiterentwicklung befindet. Wir planen beispielsweise die Einbindung von Wikipedia-Informationen zu den einzelnen Kunstobjekten, aber auch zusätzliche Sammlungs- und Bearbeitungsoptionen.
 
@@ -36,8 +36,14 @@ Bei **GLAMorous Europe** handelt es sich um einen Prototypen, der sich noch in d
 
 **GLAMorous Europe** wurde im Rahmen der 14. Förderungsrunde des Prototype Fund von September 2023 bis Februar 2024 gefördert. Der Prototype Fund ist ein Förderprogramm des Bundesministeriums für Bildung und Forschung (BMBF), das von der Open Knowledge Foundation Deutschland betreut und ausgewertet wird.
 
-Link zu **GLAMorous Europe**: https://www.glam-europe.de/
+Hier geht´s zu [GLAMorous Europe.](https://www.glam-europe.de/)
 
-Repository auf Github: https://github.com/digitalwarenkombinat/glamorouseurope
+Das Repository findet ihr auf [Github](https://github.com/digitalwarenkombinat/glamorouseurope)
 
-Das Projekt **GLAMorous Europe** steht auf der Shortlist des **DigAMus Award 2024**: https://digamus-award.de/shortlist/
+**GLAMorous Europe** ist momentan verfügbar auf Deutsch und Englisch.
+
+### Reaktionen
+
+Das Projekt **GLAMorous Europe** wurde auf die Shortlist des [DigAMus Award 2024](https://digamus-award.de/shortlist/) gesetzt und war in der Kategorie Apps und Games nominiert.
+
+Im August 2024 präsentierten wir das Projekt als Lightning Talk auf der Wikimania 2024 in Katowice. Hier findet ihr <a href='/blog/das-digitalwarenkombinat-auf-der-wikimania-2024-in-katowice'>**unseren Blogbeitrag**</a> zur Konferenz sowie das Video zu unserer Präsentation auf [Youtube.](https://www.youtube.com/live/fRFuWtDKxwM?feature=shared&t=28492)

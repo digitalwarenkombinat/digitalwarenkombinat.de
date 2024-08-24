@@ -1,9 +1,10 @@
 ---
 title: 'Plantala'
-description: Mit Plantala hauchten wir archivierten und digitalisierten Biologie-Lehrtafeln der Zentralen Kustodie der Universität Göttingen ein neues Leben ein. Mit Plantala lassen sich aus einzelnen Pflanzenteilen bunte und ausmalbare Mandalas gestalten. Plantala wurde im Rahmen eines Coding da Vinci Stipendiums 2021 entwickelt.
+description: Mit Plantala hauchten wir archivierten und digitalisierten Biologie-Lehrtafeln der Zentralen Kustodie der Universität Göttingen ein neues Leben ein. Mit Plantala lassen sich aus einzelnen Pflanzenteilen bunte und ausmalbare Mandalas gestalten.
 pubDate: '2022-03-10'
 previewImage: '/src/assets/plantala_hero.jpg'
 reference: plantala
+tags: ['Coding da Vinci', 'GLAM', 'Cultural Heritage', 'Open Data']
 isFeatured: false
 ---
 
@@ -16,18 +17,20 @@ Alle Bilder und erstellten Plantalas sind frei lizenziert und können vielfälti
 
 **Plantala** wurde im Rahmen eines Coding da Vinci Stipendiums 2021 entwickelt.
 
-Hier geht es zu **Plantala**: https://www.plantala.de/
+Hier geht es zu [Plantala.](https://www.plantala.de/)
 
-Repository auf Github: https://github.com/digitalwarenkombinat/plantala
+Das Repository findet ihr auf [Github.](https://github.com/digitalwarenkombinat/plantala)
 
 **Plantala** wurde im Rahmen des Coding da Vinci Nieder.Rhein.Land 2021 weiterentwickelt. Das Projekt **Julala** mit Bildern der "Fürstlich Jülich´schen Hochzeit“ aus dem Stadtmuseum Düsseldorf ermöglicht ebenso wie das Ursprungsprojekt die Erstellung von Bildreichen Mandalas.
 
 ![Plantala](../../assets/julala.jpg)
 
-Hier geht es zu **Julala**: https://digitalwarenkombinat.github.io/julala/
+Hier geht es zu [Julala.](https://digitalwarenkombinat.github.io/julala/)
 
-Repository auf Github: https://github.com/digitalwarenkombinat/julala
+Das Repository befindet sich ebenfalls auf [Github.](https://github.com/digitalwarenkombinat/julala)
 
 **Plantala** wartet darauf, weiterentwickelt zu werden. Als Medienstation oder zielgerichtet angepasste Anwendung kann es mit jedem beliebigen Bilderdatensatz befüllt werden.
-Schau dazu auch in unsere Beschreibung von Medienstation as a Service (MaaS): https://github.com/digitalwarenkombinat/plantala/blob/main/medienstationAsAService/README.md
+Schau dazu auch in unsere Beschreibung von [Media Station as a Service (MaaS).](https://github.com/digitalwarenkombinat/plantala/blob/main/medienstationAsAService/README.md)
 Wir helfen dir gern dabei, es an deine Zwecke anzupassen.
+
+Bitte beachte, dass Planatala momentan nur auf Deutsch verfügbar ist.

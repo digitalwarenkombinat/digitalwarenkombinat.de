@@ -16,7 +16,7 @@ The aim of the **Spook Tour** is to decode a secret message and free amateur gho
 
 A total of ten spooky AR scenes are waiting to be explored and decoded. Each scene contains the translation for an occult rune, which can be used to decode the secret message at the end.
 
-![Spook Tours](/src/assets/Spooktours1.webp)
+![Spook Tours](../../../assets/Spooktours1.webp)
 
 The **Spook Tours** work as a browser-based web app and can be played with up to 3 people.
 

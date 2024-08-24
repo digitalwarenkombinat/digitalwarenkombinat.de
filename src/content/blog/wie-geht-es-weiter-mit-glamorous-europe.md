@@ -38,7 +38,7 @@ Dabei habe ich feststellen dürfen, dass Datenpflege in Wikidata sehr einfach is
 Somit habe ich angefangen, die Titel der betreffenden Kunstwerke ins Englische zu übersetzen bzw. deren englische Titel hinzuzufügen.
 Da das Handarbeit ist, konnte ich das bisher erst für rund 200 Objekte realisieren (alles Objekte aus dem Belvedere Wien!). Dadurch fällt inzwischen direkt eine Verbesserung bei den in <a href='/projects/glamorous-europe/'>**GLAMorous Europe**</a> angezeigten Kunstwerken auf.
 
-![GLAMorous Europe](/src/assets/blog3_1.webp)
+![GLAMorous Europe](../../assets/blog3_1.webp)
 
 Zumal die Sammlung des Belvedere aktuell sehr großen Raum in unserem Projekt einnimmt - somit kommen wir zu unserem zweiten Wikidata-Problem:
 

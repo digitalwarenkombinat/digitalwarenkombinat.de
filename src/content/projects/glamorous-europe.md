@@ -28,7 +28,7 @@ Auf Basis dieser Entscheidungen entsteht eine personalisierte, digitale Sammlung
 
 Freigestellte Objekte, Bildausschnitte und vorgefertigte Lieblingsstücke können anschließend per _drag&drop_ zu einem neuen Kunstwerk zusammengefügt werden. Dabei können Kontrast, Helligkeit und Position der Elemente nachbearbeitet werden. Am Schluss kann das so entstandene eigene Kunstwerk digital oder analog geteilt werden.
 
-![GLAMorous Europe](/src/assets/glam1.webp)
+![GLAMorous Europe](../../assets/glam1.webp)
 
 Bei **GLAMorous Europe** handelt es sich um einen Prototypen, der sich noch in der Weiterentwicklung befindet. Wir planen beispielsweise die Einbindung von Wikipedia-Informationen zu den einzelnen Kunstobjekten, aber auch zusätzliche Sammlungs- und Bearbeitungsoptionen.
 

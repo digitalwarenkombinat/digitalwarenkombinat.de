@@ -27,7 +27,7 @@ After being overwhelmed at first, we took the opportunity to attend some present
 
 Our presentation of <a href='/projects/glamorous-europe/'>**GLAMorous Europe**</a> in the form of a 5-minute lightning talk was scheduled to take place on the third day of the conference, but was prepared in great detail and with empathy in the days before. After an initial brief meeting with the organizers of the lightning talk show cases on the first day of the conference, we were even able to test the stage again on the morning of the presentation and go through all the presentations. I have rarely seen conference presentations so well prepared. This also took the excitement and pressure off all the participants.
 
-![Wikimania](/src/assets/blog4_1.webp)
+![Wikimania](../../../assets/blog4_1.webp)
 _Credit: Adjoajo, CC BY-SA 4.0, via Wikimedia Commons_
 
 Our five minutes of fame went very smoothly and relaxed. You can find the video of our appearance [here on Youtube.](https://www.youtube.com/live/fRFuWtDKxwM?feature=shared&t=28492)
@@ -40,5 +40,5 @@ Thanks to the new onboarding options for Wiki beginners, we took advantage of th
 
 When the conference takes place in Paris in 2026, we'll definitely be there again.
 
-![Wikimania](/src/assets/blog4_2.webp)
+![Wikimania](../../../assets/blog4_2.webp)
 _Credit: Kasia Ostrowska (bazgra_nina), CC0, via Wikimedia Commons_

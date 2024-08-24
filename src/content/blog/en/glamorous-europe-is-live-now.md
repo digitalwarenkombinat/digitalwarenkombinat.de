@@ -14,7 +14,7 @@ After around six months of funding from the Prototype Fund, the prototype of our
 
 The web app is designed so that you can easily navigate through digitised collections of cultural institutions using a swipe system (familiar from some popular dating apps). Currently, these are mainly paintings, but also prints, sketches, posters, photographs and sculptures. All these items are being retrieved from Wikidata. This means that works of art that have been uploaded directly by cultural institutions to Wikimedia Commons and linked to Wikidata, can be displayed in <a href='/projects/glamorous-europe/'>**GLAMorous Europe**</a>. We have decided to only upload images to the web app that have an IIIF manifest. This allows us to ensure that the images can continue to be used in the next step of the project, even if this limits the selection somewhat.
 
-![GLAMorous Europe](/src/assets/glam1.webp)
+![GLAMorous Europe](../../../assets/glam1.webp)
 
 First, select your favourite artwork in the selection by swiping to the left or right (or clicking on ‘Thumbs up’ or ‘Thumbs down’). You can then edit the high-resolution images in the collection and select image sections that you would like to use for the future collage. This can currently be done using a rough lasso selection and background cropping. We are still working hard on optimising both. There will be more information on this in an upcoming blog post.
 

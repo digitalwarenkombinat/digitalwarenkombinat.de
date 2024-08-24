@@ -12,7 +12,7 @@ isFeatured: false
 
 All images and Plantalas created are freely licensed and can be used in a variety of ways, e.g. for teaching, environmental education or simply for private decoration.
 
-![Plantala](/src/assets/plantala1.webp)
+![Plantala](../../../assets/plantala1.webp)
 
 **Plantala** was developed as part of a Coding da Vinci Scholarship 2021.
 
@@ -22,7 +22,7 @@ The repository you can find on [Github.](https://github.com/digitalwarenkombinat
 
 **Plantala** was also refined as part of the Coding da Vinci Nieder.Rhein.Land 2021. The **Julala** project with pictures of the “Fürstlich Jülich'schen Hochzeit” from the Stadtmuseum Düsseldorf enables the creation of image-rich mandalas, just like the original project.
 
-![Plantala](/src/assets/julala.webp)
+![Plantala](../../../assets/julala.webp)
 
 Click here to go to [Julala.](https://digitalwarenkombinat.github.io/julala/)
 

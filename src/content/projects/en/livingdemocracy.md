@@ -14,7 +14,7 @@ Realized as a scrollytelling website, with **Living Democracy** we accompany Ann
 
 The story of the three children is told through many small animated films, mini-games and soundscapes that bring to life everyday life in a children's republic as a place of democratic education for children and young people in the Weimar Republic.
 
-![Living Democracy](/src/assets/demol1.webp)
+![Living Democracy](../../../assets/demol1.webp)
 
 **Living Democracy** was developed as part of the _Coding da Vinci Westfalen-Ruhrgebiet 2019_ cultural hackathon. The project is based on photos and material from the Archiv der Arbeiterjugendbewegung (Archive of the Workers' Youth Movement) in Oer-Erkenschwick. In 2020, we supplemented and expanded the project for the purposes of the archive as part of a Coding da Vinci grant.
 

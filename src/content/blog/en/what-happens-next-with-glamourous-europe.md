@@ -29,7 +29,7 @@ There are some large datasets, e.g. from the Belvedere in Vienna, which were not
 
 In the case of the missing English titles, this means that the record number from Wikidata is now displayed in our web application instead (also known as the Q number, because it starts with a Q). In order to tackle this problem, I started to look into data maintenance in Wikidata and took part in a so-called Carpentry Lesson (a kind of introductory course for Wikidata). I realized that data maintenance in Wikidata is very simple and much easier than in Wikipedia, for example. So I started translating the titles of the artworks in concerned into English or adding their English titles. As this is manual work, I have only been able to do this for around 200 objects so far (all objects from the Belvedere Vienna!). As a result, an improvement in the artworks displayed in <a href='/projects/glamorous-europe/'>**GLAMorous Europe**</a> is now immediately noticeable.
 
-![GLAMorous Europe](/src/assets/blog3_1.webp)
+![GLAMorous Europe](../../../assets/blog3_1.webp)
 
 Especially as the Belvedere collection currently takes up a lot of space in our project - which brings us to our second Wikidata problem:
 

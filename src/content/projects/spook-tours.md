@@ -17,7 +17,7 @@ Ziel der **Spook Tour** ist es, eine geheime Botschaft zu entschlüsseln und Hob
 Insgesamt warten zehn schaurige AR-Szenen darauf, erkundet und entschlüsselt zu werden.
 Jede Szene enthält die Übersetzung für eine okkulte Rune, mit der am Ende die geheime Botschaft entschlüsselt werden kann.
 
-![Spook Tours](/src/assets/Spooktours1.webp)
+![Spook Tours](../../assets/Spooktours1.webp)
 
 Die **Spook Tours** funktionieren als browserbasierte Webapp und können mit bis zu 3 Personen gespielt werden.
 

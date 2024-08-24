@@ -2,7 +2,7 @@
 title: 'Spook Tours'
 description: Spook Tours sind GPS-basierte Schnitzeljagden, bei denen du gruselige AR-Orte entdeckst. Die erste Tour kann man im Leipziger Friedenspark spielen. Spook Tours ist eine Produktion von Geomazing in Kooperation mit dem Digitalwarenkombinat.
 pubDate: '2024-02-01'
-previewImage: '/src/assets/SpookTour_Hero.webp'
+previewImage: '/src/assets/spooktours_hero.webp'
 reference: geomazing
 tags: ['Game', 'Leipzig', 'Augmented Reality']
 isFeatured: true
@@ -17,7 +17,7 @@ Ziel der **Spook Tour** ist es, eine geheime Botschaft zu entschlüsseln und Hob
 Insgesamt warten zehn schaurige AR-Szenen darauf, erkundet und entschlüsselt zu werden.
 Jede Szene enthält die Übersetzung für eine okkulte Rune, mit der am Ende die geheime Botschaft entschlüsselt werden kann.
 
-![Spook Tours](../../assets/Spooktours1.webp)
+![Spook Tours](../../assets/spooktours1.webp)
 
 Die **Spook Tours** funktionieren als browserbasierte Webapp und können mit bis zu 3 Personen gespielt werden.
 

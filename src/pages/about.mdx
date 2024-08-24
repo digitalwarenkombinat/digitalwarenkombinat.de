@@ -1,13 +1,15 @@
 ---
 title: Über uns
+subtitle: Wer sind wir
 layout: '@layouts/Page.astro'
 reference: about
 description: 'Digitalwarenkombinat | Über uns'
 ---
 
+import Caption from '@components/Caption.astro'
 import PeopleList from '@components/PeopleList.astro'
 
 <article>
-  <h1>{frontmatter.title}</h1>
+  <Caption title={frontmatter.title} subtitle={frontmatter.subtitle} />
   <PeopleList />
 </article>

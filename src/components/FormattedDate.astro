@@ -6,12 +6,12 @@ const { date } = Astro.props
 const locale = Astro.currentLocale
 ---
 
-<time datetime={date.toISOString()}>
-  {
+<time datetime={date.toISOString()}
+  >{
     date.toLocaleDateString(locale, {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
     })
-  }
-</time>
+  }</time
+>

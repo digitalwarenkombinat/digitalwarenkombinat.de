@@ -8,9 +8,9 @@ export type FocusData = {
 
 export const areaData: FocusData[] = [
   {
-    name: 'Open Source Lösungen',
+    name: 'Open Source Lösungen/ Open Source Solutions',
     description: {
-      de: 'Open-Source-Software bietet die Möglichkeit, von jedermann weiterentwickelt zu werden, wodurch GLAMs eine größere Unabhängigkeit von teurer proprietärer Software und einschränkenden Lizenzverträgen erlangen. Darüber hinaus fördert sie Transparenz und Sicherheit, da der Quellcode offen einsehbar und überprüfbar ist. Die Anpassungsfähigkeit und Wiederverwendbarkeit führen zu einer langfristigen Kosteneffizienz und ermöglichen GLAMs, nachhaltige Lösungen zu implementieren.',
+      de: 'Open-Source-Software bietet die Möglichkeit, von jeder Person weiterentwickelt werden zu können, wodurch GLAMs eine größere Unabhängigkeit von teurer proprietärer Software und einschränkenden Lizenzverträgen erlangen. Darüber hinaus fördert sie Transparenz und Sicherheit, da der Quellcode offen einsehbar und überprüfbar ist. Die Anpassungsfähigkeit und Wiederverwendbarkeit führen zu einer langfristigen Kosteneffizienz und ermöglichen GLAMs, nachhaltige Lösungen zu implementieren.',
       en: 'Open source software offers the opportunity to be developed by anyone, giving GLAMs greater independence from expensive proprietary software and restrictive licence agreements. It also promotes transparency and security, as the source code is openly visible and verifiable. Adaptability and re-usability lead to long-term cost efficiency and enable GLAMs to implement sustainable solutions.',
     },
   },
@@ -31,8 +31,8 @@ export const areaData: FocusData[] = [
   {
     name: 'Umweltfreundlichkeit/Eco-friendliness',
     description: {
-      de: 'Wir entwickeln unsere Web-Anwendungen und Websites mit schlankem Code und einem Fokus auf minimalen Speicherplatzbedarf. Für alle Projekte nutzen wir grünes Hosting von Greensta und verfügen über entsprechende Zertifizierungen. Diese umweltfreundlichen Maßnahmen reduzieren den Energieverbrauch und senken CO2-Emissionen. Durch die Optimierung unserer Softwarelösungen fördern wir Nachhaltigkeit und einen verantwortungsvollen Umgang mit Ressourcen. Unsere Kunden profitieren von Websites und Anwendungen, die sich durch eine kurze Ladezeit und eine hohe Kosteneffizienz auszeichnen.',
-      en: 'We develop our web applications and websites with lean code and a focus on minimising storage space requirements. We use green hosting from Greensta for all projects and have the corresponding certifications. These environmentally friendly measures reduce energy consumption and lower CO2 emissions. By optimising our software solutions, we promote sustainability and the responsible use of resources. Our customers benefit from websites and applications that are characterised by short loading times and high cost efficiency.',
+      de: 'Wir entwickeln unsere Web-Anwendungen und Websites mit schlankem Code und einem Fokus auf minimalen Speicherplatzbedarf. Für alle Projekte nutzen wir grünes Hosting von Greensta. Diese Maßnahmen reduzieren den Energieverbrauch und senken die CO2-Emissionen der betreffenden Anwendungen. Durch die Optimierung unserer Softwarelösungen unterstützen wir einen verantwortungsvollen Umgang mit Ressourcen. Unsere Kunden profitieren von Websites und Anwendungen, die sich durch eine kurze Ladezeit und eine hohe Kosteneffizienz auszeichnen.',
+      en: 'We develop our web applications and websites with lean code and a focus on minimizing storage space requirements. For all projects we use green hosting from Greensta. These measures reduce energy consumption and lower the CO2 emissions of the applications concerned. By optimizing our software solutions, we support the responsible use of resources. Our customers benefit from websites and applications that are characterized by short loading times and high cost efficiency.',
     },
   },
 ]

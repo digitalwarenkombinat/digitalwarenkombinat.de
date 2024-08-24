@@ -6,4 +6,4 @@ collection: blog
 reference: blog
 ---
 
-Wir schreiben hier über unsere Projekte, Learnings, neue Technologien, die wir ausprobiert haben, und andere Neuigkeiten von uns.
+In unserem Blog schreiben wir in regelmäßigen Abständen über aktuelle Projekte, Learnings aus Projekten, ausgeteste Technologien, Konferenzteilnahmen, Projektpräsentationen oder auch über Firmenspezifische Themen, die wir mit euch teilen wollen. Schaut also immer mal rein.

@@ -108,8 +108,8 @@ export const uiStrings: TypeUIStrings = {
     en: 'View all posts',
   },
   blogAllText: {
-    de: 'Hier geht es zu unseren anderen Blogposts.',
-    en: 'Click here to read our other blog posts.',
+    de: 'In unserem Blog schreiben wir in regelmäßigen Abständen über aktuelle Projekte, Learnings aus Projekten, ausgeteste Technologien, Konferenzteilnahmen, Projektpräsentationen oder auch über Firmenspezifische Themen, die wir mit euch teilen wollen. Schaut also immer mal rein. Ältere Blogposts findet ihr hier.',
+    en: 'In our blog, we regularly write about current projects, lessons learnt from projects, tested technologies, conference participations, project presentations and company-specific topics that we want to share with you. So keep a look in from time to time. You can find older blog posts here.',
   },
   blogRelated: {
     de: 'Weitere Blogbeiträge',

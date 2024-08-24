@@ -127,6 +127,10 @@ export const uiStrings: TypeUIStrings = {
     de: 'Posts zum Thema',
     en: 'Posts about',
   },
+  postsPerAuthorTitle: {
+    de: 'Alle Posts von',
+    en: 'All posts from',
+  },
   updated: {
     de: 'zuletzt aktualisiert ',
     en: 'last updated on ',

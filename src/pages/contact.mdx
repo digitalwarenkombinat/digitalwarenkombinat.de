@@ -8,7 +8,7 @@ description: 'Digitalwarenkombinat | Kontakt'
 import Button from '@components/Button.astro'
 import { siteMail } from '@src/consts'
 
-<article class='text-center'>
+<article class='text-center flex flex-col my-0'>
   <h1>{frontmatter.title}</h1>
 
 Digitalwarenkombinat GbR<br/>
@@ -18,6 +18,8 @@ Eilenburger Straße 27<br/>
 
 E-Mail: info@digitalwarenkombinat.de
 
-<Button href={siteMail}>Schreib uns!</Button>
+<div>
+  <Button href={siteMail}>Schreib uns!</Button>
+</div>
 
 </article>

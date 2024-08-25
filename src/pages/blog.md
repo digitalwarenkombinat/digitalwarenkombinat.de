@@ -6,4 +6,4 @@ collection: blog
 reference: blog
 ---
 
-In unserem Blog schreiben wir in regelmäßigen Abständen über aktuelle Projekte, Learnings aus Projekten, ausgeteste Technologien, Konferenzteilnahmen, Projektpräsentationen oder auch über Firmenspezifische Themen, die wir mit euch teilen wollen. Schaut also immer mal rein.
+In unserem Blog schreiben wir in regelmäßigen Abständen über aktuelle Projekte, Learnings aus Projekten, getestete Technologien, Konferenzteilnahmen, Projektpräsentationen oder auch über firmenspezifische Themen, die wir mit euch teilen möchten. Schaut also immer mal wieder vorbei.

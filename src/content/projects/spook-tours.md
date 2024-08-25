@@ -1,6 +1,6 @@
 ---
 title: 'Spook Tours'
-description: Spook Tours sind GPS-basierte Schnitzeljagden, bei denen du gruselige AR-Orte entdeckst. Die erste Tour kann man im Leipziger Friedenspark spielen. Spook Tours ist eine Produktion von Geomazing in Kooperation mit dem Digitalwarenkombinat.
+description: Spook Tours sind GPS-basierte Schnitzeljagden, bei denen du gruselige AR-Orte entdeckst. Die erste Tour kann im Leipziger Friedenspark gespielt werden. Spook Tours ist eine Produktion von Geomazing in Kooperation mit dem Digitalwarenkombinat.
 pubDate: '2024-02-01'
 previewImage: '/src/assets/spooktours_hero.webp'
 reference: geomazing

@@ -56,7 +56,7 @@ export const uiStrings: TypeUIStrings = {
     en: 'All projects',
   },
   projectAllSubtitle: {
-    de: 'Seit 2018 haben wir etliche Open-Source-Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen, wie z.B. Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons. Seit 2022 realisieren wir Projekte als Digtalwarenkombinat. Hier findet ihr alle unsere finalisierten und aktuellen Projekte.',
+    de: 'Seit 2018 haben wir mehrere Open-Source-Projekte mit offenen Kulturdaten realisiert. Einige dieser Webanwendungen wie Plantala oder Demokratie Erleben entstanden im Rahmen des Coding da Vinci Kulturhackathons. Seit 2022 realisieren wir Projekte als Digtalwarenkombinat. Hier findet ihr alle unsere abgeschlossenen und aktuellen Projekte.',
     en: 'Since 2018, we have implemented a number of open source projects with open cultural data. Some of these web applications, such as Plantala or Demokratie Erleben (Living Democracy), were created as part of the Coding da Vinci cultural hackathon. Since 2022 we have been realizing projects as Digtalwarenkombinat. Here you can find all our completed and ongoing projects.',
   },
   projectLink: {
@@ -108,7 +108,7 @@ export const uiStrings: TypeUIStrings = {
     en: 'View all posts',
   },
   blogAllText: {
-    de: 'In unserem Blog schreiben wir in regelmäßigen Abständen über aktuelle Projekte, Learnings aus Projekten, ausgeteste Technologien, Konferenzteilnahmen, Projektpräsentationen oder auch über Firmenspezifische Themen, die wir mit euch teilen wollen. Schaut also immer mal rein. Ältere Blogposts findet ihr hier.',
+    de: 'In unserem Blog schreiben wir in regelmäßigen Abständen über aktuelle Projekte, Learnings aus Projekten, getestete Technologien, Konferenzteilnahmen, Projektpräsentationen oder auch über firmenspezifische Themen, die wir mit euch teilen möchten. Schaut also immer mal wieder vorbei. Ältere Blogposts findet ihr hier.',
     en: 'In our blog, we regularly write about current projects, lessons learnt from projects, tested technologies, conference participations, project presentations and company-specific topics that we want to share with you. So keep a look in from time to time. You can find older blog posts here.',
   },
   blogRelated: {

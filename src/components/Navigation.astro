@@ -1,0 +1,32 @@
+---
+import { defaultLocale, fallback } from '@i18n/i18n'
+import FooterLinks from './FooterLinks.astro'
+import HeaderLink from './HeaderLink.astro'
+import Logo from './Logo.astro'
+import SocialLinks from './SocialLinks.astro'
+import ThemeIcon from './ThemeIcon.astro'
+import { headerMenu } from '@src/header'
+import type { navigationItem } from '@src/header'
+
+const menuLocale: string = headerMenu[Astro.currentLocale]
+  ? Astro.currentLocale
+  : fallback[Astro.currentLocale] || defaultLocale
+const headerMenuItems: navigationItem[] = headerMenu[menuLocale].items
+---
+
+<nav
+  class='bg-primary dark:bg-tertiary fixed grid z-[1500] right-[-60vw] opacity-0 w-0 h-screen transition-all duration-700 top-0'
+>
+  <ThemeIcon />
+  <ul class='flex-col text-center mb-8'>
+    {
+      headerMenuItems.map((item) => (
+        <HeaderLink href={item.path}>{item.label}</HeaderLink>
+      ))
+    }
+    <slot />
+  </ul>
+  <Logo />
+  <FooterLinks />
+  <SocialLinks />
+</nav>

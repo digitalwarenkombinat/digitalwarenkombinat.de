@@ -1,41 +1,49 @@
-import preact from '@astrojs/preact';
+import { defaultLocale, locales } from './src/i18n/i18n'
 import { defineConfig } from 'astro/config'
-import AstroPWA from '@vite-pwa/astro'
+import icon from 'astro-icon'
+import mdx from '@astrojs/mdx'
+import rehypeExternalLinks from 'rehype-external-links'
+import { site } from './src/consts'
+const sitemapLocales = Object.fromEntries(
+  locales.map((_, i) => [locales[i], locales[i]]),
+) // Create an object with keys and values based on locales
 
+import sitemap from '@astrojs/sitemap'
+import tailwind from '@astrojs/tailwind'
+
+// https://astro.build/config
 export default defineConfig({
+  site: site,
   integrations: [
-    preact(),
-    AstroPWA({
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
-      manifest: {
-        name: 'Digitalwarenkombinat',
-        short_name: 'Diwako',
-        description: 'Digitalagentur für Museen, Archive, Bibliotheken und Galerien. Webdesign, Entwicklung und Beratung für digitalisierte Sammlungen.',
-        theme_color: '#dd8d0e',
-        icons: [
-          {
-            src: "pwa-64x64.png",
-            sizes: "64x64",
-            type: "image/png"
+    mdx(),
+    sitemap({
+      filter: (page) => page.secret !== true,
+      i18n: {
+        defaultLocale: defaultLocale,
+        locales: sitemapLocales,
+      },
+    }),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    icon(),
+  ],
+  i18n: {
+    defaultLocale: defaultLocale,
+    locales: locales,
+  },
+  markdown: {
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          content: {
+            type: 'text',
+            value: ' 🔗',
           },
-          {
-            src: "pwa-192x192.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "pwa-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
-          },
-          {
-            src: "maskable-icon-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "maskable"
-          }
-        ]
-      }
-    })
-  ]
+          target: '_blank',
+        },
+      ],
+    ],
+  },
 })

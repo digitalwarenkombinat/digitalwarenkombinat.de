@@ -1,0 +1,27 @@
+---
+import Button from '@components/Button.astro'
+import CustomImage from '@components/CustomImage.astro'
+import { getPostDescription } from '@utilities/getPageDescription'
+import { getRelativePostPath } from '@utilities/getPostPath'
+
+const { collection, post } = Astro.props
+const locale = Astro.currentLocale
+const { title, previewImage } = post.data
+const postPath = getRelativePostPath(locale, collection, post.slug)
+const description = getPostDescription(post)
+---
+
+<li>
+  <a href={postPath}>
+    <h3>{title}</h3>
+    <CustomImage
+      class='border-primary border-2 rounded-md'
+      imagePath={previewImage}
+      altText={description}
+    />
+  </a>
+  <blockquote class='m-auto' cite={postPath}>
+    {description}
+  </blockquote>
+  <Button href={postPath}>{title}</Button>
+</li>

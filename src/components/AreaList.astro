@@ -1,0 +1,26 @@
+---
+import Caption from './Caption.astro'
+import { area } from '@src/utilities/area'
+import { uiStrings } from '@i18n/uiStrings'
+
+const locale = Astro.currentLocale
+
+const { areaTitle, areaSubtitle } = uiStrings
+const title = areaTitle[locale]
+const subtitle = areaSubtitle[locale]
+---
+
+<article>
+  <Caption title={title} subtitle={subtitle} />
+  <ul>
+    {
+      area.map((focus) => (
+        <li>
+          <span class='bg-secondary rounded-full absolute -ml-3 h-10 w-10' />
+          <h3 class='z-10'>{focus.name[locale]}</h3>
+          <p class='p-4'>{focus.description[locale]}</p>
+        </li>
+      ))
+    }
+  </ul>
+</article>

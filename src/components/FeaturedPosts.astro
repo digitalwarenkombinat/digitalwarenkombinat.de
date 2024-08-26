@@ -1,0 +1,38 @@
+---
+import Button from '@components/Button.astro'
+import Caption from './Caption.astro'
+import Post from '@components/Post.astro'
+import { getLocalizedHref } from '@i18n/utilities'
+import getPublishedPosts from '@utilities/getPublishedPosts'
+import { uiStrings } from '@i18n/uiStrings'
+
+const BLOG_COLLECTION = 'blog'
+const locale = Astro.currentLocale
+
+const { blogTitle, blogSubtitle, blogAllLink, blogAllText } = uiStrings
+const title = blogTitle[locale]
+const subtitle = blogSubtitle[locale]
+const link = blogAllLink[locale]
+const text = blogAllText[locale]
+
+async function getFeaturedPosts() {
+  const posts = await getPublishedPosts(locale, BLOG_COLLECTION)
+  return posts.filter(({ data }) => data.isFeatured)
+}
+const featuredPosts = await getFeaturedPosts()
+---
+
+<article>
+  <Caption title={title} subtitle={subtitle} />
+  {
+    featuredPosts?.length > 0 && (
+      <ul>
+        {featuredPosts.map((post) => (
+          <Post isFeature post={post} collection={BLOG_COLLECTION} />
+        ))}
+      </ul>
+    )
+  }
+  <blockquote>{text}</blockquote>
+  <Button href={getLocalizedHref(locale, '/blog')}>{link}</Button>
+</article>

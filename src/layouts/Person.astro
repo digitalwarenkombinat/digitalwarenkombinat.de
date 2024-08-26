@@ -1,0 +1,18 @@
+---
+import type { CommonFrontmatter } from '@src/types'
+import Page from '@layouts/Page.astro'
+import People from '@components/People.astro'
+import type { Person } from '@utilities/people'
+export interface PersonFrontmatter extends CommonFrontmatter {
+  person: Person
+}
+interface Props {
+  frontmatter: PersonFrontmatter
+}
+const { frontmatter } = Astro.props
+const person = frontmatter.person
+---
+
+<Page {frontmatter}>
+  <People showPosts {person} />
+</Page>

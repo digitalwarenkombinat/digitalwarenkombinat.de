@@ -1,0 +1,23 @@
+---
+import Caption from '@components/Caption.astro'
+import type { CommonFrontmatter } from '@src/types'
+import { type FocusData } from '@src/area'
+import Page from '@layouts/Page.astro'
+export interface FocusFrontmatter extends CommonFrontmatter {
+  focus: FocusData
+}
+interface Props {
+  frontmatter: FocusFrontmatter
+}
+const { frontmatter } = Astro.props
+const focus = frontmatter.focus
+---
+
+<Page {frontmatter}>
+  <article>
+    <Caption title={focus.name[Astro.currentLocale]} />
+    <div class='prose dark:prose-invert'>
+      {focus.description[Astro.currentLocale]}
+    </div>
+  </article>
+</Page>

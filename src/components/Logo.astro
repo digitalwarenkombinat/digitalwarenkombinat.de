@@ -1,0 +1,15 @@
+---
+import { Icon } from 'astro-icon/components'
+import { getLocalizedHref } from '@i18n/utilities'
+const locale = Astro.currentLocale
+const { background = false } = Astro.props
+---
+
+<a href={getLocalizedHref(locale, '/')} rel='home' aria-label='Homepage'>
+  {
+    background && (
+      <div class='bg-primary rounded-full absolute -z-50 transition-all top-1 left-1 h-16 w-16' />
+    )
+  }
+  <Icon name='logo' class='w-24 h-24 ml-2' />
+</a>

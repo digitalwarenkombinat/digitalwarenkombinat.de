@@ -1,0 +1,16 @@
+---
+import { Icon } from 'astro-icon/components'
+import { socialMedia } from '@src/consts'
+---
+
+<div class='flex items-center justify-center gap-2 h-8'>
+  <a aria-label='instagram' href={socialMedia.instagram} target='_blank'>
+    <Icon name='instagram' class='w-8 h-8' />
+  </a>
+  <a aria-label='github' href={socialMedia.github} target='_blank'>
+    <Icon name='github' class='w-8 h-8' />
+  </a>
+  <a aria-label='linkedin' href={socialMedia.linkedin} target='_blank'>
+    <Icon name='linkedin' class='w-8 h-8' />
+  </a>
+</div>

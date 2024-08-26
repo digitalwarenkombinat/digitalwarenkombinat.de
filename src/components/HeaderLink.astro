@@ -1,0 +1,29 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+type Props = HTMLAttributes<'a'>
+
+const { href, class: className, ...props } = Astro.props
+const { pathname } = Astro.url
+const ariaCurrent =
+  href === pathname || href === pathname.replace(/\/$/, '') ? 'page' : ''
+---
+
+<li
+  class='w-1/2 md:w-1/4 m-auto [&:not(:last-child)]:border-tertiary [&:not(:last-child)]:dark:border-primary [&:not(:last-child)]:border-b-2'
+>
+  <a
+    href={href}
+    class:list={[className]}
+    class='link hover:text-secondary active:text-secondary'
+    aria-current={ariaCurrent ? ariaCurrent : undefined}
+    {...props}
+  >
+    <slot />
+  </a>
+</li>
+
+<style>
+  a[aria-current='page'] {
+    font-weight: bolder;
+  }
+</style>

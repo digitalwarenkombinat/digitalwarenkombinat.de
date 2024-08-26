@@ -1,0 +1,99 @@
+---
+import {
+  getAbsolutePostPath,
+  getRelativePostPath,
+} from '@utilities/getPostPath'
+import type { CommonFrontmatter } from '@src/types'
+import Footer from '@components/Footer.astro'
+import Header from '@components/Header.astro'
+import Html from '@components/Html.astro'
+import TranslationLinks from '@components/TranslationLinks.astro'
+import { getLocaleFromUrl } from '@i18n/utilities'
+import getPublishedPosts from '@utilities/getPublishedPosts'
+import { site } from '@src/consts'
+import { uiStrings } from '@i18n/uiStrings'
+
+interface Props {
+  frontmatter: CommonFrontmatter
+  collection: string
+}
+export interface TranslationLink {
+  absoluteURL: string
+  relativeURL: string
+  locale: string
+  label: string
+}
+
+const { frontmatter, collection } = Astro.props
+const reference: string = frontmatter?.reference || ''
+
+let translationsAvailable = []
+const translationLinks: TranslationLink[] = []
+
+if (reference) {
+  if (collection === 'pages') {
+    // The current page is not part of a collection
+    const allPages = await Astro.glob('../pages/**/*.{md,mdx}')
+    translationsAvailable = allPages
+      .filter(({ frontmatter }) => {
+        return (
+          frontmatter.reference !== null && frontmatter.reference === reference
+        )
+      })
+      .filter((page) => {
+        return getLocaleFromUrl(page.url) !== Astro.currentLocale
+      })
+    for (const translation of translationsAvailable) {
+      const locale = getLocaleFromUrl(translation.url)
+      const relativeURL = translation.url || '/'
+      const absoluteURL = `${site}${relativeURL}`
+      const link = {
+        absoluteURL: absoluteURL,
+        relativeURL: relativeURL,
+        locale: locale,
+        label: uiStrings[locale][Astro.currentLocale],
+      }
+      translationLinks.push(link)
+    }
+  } else {
+    // The current page is part of a collection
+    const translationsSlugs = (
+      await getPublishedPosts('', collection as 'blog', '')
+    )
+      .filter((post) => post.data.reference === reference)
+      .filter((post) => getLocaleFromUrl(post.slug) !== Astro.currentLocale)
+      .map((post) => post.slug)
+
+    for (const slug of translationsSlugs) {
+      const locale = getLocaleFromUrl(slug)
+      const link = {
+        absoluteURL: getAbsolutePostPath(locale, collection, slug),
+        relativeURL: getRelativePostPath(locale, collection, slug),
+        locale: locale,
+        label: uiStrings[locale][Astro.currentLocale],
+      }
+      translationLinks.push(link)
+    }
+  }
+}
+---
+
+<Html {frontmatter}>
+  {
+    translationLinks.map((translation) => (
+      <link
+        rel='alternate'
+        hreflang={translation.locale}
+        href={translation.absoluteURL}
+        slot='head'
+      />
+    ))
+  }
+  <Header>
+    {translationLinks.length > 0 && <TranslationLinks {translationLinks} />}
+  </Header>
+  <slot />
+  <footer class='dark:bg-tertiary'>
+    <Footer />
+  </footer>
+</Html>

@@ -1,7 +1,15 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true
+    "strictNullChecks": false,
+    "baseUrl": ".",
+    "paths": {
+      "@i18n/*": ["src/i18n/*"],
+      "@components/*": ["src/components/*"],
+      "@content/*": ["src/content/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@src/*": ["src/*"],
+      "@utilities/*": ["src/utilities/*"]
+    }
   }
 }

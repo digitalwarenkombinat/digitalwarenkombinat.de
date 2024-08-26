@@ -1,0 +1,45 @@
+---
+import { getShopItemPath, shop } from '@src/utilities/shop'
+import Button from '@components/Button.astro'
+import Caption from '@components/Caption.astro'
+import CustomImage from '@components/CustomImage.astro'
+import { getLocalizedHref } from '@i18n/utilities'
+import { uiStrings } from '@i18n/uiStrings'
+
+const locale = Astro.currentLocale
+
+const { shopTitle, shopSubtitle, shopLinkText, shopLink } = uiStrings
+const title = shopTitle[locale]
+const subtitle = shopSubtitle[locale]
+const linkText = shopLinkText[locale]
+const link = shopLink[locale]
+---
+
+<article>
+  <Caption title={title} subtitle={subtitle} />
+  <ul class='flex flex-wrap justify-between items-start gap-8'>
+    {
+      shop.map((shopItem) => (
+        <li class='md:w-1/4'>
+          <a href={getShopItemPath(locale, shopItem.id)}>
+            <CustomImage
+              class='border-tertiary dark:border-primary border-8 rounded-md'
+              imagePath={shopItem.image}
+              altText={shopItem.name}
+            />
+            <h3>{shopItem.name}</h3>
+            <p>{shopItem.project[locale]}</p>
+          </a>
+          <div>
+            <p>{shopItem.description[locale]}</p>
+            <p>{shopItem.price[locale]}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  <div class='text-center'>
+    <blockquote class='mb-4'>{linkText}</blockquote>
+    <Button href={getLocalizedHref(locale, '/shop')}>{link}</Button>
+  </div>
+</article>

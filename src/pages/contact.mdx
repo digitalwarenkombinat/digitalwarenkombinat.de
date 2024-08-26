@@ -1,0 +1,25 @@
+---
+title: Kontakt
+layout: '@layouts/Page.astro'
+reference: contact
+description: 'Digitalwarenkombinat | Kontakt'
+---
+
+import Button from '@components/Button.astro'
+import { siteMail } from '@src/consts'
+
+<article class='text-center flex flex-col my-0'>
+  <h1>{frontmatter.title}</h1>
+
+Digitalwarenkombinat GbR<br/>
+Anne Mühlich und Gerd Müller<br/>
+Eilenburger Straße 27<br/>
+04317 Leipzig<br/>
+
+E-Mail: info@digitalwarenkombinat.de
+
+<div>
+  <Button href={siteMail}>Schreib uns!</Button>
+</div>
+
+</article>

@@ -1,40 +1,29 @@
-<html lang="de">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name ="title" content ="Digitalwarenkombinat | Vereint digitale Welten gestalten"/>
-		<meta name ="description" content ="Digitalwarenkombinat | Digitalagentur aus Leipzig für Webanwendungen für Museen, Archive, Bibliotheken und Galerien. Webdesign, Entwicklung und Beratung für eure digitalisierten Sammlungen."/>
-		<meta name ="copyright" content ="Digitalwarenkombinat"/>
-		<meta name ="keywords" content ="Digitalagentur, Leipzig, Open Source, Kulturinstitutionen, Internet-Agentur, Webdesign, Entwicklung, Beratung, DIWAKO"/>
-		<meta property ="og:type" content ="website"/>
-		<meta property ="og:url" content ="https://digitalwarenkombinat.de/"/>
-		<meta property ="og:title" content ="Digitalwarenkombinat"/>
-		<meta property ="og:description" content ="Digitalwarenkombinat | Vereint digitale Welten gestalten"/>
-		<meta property ="og:image" content ="https://digitalwarenkombinat.de/image.png"/>
-		<meta property ="twitter:card" content ="summary_large_image"/>
-		<meta property ="twitter:url" content ="https://digitalwarenkombinat.de/"/>
-		<meta property ="twitter:title" content ="Digitalwarenkombinat"/>
-		<meta property ="twitter:description" content ="Digitalwarenkombinat | Vereint digitale Welten gestalten"/>
-		<meta property ="twitter:image" content ="https://digitalwarenkombinat.de/image.png"/>
+---
+import Header from '@components/Header.astro'
+import Html from '@components/Html.astro'
+import { getLocalizedHref } from '@i18n/utilities'
+import { uiStrings } from '@i18n/uiStrings'
+const locale = Astro.currentLocale
+const title = uiStrings.pageNotFoundHeading[locale]
+---
 
-		<title>Digitalwarenkombinat | Vereint digitale Welten gestalten</title>
-
-		<link rel="canonical" href="https://digitalwarenkombinat.de/" />
-		<link rel="icon" href="/favicon.ico" sizes="any" />
-		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-	</head>
-	<body>
-
-		<div class={'bg-background grid gap-y-16 overflow-hidden'}>
-			<main class="mt-8 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-				<div class="sm:text-center lg:text-left">
-					<h1 class="text-4xl tracking-tight font-extrabold text-black sm:text-5xl md:text-5xl">
-						<span class="block xl:inline">Seite</span>{' '}
-						<span class={'block text-primary xl:inline'}>nicht gefunden</span>
-					</h1>
-				</div>
-			</main>
-		</div>
-
-	</body>
-</html>
+<Html frontmatter={{ title, description: title }}>
+  <Header />
+  <main id='main'>
+    <article class='prose dark:prose-invert'>
+      <h1 lang={locale}>
+        {title}
+      </h1>
+      <a
+        href={getLocalizedHref(Astro.currentLocale, '/')}
+        rel='home'
+        aria-label='Homepage'
+      >
+        <p lang={locale}>
+          {uiStrings.pageNotFoundBody[locale]}
+        </p>
+      </a>
+      <slot />
+    </article>
+  </main>
+</Html>

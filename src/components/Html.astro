@@ -1,0 +1,23 @@
+---
+import type { CommonFrontmatter } from '@src/types'
+import Head from '@components/Head.astro'
+interface Props {
+  frontmatter: CommonFrontmatter
+  includeCanonicalMeta?: boolean
+}
+
+const { frontmatter, includeCanonicalMeta = true } = Astro.props
+const lang = Astro.currentLocale
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <Head {frontmatter} {includeCanonicalMeta}>
+      <slot name='head' />
+    </Head>
+  </head>
+  <body class='dark:bg-tertiary dark:text-white'>
+    <slot />
+  </body>
+</html>

@@ -1,6 +1,8 @@
 # build output
-dist
-.jampack
+dist/
+
+# generated types
+.astro/
 
 # dependencies
 node_modules/
@@ -16,3 +18,11 @@ yarn-error.log*
 
 # macOS-specific files
 .DS_Store
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

@@ -1,13 +1,8 @@
 ---
-import Divider from './Divider.astro';
-const { title } = Astro.props;
+const { title, subtitle, class: className } = Astro.props
 ---
-  
-<h1 class={'w-full text-5xl font-bold leading-tight text-center'}>
-  {title.split(' ').map((word, index) => (
-    <span key={index} class={index % 2 ? 'text-black' : 'text-primary'}>
-      {word}{' '}
-    </span>
-  ))}
-</h1>
-<Divider />
+
+<h2 class:list={[className]}>
+  <strong class='block text-primary text-[75%]'>{subtitle}</strong>
+  {title}
+</h2>

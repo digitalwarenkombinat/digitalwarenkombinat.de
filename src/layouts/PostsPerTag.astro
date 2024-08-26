@@ -1,0 +1,36 @@
+---
+import type { CommonFrontmatter } from '@src/types'
+import Page from '@layouts/Page.astro'
+import Post from '@components/Post.astro'
+import { getPostsByTag } from '@utilities/tags'
+
+interface Frontmatter extends CommonFrontmatter {
+  tag?: string
+  collection?: string
+}
+interface Props {
+  frontmatter: Frontmatter
+}
+
+const BLOG_COLLECTION = 'blog'
+
+const { frontmatter } = Astro.props
+const filteredPosts = await getPostsByTag(
+  BLOG_COLLECTION,
+  frontmatter.tag,
+  Astro.currentLocale
+)
+---
+
+<Page {frontmatter}>
+  <article>
+    {(<h1>{frontmatter.title}</h1>)}
+    <ul>
+      {
+        filteredPosts.map((post) => (
+          <Post isFeature post={post} collection={BLOG_COLLECTION} />
+        ))
+      }
+    </ul>
+  </article>
+</Page>

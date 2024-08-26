@@ -1,0 +1,37 @@
+---
+import AllProjects from '@components/AllProjects.astro'
+import Caption from '@components/Caption.astro'
+import Project from '@components/Project.astro'
+import getPublishedPosts from '@utilities/getPublishedPosts'
+import { uiStrings } from '@i18n/uiStrings'
+
+const PROJECTS_COLLECTION = 'projects'
+const locale = Astro.currentLocale
+
+const { projectTitle, projectSubtitle } = uiStrings
+const title = projectTitle[locale]
+const subtitle = projectSubtitle[locale]
+
+async function getFeaturedPosts() {
+  const posts = await getPublishedPosts(locale, PROJECTS_COLLECTION)
+  return posts.filter(({ data }) => data.isFeatured)
+}
+
+const featuredPosts = await getFeaturedPosts()
+---
+
+<article>
+  <Caption title={title} subtitle={subtitle} />
+  <div class='text-center'>
+    {
+      featuredPosts?.length > 0 && (
+        <ul>
+          {featuredPosts.map((post) => (
+            <Project post={post} collection={PROJECTS_COLLECTION} />
+          ))}
+          <AllProjects />
+        </ul>
+      )
+    }
+  </div>
+</article>

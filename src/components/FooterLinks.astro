@@ -1,0 +1,21 @@
+---
+import { defaultLocale, fallback } from '@i18n/i18n'
+import { footerMenu } from '@src/header'
+import type { navigationItem } from '@src/header'
+
+const locale = Astro.currentLocale
+const menuLocale: string = footerMenu[locale]
+  ? locale
+  : fallback[locale] || defaultLocale
+const footerMenuItems: navigationItem[] = footerMenu[menuLocale].items
+---
+
+<ul class='text-center'>
+  {
+    footerMenuItems.map((item) => (
+      <li>
+        <a href={item.path}>{item.label}</a>
+      </li>
+    ))
+  }
+</ul>

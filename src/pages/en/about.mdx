@@ -1,0 +1,14 @@
+---
+title: 'About us'
+layout: '@layouts/Page.astro'
+reference: about
+description: 'Digitalwarenkombinat | About us'
+---
+
+import PeopleList from '@components/PeopleList.astro'
+import Caption from '@components/Caption.astro'
+
+<article>
+  <h1>{frontmatter.title}</h1>
+  <PeopleList />
+</article>

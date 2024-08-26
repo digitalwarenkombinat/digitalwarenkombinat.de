@@ -1,0 +1,26 @@
+---
+import { getShopItemPath, shop } from '@src/utilities/shop'
+import ShopItem from '@layouts/ShopItem.astro'
+import { locales } from '@i18n/i18n'
+
+export async function getStaticPaths() {
+  const allShopPages = []
+  for (const locale of locales) {
+    const shopParsed = shop.map((shopItem) => ({
+      params: {
+        shopItem: `${getShopItemPath(locale, shopItem.id, false)}`,
+      },
+      props: {
+        title: shopItem.name,
+        description: shopItem.description[locale],
+        shopItem: shopItem,
+      },
+    }))
+    allShopPages.push(...shopParsed)
+  }
+  return allShopPages
+}
+const frontmatter = Astro.props
+---
+
+<ShopItem {frontmatter} />

@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Fabrik;
+  src: url('/fonts/fabrik.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fundamental Brigade';
+  src: url('/fonts/Fundamental_Brigade.woff2') format('woff2');
+  font-display: swap;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  font-family: 'Fundamental Brigade', sans-serif;
+}
+
+nav a {
+  justify-self: center;
+}
+
+main {
+  display: grid;
+  flex-grow: 1;
+  grid-gap: 2rem;
+  margin-top: 6rem;
+}
+
+article {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  gap: 4rem;
+  margin: auto;
+  max-width: 1000px;
+}
+
+section {
+  display: grid;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+  font-family: Fabrik, serif;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+blockquote,
+p {
+  font-size: 1.25rem;
+}
+
+:where(main) li {
+  display: grid;
+  gap: 2rem;
+}
+
+:where(main) li:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  display: inline-block;
+  width: 1.5rem;
+  height: 3px;
+  background-color: black;
+}
+
+.icon::after {
+  top: 0.5rem;
+}
+
+.icon::before {
+  top: -0.5rem;
+}
+
+.icon::before,
+.icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.button {
+  position: fixed;
+  z-index: 2000;
+  right: 2vw;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.button:hover .icon::after {
+  top: 0.5rem;
+}
+
+.button:hover .icon::before {
+  top: -0.5rem;
+}
+
+.background {
+  position: fixed;
+  z-index: 1000;
+  right: 2vw;
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 50%;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked + .button .icon {
+  background-color: transparent;
+}
+
+.checkbox:checked + .button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.checkbox:checked + .button .icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.checkbox:checked ~ .background {
+  transform: scale(90);
+}
+
+div:has(.checkbox:checked) ~ nav {
+  right: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.link:link,
+.link:visited {
+  display: block;
+  padding-top: 0.5rem;
+  transition: all 0.4s;
+  font-size: 2.5rem;
+}
+
+header.small > a div {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+header.small > a svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.prose:has(img):has(em) img {
+  margin-bottom: 0;
+}

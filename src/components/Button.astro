@@ -1,0 +1,26 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+
+type AnchorProps = HTMLAttributes<'a'> & { type?: never }
+type ButtonProps = HTMLAttributes<'button'> & { href?: never }
+
+type Props = ButtonProps | AnchorProps
+
+const { href, ...rest } = Astro.props
+---
+
+{
+  href ? (
+    <a
+      class='block w-full md:w-1/2 md:m-auto py-2 rounded-md text-xl text-center text-white bg-tertiary dark:text-black dark:bg-primary'
+      href={href}
+      {...rest}
+    >
+      <slot />
+    </a>
+  ) : (
+    <button {...rest}>
+      <slot />
+    </button>
+  )
+}

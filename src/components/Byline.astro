@@ -20,7 +20,7 @@ const person: Person = people.find((person) => person.name === authorFullName)
 const hasAuthorLink: boolean = !!person
 ---
 
-<h4>
+<h3 class='text-xl/8'>
   <FormattedDate date={pubDate} />
   {
     updatedDate && (
@@ -42,4 +42,4 @@ const hasAuthorLink: boolean = !!person
       </span>
     )
   }
-</h4>
+</h3>

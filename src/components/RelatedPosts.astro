@@ -16,4 +16,6 @@ const blogRelated = uiStrings.blogRelated[locale]
 
 <Divider />
 <h2>{blogRelated}</h2>
-{posts.map((post) => <PreviewPost collection='blog' post={post} isFeature />)}
+<ul>
+  {posts.map((post) => <PreviewPost collection='blog' post={post} isFeature />)}
+</ul>

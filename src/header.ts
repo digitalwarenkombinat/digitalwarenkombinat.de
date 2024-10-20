@@ -8,7 +8,7 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
     items: [
       {
         path: '/',
-        label: 'Startseite Digitalwarenkombinat',
+        label: 'Startseite',
       },
       {
         path: '/projects',
@@ -25,14 +25,14 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: '/about',
         label: 'Über uns',
-      }
+      },
     ],
   },
   en: {
     items: [
       {
         path: '/en/',
-        label: 'Home Digitalwarenkombinat',
+        label: 'Home',
       },
       {
         path: '/en/projects',
@@ -49,7 +49,7 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: '/en/about',
         label: 'About',
-      }
+      },
     ],
   },
 }
@@ -68,7 +68,7 @@ export const footerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: '/privacy',
         label: 'Datenschutzerklärung',
-      }
+      },
     ],
   },
   en: {
@@ -84,7 +84,7 @@ export const footerMenu: Record<string, Record<string, navigationItem[]>> = {
       {
         path: '/en/privacy',
         label: 'Privacy Policy',
-      }
+      },
     ],
   },
 }

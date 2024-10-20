@@ -8,7 +8,7 @@ export const headerMenu: Record<string, Record<string, navigationItem[]>> = {
     items: [
       {
         path: '/',
-        label: 'Startseite',
+        label: 'Start',
       },
       {
         path: '/projects',

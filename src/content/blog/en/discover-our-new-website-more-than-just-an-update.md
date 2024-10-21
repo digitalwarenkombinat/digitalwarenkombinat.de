@@ -6,7 +6,7 @@ pubDate: '2024-10-21'
 previewImage: '/src/assets/blog5.webp'
 previewImageCredit: 'Credit: Anne Mühlich'
 reference: fifth-post
-tags: [Webapp, GLAM, Technik]
+tags: [Webapp, GLAM, Tech]
 isFeatured: true
 # relatedShopItem: 'Postkarten GLAM'
 relatedPosts:

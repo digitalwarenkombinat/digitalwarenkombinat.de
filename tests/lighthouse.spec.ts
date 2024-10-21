@@ -18,6 +18,11 @@ test('open browser', async () => {
       'best-practices': 90,
       seo: 90,
     },
+    reports: {
+      formats: {
+        html: true,
+      },
+    },
   })
 
   await browser.close()

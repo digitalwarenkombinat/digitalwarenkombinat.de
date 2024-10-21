@@ -1,7 +1,7 @@
 ---
 title: 'Blaues WundAR'
 description: The ‘Blaues WundAR’ project was created as part of the Leipzig Light Festival 2024 as an art project by Maix Mayer and allows the resurrection of the pedestrian bridge on Goerdelerring in Leipzig, known as the ‘Blue Wonder’.
-pubDate: '2024-10-19'
+pubDate: '2024-10-21'
 previewImage: '/src/assets/blaues_wundar.webp'
 reference: wundar
 isFeatured: true

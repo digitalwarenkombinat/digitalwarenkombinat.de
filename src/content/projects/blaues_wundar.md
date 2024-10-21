@@ -1,7 +1,7 @@
 ---
 title: 'Blaues WundAR'
 description: Das Projekt "Blaues WundAR" entstand im Rahmen des Lichtfest Leipzig 2024 als Kunstprojekt von Maix Mayer und ermöglicht am historischen Ort die Wiederauferstehung der Fußgängerbrücke am Goerdelerring in Leipzig, genannt "Blaues Wunder".
-pubDate: '2024-10-19'
+pubDate: '2024-10-21'
 previewImage: '/src/assets/blaues_wundar.webp'
 reference: wundar
 isFeatured: true

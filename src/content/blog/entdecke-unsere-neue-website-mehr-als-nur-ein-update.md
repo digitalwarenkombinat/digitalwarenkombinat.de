@@ -2,7 +2,7 @@
 title: 'Entdecke unsere neue Website: Mehr als nur ein Update'
 author: 'Gerd Müller'
 description: 'Wir stellen die neuen Funktionen unserer Website vor, wie umweltfreundliches Hosting, den Darkmode und Open-Source-Lösungen. Zudem bieten wir einen Einblick in die technischen Schritte – von der Planung über den Code und Tests bis hin zu Deployment und Monitoring.'
-pubDate: '2024-10-21'
+pubDate: '2024-10-22'
 previewImage: '/src/assets/blog5.webp'
 previewImageCredit: 'Credit: Anne Mühlich'
 reference: fifth-post

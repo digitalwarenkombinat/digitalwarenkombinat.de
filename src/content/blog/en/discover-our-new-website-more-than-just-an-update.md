@@ -2,7 +2,7 @@
 title: 'Discover our new Website: More than just an Update'
 author: 'Gerd Müller'
 description: 'We present the new features of our website, such as environmentally friendly hosting, dark mode and open source solutions. We also offer an insight into the technical steps - from planning, code and testing to deployment and monitoring.'
-pubDate: '2024-10-21'
+pubDate: '2024-10-22'
 previewImage: '/src/assets/blog5.webp'
 previewImageCredit: 'Credit: Anne Mühlich'
 reference: fifth-post

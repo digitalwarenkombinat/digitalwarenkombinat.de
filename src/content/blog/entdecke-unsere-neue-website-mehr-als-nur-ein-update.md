@@ -36,7 +36,7 @@ Unsere Arbeit basiert auf Open-Source-Lösungen. Das bedeutet, dass die Software
 
 ### Blog – Neuigkeiten aus erster Hand
 
-Unser neuer <a href='/blog/'>**Blog**</a> hält dich auf dem Laufenden! Hier findest du interessante Beiträge rund um unsere digitalen Projekte, Tipps zu Open-Source-Technologien und Einblicke hinter die Kulissen.
+Unser neuer [**Blog**](/blog/) hält dich auf dem Laufenden! Hier findest du interessante Beiträge rund um unsere digitalen Projekte, Tipps zu Open-Source-Technologien und Einblicke hinter die Kulissen.
 
 ### Erweiterter Blick hinter die Kulissen
 
@@ -66,4 +66,4 @@ _Monitor:_ Mit Monitoring-Tools überprüfen wir laufend die Performance unserer
 
 ![Lighthouse Score](../../assets/blog5_4.webp)
 
-Wir hoffen, dir gefällt unsere neue Seite genauso gut wie uns! Schau dich um, entdecke unsere neuesten Projekte, wie <a href='/projects/glamorous-europe/'>**GLAMorous Europe**</a> und <a href='/projects/blaues-wundar/'>**Blaues WundAR**</a> und erfahre, wie wir mit offenen Kulturdaten neue Ideen entwickeln und die digitale Zukunft für Kulturinstitutionen mitgestalten.
+Wir hoffen, dir gefällt unsere neue Seite genauso gut wie uns! Schau dich um, entdecke unsere neuesten Projekte, wie [**GLAMorous Europe**](/projects/glamorous-europe/) und [**Blaues WundAR**](/projects/blaues-wundar/) und erfahre, wie wir mit offenen Kulturdaten neue Ideen entwickeln und die digitale Zukunft für Kulturinstitutionen mitgestalten.

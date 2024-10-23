@@ -36,7 +36,7 @@ Our work is based on open source solutions. This means that the software we use 
 
 ### Blog - First-hand news
 
-Our new <a href='/en/blog/'>**Blog**</a> keeps you updated! Here you will find interesting articles about our digital projects, tips on open source technologies and insights behind the scenes.
+Our new [**Blog**](/en/blog/) keeps you updated! Here you will find interesting articles about our digital projects, tips on open source technologies and insights behind the scenes.
 
 ### Extended look behind the scenes
 
@@ -66,4 +66,4 @@ _Monitor:_ We use monitoring tools to continuously check the performance of our 
 
 ![Lighthouse Score](../../../assets/blog5_4.webp)
 
-We hope you like our new site as much as we do! Take a look around, discover our latest projects, such as <a href='/en/projects/glamorous-europe/'>**GLAMorous Europe**</a> and <a href='/en/projects/blaues-wundar/'>**Blaues WundAR**</a> and find out how we are using open cultural data to develop new ideas and help shape the digital future for cultural institutions.
+We hope you like our new site as much as we do! Take a look around, discover our latest projects, such as [**GLAMorous Europe**](/en/projects/glamorous-europe/) and [**Blaues WundAR**](/en/projects/blaues-wundar/) and find out how we are using open cultural data to develop new ideas and help shape the digital future for cultural institutions.

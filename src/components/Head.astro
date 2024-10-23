@@ -18,7 +18,7 @@ const description = frontmatter.description
 const previewImage = frontmatter.previewImage || '/image.png'
 const canonicalURL = new URL(
   frontmatter.canonicalURL || Astro.url.pathname,
-  Astro.site,
+  Astro.site
 )
 const faviconIco = '/favicon.ico'
 const faviconSVG = '/favicon.svg'
@@ -46,6 +46,20 @@ const appleTouchIcon = '/apple-touch-icon.png'
 <slot />
 
 <link rel="sitemap" href="/sitemap-index.xml" />
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title={`Blog ${siteTitle} Deutsch`}
+  href={new URL('rss-de.xml', Astro.site)}
+/>
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title={`Blog ${siteTitle} English`}
+  href={new URL('rss-en.xml', Astro.site)}
+/>
 
 <!-- Theme color -->
 <meta name="theme-color" content={siteThemeColor} />

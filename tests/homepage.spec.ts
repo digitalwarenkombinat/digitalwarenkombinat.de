@@ -20,6 +20,7 @@ test.describe('Homepage areas', () => {
     await expect(
       page.getByRole('img', { name: 'Digitalwarenkombinat Hero' }),
     ).toBeVisible()
+    await expect(page).toHaveScreenshot()
   })
 
   test('has projects', async ({ page }) => {
@@ -45,7 +46,12 @@ test.describe('Homepage areas', () => {
       page.getByRole('heading', { name: 'Was gibt es Neues? Unser Blog' }),
     ).toBeVisible()
     await expect(
-      page.locator('section').filter({ hasText: 'Das Digitalwarenkombinat auf der Wikimania 2024 in Katowice' }),
+      page
+        .locator('section')
+        .filter({
+          hasText:
+            'Das Digitalwarenkombinat auf der Wikimania 2024 in Katowice',
+        }),
     ).toBeVisible()
   })
 

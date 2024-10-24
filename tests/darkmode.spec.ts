@@ -16,6 +16,7 @@ test.describe('Default dark mode', () => {
     await page.locator('#header span').click()
     await page.getByLabel('theme toggle').click()
     await expect(page.locator('html')).toHaveAttribute('class', '')
+    await expect(page).toHaveScreenshot()
   })
 })
 
@@ -31,5 +32,6 @@ test.describe('Default light mode', () => {
     await page.locator('#header span').click()
     await page.getByLabel('theme toggle').click()
     await expect(page.locator('html')).toHaveAttribute('class', 'dark')
+    await expect(page).toHaveScreenshot()
   })
 })

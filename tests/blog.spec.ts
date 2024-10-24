@@ -34,5 +34,6 @@ test.describe('Blog pages', () => {
     await expect(
       page.getByRole('heading', { name: 'Unser Blog GLAMorous Europe' }),
     ).toBeVisible()
+    await expect(page).toHaveScreenshot()
   })
 })

@@ -177,6 +177,14 @@ div:has(.checkbox:checked) ~ nav {
   height: 100%;
 }
 
+.link:link,
+.link:visited {
+  display: block;
+  padding-top: 0.5rem;
+  transition: all 0.4s;
+  font-size: 2.5rem;
+}
+
 .prose a:visited {
   color: #dd8d0e;
 }

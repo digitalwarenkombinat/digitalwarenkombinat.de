@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import Divider from '@components/Divider.astro'
 import Project from '@layouts/Project.astro'
 import ProjectPreview from '@components/ProjectPreview.astro'
 import { getLocaleFromUrl } from '@i18n/utilities'
@@ -54,9 +53,9 @@ post.data.description = getPostDescription(post)
   <Content />
   {
     (prevProject || nextProject) && (
-      <div class='my-16'>
-        <div class='opacity-80 h-1 bg-primary rounded' />
-        <h2 class='mb-12'>{next}</h2>
+      <div class="my-16">
+        <div class="opacity-80 h-1 bg-primary rounded" />
+        <h2 class="mb-12">{next}</h2>
         {nextProject && <ProjectPreview project={nextProject} />}
         {prevProject && <ProjectPreview project={prevProject} />}
       </div>

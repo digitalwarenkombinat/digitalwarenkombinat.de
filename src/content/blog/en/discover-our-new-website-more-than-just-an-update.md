@@ -4,7 +4,6 @@ author: 'Gerd Müller'
 description: 'We present the new features of our website, such as environmentally friendly hosting, dark mode and open source solutions. We also offer an insight into the technical steps - from planning, code and testing to deployment and monitoring.'
 pubDate: '2024-10-22'
 previewImage: '/src/assets/blog5.webp'
-previewImageCredit: 'Credit: Anne Mühlich'
 reference: fifth-post
 tags: [Webapp, GLAM, Tech]
 isFeatured: true

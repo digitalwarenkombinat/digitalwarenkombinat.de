@@ -202,3 +202,7 @@ header.small > a svg {
 .prose:has(img):has(em) img {
   margin-bottom: 0;
 }
+
+.prose:has(p) em {
+  font-size: initial;
+}

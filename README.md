@@ -2,6 +2,6 @@
 
 ![](./public/image.png)
 
-The Digitalwarenkombinat (DIWAKO) is dedicated to the creative use of open cultural data and develops web applications and merchandise for and with GLAM institutions under the motto „Shaping digital worlds together“. We are committed to the sustainable use of open cultural data and support museums, galleries, archives and libraries in opening up digitally to the whole society.
+We develop open source web applications for museums, galleries, archives, libraries (GLAMs) and other cultural institutions to make digitized collections experienceable and accessible. We also create graphic design products based on our digital projects.
 
 Here you can find the source code for the [Digitalwarenkombinat](https://digitalwarenkombinat.de) website.

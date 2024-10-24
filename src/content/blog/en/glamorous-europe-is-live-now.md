@@ -22,7 +22,7 @@ In the third step, you can combine your selected image sections and suggested st
 
 Try out the prototype, discover paintings, prints and sketches and create your own artwork at the end. We look forward to your feedback.
 
-Click here to go to the website of [GLAMorous Europe](https://www.glam-europe.de/en).
+Click here to go to the website of [GLAMorous Europe](https://www.glam-europe.de/).
 
 Unfortunately, the project launch also marks the end of our time with the Prototype Fund. We have learnt and tried out a lot in these six months. The financial support from the Prototype Fund was just as important as the two design coaching sessions with Lisa Steingräber from Superbloom. A big thanks for that!
 

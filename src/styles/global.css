@@ -206,3 +206,7 @@ header.small > a svg {
 .prose:has(p) em {
   font-size: initial;
 }
+
+.prose p:has(img):has(em) {
+  line-height: initial;
+}

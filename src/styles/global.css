@@ -185,6 +185,10 @@ div:has(.checkbox:checked) ~ nav {
   font-size: 2.5rem;
 }
 
+.prose a:visited {
+  color: #dd8d0e;
+}
+
 header.small > a div {
   width: 2.5rem;
   height: 2.5rem;
@@ -197,4 +201,12 @@ header.small > a svg {
 
 .prose:has(img):has(em) img {
   margin-bottom: 0;
+}
+
+.prose:has(p) em {
+  font-size: initial;
+}
+
+.prose p:has(img):has(em) {
+  line-height: initial;
 }

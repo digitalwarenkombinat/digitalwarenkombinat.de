@@ -11,11 +11,9 @@ test.describe('Project pages', () => {
     await expect(
       page.getByRole('img', { name: 'GLAMorous Europe bringt' }),
     ).toBeVisible()
-    await expect(page.getByText('Weitere Projekte Spook Tours')).toBeVisible()
+    await expect(page.getByText('Weitere Projekte')).toBeVisible()
 
-    await page
-      .getByRole('link', { name: 'Spook Tours' })
-      .click()
+    await page.getByRole('link', { name: 'Spook Tours' }).click()
     await expect(page).toHaveURL(/.*spook-tours/)
     await expect(
       page.getByRole('heading', { name: 'Spook Tours' }),
@@ -29,6 +27,7 @@ test.describe('Project pages', () => {
     await expect(
       page.getByRole('heading', { name: 'GLAMorous Europe' }),
     ).toBeVisible()
+    await expect(page).toHaveScreenshot()
   })
 
   test('has projects in navigation', async ({ page }) => {

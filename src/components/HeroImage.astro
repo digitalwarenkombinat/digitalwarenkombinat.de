@@ -1,12 +1,5 @@
 ---
-import { Image } from 'astro:assets'
-import hero from '../icons/about.svg'
-import { siteTitle } from '@src/consts'
+import Hero from '../icons/about.svg'
 ---
 
-<Image
-  class:list={'m-auto h-[300px] object-cover'}
-  src={hero}
-  alt=`${siteTitle} Hero`
-  loading='eager'
-/>
+<Hero class:list={'m-auto h-[300px] object-cover'} />

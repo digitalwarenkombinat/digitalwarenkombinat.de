@@ -66,7 +66,7 @@ test.describe('Homepage areas', () => {
 
   test('has footer', async ({ page }) => {
     await expect(
-      page.getByRole('contentinfo').getByLabel('instagram'),
+      page.getByRole('contentinfo').getByLabel('Instagram'),
     ).toBeVisible()
   })
 })

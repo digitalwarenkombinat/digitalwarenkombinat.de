@@ -1,5 +1,9 @@
 ---
-import Hero from '../icons/about.svg'
+import HeroSVG from '../icons/about.svg'
+import { siteTitle } from '@src/consts'
 ---
 
-<Hero class:list={'m-auto h-[300px] object-cover'} />
+<HeroSVG
+  aria-label=`${siteTitle} Hero`
+  class:list={'m-auto h-[300px] object-cover'}
+/>

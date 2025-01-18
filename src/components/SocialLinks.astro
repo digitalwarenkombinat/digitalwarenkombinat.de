@@ -6,13 +6,23 @@ import { socialMedia } from '@src/consts'
 ---
 
 <div class='flex items-center justify-center gap-2 h-8'>
-  <a aria-label='instagram' href={socialMedia.instagram} target='_blank'>
-    <Instagram width={32} height={32} fill='currentColor' />
+  <a href={socialMedia.instagram} target='_blank'>
+    <Instagram
+      aria-label='Instagram'
+      width={32}
+      height={32}
+      fill='currentColor'
+    />
   </a>
-  <a aria-label='github' href={socialMedia.github} target='_blank'>
-    <Github width={32} height={32} fill='currentColor' />
+  <a href={socialMedia.github} target='_blank'>
+    <Github aria-label='Github' width={32} height={32} fill='currentColor' />
   </a>
-  <a aria-label='linkedin' href={socialMedia.linkedin} target='_blank'>
-    <Linkedin width={32} height={32} fill='currentColor' />
+  <a href={socialMedia.linkedin} target='_blank'>
+    <Linkedin
+      aria-label='Linkedin'
+      width={32}
+      height={32}
+      fill='currentColor'
+    />
   </a>
 </div>

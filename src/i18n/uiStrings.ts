@@ -31,10 +31,6 @@ export const uiStrings: TypeUIStrings = {
     de: 'Wir entwickeln Open-Source-Webanwendungen für Museen, Galerien, Archive, Bibliotheken (GLAMs) und andere Kulturinstitutionen, um digitalisierte Sammlungen erfahrbar und zugänglich zu machen. Wir erstellen außerdem Grafikprodukte, die aus unseren digitalen Projekten hervorgehen.',
     en: 'We develop open source web applications for museums, galleries, archives, libraries (GLAMs) and other cultural institutions to make digitized collections experienceable and accessible. We also create graphic design products based on our digital projects.',
   },
-  primaryAction: {
-    de: 'Schreib uns!',
-    en: 'Email us!',
-  },
   areaTitle: {
     de: 'Unsere Schwerpunkte',
     en: 'Our Focus',

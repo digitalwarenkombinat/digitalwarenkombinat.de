@@ -2,7 +2,6 @@ import type { LocalizedText } from '@src/types.ts'
 
 export type PersonData = {
   name: string
-  mail: string
   content: LocalizedText
   description: LocalizedText
   image?: string
@@ -11,7 +10,6 @@ export type PersonData = {
 export const peopleData: PersonData[] = [
   {
     name: 'Anne Mühlich',
-    mail: 'info@digitalwarenkombinat.de',
     description: {
       de: 'Westslawistin, Europäistin, Digitalhumanistin',
       en: 'Western Slavist, Europeanist, Digital Humanist',
@@ -24,7 +22,6 @@ export const peopleData: PersonData[] = [
   },
   {
     name: 'Gerd Müller',
-    mail: 'info@digitalwarenkombinat.de',
     description: {
       de: 'Software-Architekt, Kulturenthusiast, Open Source-Liebhaber',
       en: 'Software Architect, Culture Enthusiast, Open Source Lover',

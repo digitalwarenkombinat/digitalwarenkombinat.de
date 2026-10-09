@@ -15,7 +15,7 @@ test.describe('Homepage areas', () => {
       page.getByRole('heading', { name: 'Wir sind das Digitalwarenkombinat' }),
     ).toBeVisible()
 
-    await expect(page.getByRole('link', { name: 'Schreib uns!' })).toBeVisible()
+    await expect(page.getByRole('link', { name: 'Schreib uns!' })).toHaveCount(0)
 
     await expect(
       page.getByRole('img', { name: 'Digitalwarenkombinat Hero' }),

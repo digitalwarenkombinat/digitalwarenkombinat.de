@@ -21,7 +21,7 @@
     "@sindresorhus/slugify": "^2.2.1",
     "astro": "^5.1.7",
     "astro-icon": "^1.1.5",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.3.3",
     "node-html-parser": "^7.0.1",
     "rehype-external-links": "^3.0.0",
     "sanitize-html": "^2.14.0"

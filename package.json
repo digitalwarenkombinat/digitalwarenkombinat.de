@@ -24,7 +24,7 @@
     "markdown-it": "^14.1.0",
     "node-html-parser": "^7.0.1",
     "rehype-external-links": "^3.0.0",
-    "sanitize-html": "^2.14.0"
+    "sanitize-html": "^2.18.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.4",
